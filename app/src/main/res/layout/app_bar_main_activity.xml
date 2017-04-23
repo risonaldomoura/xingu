@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xingu.inteceleri.xingu.Main_activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/holo_green_light"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <include layout="@layout/content_main_activity"
+        android:layout_height="525dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="56dp" />
+
+            <Spinner
+                android:id="@+id/spn_disciplina"
+                android:layout_width="87dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.33" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.04" />
+
+            <Spinner
+                android:id="@+id/spn_ano"
+                android:layout_width="87dp"
+                android:layout_height="56dp"
+                android:layout_weight="0.33" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
