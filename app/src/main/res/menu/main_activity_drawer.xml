@@ -3,33 +3,50 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/configuracoes"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Configurações" />
+        <item
+            android:id="@+id/compartilhar"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Compartilhar" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Objetivos das disciplinas"
+          android:textSize="18sp">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
+                android:id="@+id/arte"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Arte" />
+            <item
+                android:id="@+id/ciencias"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ciências" />
+            <item
+                android:id="@+id/ed_fisica"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ed. física" />
+            <item
+                android:id="@+id/ens_religioso"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ens. Religioso" />
+            <item
+                android:id="@+id/geografia"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Geografia" />
+            <item
+                android:id="@+id/historia"
+                android:icon="@drawable/ic_menu_send"
+                android:title="História" />
+            <item
+                android:id="@+id/matematica"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Matemática" />
+            <item
+                android:id="@+id/portugues"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Português" />
         </menu>
     </item>
 

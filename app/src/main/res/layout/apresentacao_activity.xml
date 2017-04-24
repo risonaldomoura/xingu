@@ -13,40 +13,21 @@
         tools:background="@color/apresentacao_tela_bg">
 
         <Button
-            android:id="@+id/simbolo_avancar"
+            android:id="@+id/btn_avancar"
             android:layout_width="82dp"
             android:layout_height="83dp"
             android:layout_marginBottom="-4dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="-2dp"
             android:layout_marginTop="8dp"
-            android:background="@mipmap/btn_avancar"
-            android:elevation="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <Button
-            android:id="@+id/btn_avancar"
-            android:layout_width="75dp"
-            android:layout_height="67dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:color/transparent"
+            android:background="@drawable/btn_avancar"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.992"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:layout_constraintVertical_bias="1.0"
-            tools:layout_editor_absoluteX="277dp"
-            tools:layout_editor_absoluteY="436dp" />
+            app:layout_constraintVertical_bias="0.997"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
@@ -87,7 +68,7 @@
             android:layout_height="173dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Saberes e Fazeres é um projeto digital da matriz curricular unificada para auxiliarr professores e educadores no acompanhamento dos conteúdos a serem lecionados em sala de aula."
+            android:text="Saberes e Fazeres é um projeto digital da matriz curricular unificada para auxiliar professores e educadores no acompanhamento dos conteúdos a serem lecionados em sala de aula."
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"

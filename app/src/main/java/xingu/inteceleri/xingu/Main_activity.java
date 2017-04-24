@@ -42,15 +42,14 @@ public class Main_activity extends AppCompatActivity
         spn_disciplina.setAdapter(adp_disciplina);
         spn_ano.setAdapter(adp_ano);
 
-        adp_disciplina.add("Artes");
-        adp_disciplina.add("Biologia");
+        adp_disciplina.add("Arte");
+        adp_disciplina.add("Ens. Religioso");
         adp_disciplina.add("Ciências");
-        adp_disciplina.add("Filosofia");
-        adp_disciplina.add("Física");
+        adp_disciplina.add("Ed. Física");
         adp_disciplina.add("Geografia");
         adp_disciplina.add("História");
+        adp_disciplina.add("Português");
         adp_disciplina.add("Matemática");
-        adp_disciplina.add("Química");
 
         adp_ano.add("6º ano");
         adp_ano.add("7º ano");
@@ -108,17 +107,25 @@ public class Main_activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.configuracoes) {
+            // chamar a activity de configurações
+        } else if (id == R.id.compartilhar) {
+            //Abrir opçoes de compartilhar
+        } else if (id == R.id.arte) {
+            //Abrir a mensagem de opções de arte
+        } else if (id == R.id.ciencias) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.ed_fisica) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.ens_religioso) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.geografia) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.historia) {
+
+        } else if (id == R.id.matematica) {
+
+        } else if (id == R.id.portugues) {
 
         }
 
