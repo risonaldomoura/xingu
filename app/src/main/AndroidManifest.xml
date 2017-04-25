@@ -30,7 +30,16 @@
         <activity
             android:name=".Main_activity"
             android:label="@string/title_activity_main_activity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Config_activity"
+            android:label="@string/title_activity_config_activity"
+            android:parentActivityName=".Main_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="xingu.inteceleri.xingu.Main_activity" />
+        </activity>
     </application>
 
 </manifest>

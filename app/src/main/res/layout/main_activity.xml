@@ -22,4 +22,9 @@
         app:headerLayout="@layout/nav_header_main_activity"
         app:menu="@menu/main_activity_drawer" />
 
+    <include
+        layout="@layout/arte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </android.support.v4.widget.DrawerLayout>

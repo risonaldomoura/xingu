@@ -97,4 +97,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_teste">Teste</string>
     <string name="title_activity_main_ctivity">Painel</string>
+    <string name="title_activity_config_ctivity">Configurações</string>
+    <string name="title_activity_config_activity">Configurações</string>
 </resources>
