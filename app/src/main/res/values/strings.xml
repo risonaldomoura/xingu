@@ -4,6 +4,263 @@
     <string name="title_activity_apresentacao_activity">Apresentacao</string>
     <string name="title_activity_login_activity">Login</string>
     <string name="title_activity_main_activity">Painel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_config_activity">Configurações</string>
+    <string name="conteudo">Configurações</string>
+    <string name="sexto_arte_primeiro">
+        - Os elementos das artes visuais \n
+        - Criar e sentir \n
+        - Pintura \n
+        - A arte dos povos indígenas \n
+        - Realismo \n
+        - Missão colonial: A Caravela \n
+        - Simetria \n- O que é cultura? \n
+        - As sementes da cultura afrodescendente \n
+        - Riscar e rabiscar </string>
+    <string name="sexto_arte_segundo">
+        -História da dança \n
+        -Ouvir e dançar \n
+        -Sons ritmo e movimento \n
+        -Vem cantar! Vem dançar! \n
+        -Dançando no ritmo maracatu \n
+        -Dançando nas paredes \n
+        </string>
+
+    <string name="sexto_arte_terceiro">
+        -História do teatro \n
+        -Lugar para encenar \n
+        -A arte da mímica \n
+        -Imagens e cores fantásticas \n
+        -O circo: Um lugar especial \n
+        -Teatro jesuítico \n
+        -Auto lá \n
+        -Improvisar e jogar \n
+        </string>
+    <string name="sexto_arte_quarto">
+        - Historia da musica\n
+        - A musica e seus códigos\n
+        - Ouvir e cantar \n
+        - Este som é nossa cara \n
+        - Sons e lugares \n
+        - Compondo, regendo e cantando \n
+        - Música de estilo múltiplo \n
+        </string>
+    <string name="objetivo_arte">
+            A presente matriz curricular surgiu da rica experiência de profissionais
+pertencentes ao processo educativo, da área de Artes, em construí-la de forma
+coletiva. Porém, depois de construída, dever ser compreendida e adaptada de
+acordo com a realidade de cada escola, visto que serve para planejar, intervir e
+replanejar a prática pedagógica. \n
+            Para se entender por que a matriz curricular de Artes foi organizada
+dessa forma, deve-se fazer as seguintes perguntas: a quem ensinar? O que
+ensinar? por que ensinar? Tais questionamentos ajudam o professor na busca
+por aulas com conteúdos que não sejam repetitivos aos seus alunos,
+considerando-se a observação de que, no mesmo município,o educando
+estudava o mesmo conteúdo por diversas vezes, ocasionalmente mudando
+apenas de escola. Em consequência disso, as aulas de Artes vinham se
+tornando apáticas e desniveladas. \n
+            Unificar os conteúdos para garantir o acesso à educação, estabelecer
+conteúdos que os alunos devam conhecer na série em que estão, no caso
+ensino fundamental II, dando o insumo necessário para que tenha uma
+sequência linear, sem ficar com lacunas no ensino médio, com relação ao
+conhecimento da Arte. \n
+Segundo BNCC, para que o ensino tenha êxito devemos seguir os
+seguintes tópicos: \n
+- Explicar as diversidades culturais através de projetos ,filmes
+e documentários; \n
+- Conhecer as matrizes estéticas e culturais (inicialmente pela
+História, Música, Dança, Teatro e Artes Visuais) no âmbito
+internacional, nacional, regional e local;\n
+- Estudo teórico não basta, é preciso ter a prática (teoria e
+prática andam juntas);\n
+-  Conciliar registros e pesquisa, fazer uma produção Artística
+(usando as materiais disponíveis na comunidade local);\n
+- Levar o aluno a perceber que ele pode fazer sua própria
+produção e não se deixar levar pelo mercado de consumo
+passado pela mídia; \n
+- Independente do meio e condição social o aluno poderá se
+desenvolver no âmbito social e cultural;\n
+- Propiciar que esse aluno se desenvolva tanto no aspecto
+individual como no coletivo;\n
+- Expor as produções artísticas para a comunidade escolar.\n
+    Para solidificar o ensino da arte em Altamira e Senador José Porfírio e
+garantir qualidade e unidade, no que se refere ministrar aulas de Artes do 6º
+        ao 9º ano no ensino do fundamental, o educador deve ministrar aulas
+interdisciplinares que dialoguem principalmente com a História, seja da Arte,
+da Música, da Literatura, do Teatro etc. e fazer uma avaliação qualitativa que
+envolva práticas provocadas por suas vivências escolares, sem desconsiderar
+as extra escolares, e a prova escrita.\n
+        Sabe-se que os professores, como agentes formadores, devem garantir o
+acesso à educação, de fato e de direito, independente da cor da pele, da etnia,
+de classe social, do credo religioso ou político. Em se tratando do ensino de
+Arte, ministrar a disciplina vai além do cromo, além do ver e do olhar. Os
+porquês, o processo investigativo, o instigar, o olhar, o analisar tornam-se
+processos normais, pois aprendemos uns com os outros desde muito tempo,
+desde quando o “mundo é mundo”. O pintor Espanhol Pablo Picasso, em sua
+visita às gravuras rupestres das cavernas de Altamira, no norte da Espanha,
+chegou à seguinte conclusão: “Depois de Altamira tudo é decadência”. Picasso
+percebeu e expressou que aquelas manifestações artísticas foram feitas com
+materiais rústicos em um ambiente precário e estavam ali aproximadamente há
+17 mil anos decorando as paredes com beleza e originalidade e nos mostrando
+que estamos em constante aprendizagem uns com os outros, mesmo os de
+outras épocas.
+
+        </string>
+
+    <string name="objetivo_ciencias">
+
+        Texto de apresentação da Disciplina de Ciências
+
+    </string>
+
+    <string name="objetivo_ed_fisica">
+
+        Texto de apresentação da disciplina de Educação Fìsica
+    </string>
+
+    <string name="objetivo_ens_religioso">
+         Os novos paradigmas da disciplina Ensino Religioso Escolar, apontam
+para o respeito à diversidade cultural religiosa, quando a lei nº 9.475/97 (que
+modifica o Art. 33 da Lei 9394/96 ) estabelece:\n
+O Ensino Religioso, de matricula facultativa, é parte integrante
+da formação básica do cidadão e constitui disciplina dos
+horários normais das escolas públicas de Ensino Fundamental,
+assegurado o respeito à diversidade cultural religiosa do Brasil,
+vedadas quaisquer formas de proselitismo.\n
+Neste novo paradigma, que tem como base teórica e metodológica o
+modelo das Ciências da Religião, definido por Passos ( 2007,pags. 65-66) como
+um paradigma que
+reconhece a religião e a religiosidade como dados
+antropológicos e socioculturais que devem ser abordados no
+conjunto das demais disciplinas escolares, por razões
+cognitivas e pedagógicas. O conhecimento da religião faz
+parte da educação geral e contribui para a formação
+completado cidadão, devendo assim, estar sob a
+responsabilidade dos sistemas de ensino. e submetida às
+mesmas exigências das demais áreas do saber que compõem
+os currículos escolares.\n
+Nessa perspectiva, o Ensino Religioso toma como referências a
+sociedade secularizada, a laicidade, a democratização, a cidadania e a
+interculturalidade como princípios básicos na educação.\n
+A escola, enquanto espaço de desenvolvimento humano e sóciocultural,
+responsável pela socialização, construção e reconstrução dos conhecimentos,
+é um lugar privilegiado para o reconhecimento da existência dessa diversidade
+cultural religiosa do povo e para a formação de uma ética voltada para a
+convivência fraterna, onde o respeito mútuo, a solidariedade e a abertura para o
+transcendente sejam o fio condutor do trabalho pedagógico na escola.\n
+Dessa forma, o objeto de estudos do Ensino religioso passa a ser o
+fenômeno religioso em suas diversas formas de expressão nas culturas
+humanas, numa abordagem sócio antropológica, buscando compreender o ser
+humano em sua busca de dar sentido à vida.\n
+Este é um momento importante para a consolidação da área de Ensino
+Religioso, pois pela primeira vez na história da educação brasileira o Ensino
+Religioso é contemplado como uma área de conhecimentos, reconhecida comotal pelo Ministério da Educação, por meio da Resolução CEB/CNE n. 2/1998 e
+ratificada pelas Resoluções CEB/CNE n. 4/2010 e 7/2010). Como tal, requer
+diretrizes curriculares nacionais, como as demais áreas de conhecimento que
+compõem a BNCC. Isso representa uma grande conquista para o avanço e a
+legitimação do Ensino Religioso como área de conhecimentos da Educação
+Básica, uma vez que até então as escolas só contavam com as orientações
+curriculares elaboradas pelo Fórum Nacional Permanente do Ensino ReligiosoFONAPER ou pelas confissões religiosas que atuam na Educação Básica,
+estas últimas com orientações de cunho catequético, de acordo com a
+confissão religiosa da instituição mantenedora.\n
+O conhecimento religioso produzido no âmbito das culturas e tradições
+religiosas (indígenas, africanas, afro-brasileiras, judaico-cristãs, islâmica,
+espíritas, hindus, chinesas, japonesas, semitas, movimentos místicos,
+esotéricos, sincréticos, entre muitos outros) e os conhecimentos não-religiosos
+(ateísmo, agnosticismo, materialismo, ceticismo, entre outros) (BNCC, pag
+172).\n
+Em sua estrutura curricular, as diretrizes apontam para a organização
+desses conhecimentos a partir dos seguintes eixos temáticos: Identidades e
+diferenças; Conhecimentos dos fenômenos religiosos/não-religiosos e Idéias e
+Práticas religiosas/não-religiosas.\n
+Como se percebe, as orientações apresentadas na BNCC representam
+um grande avanço na qualidade da educação brasileira, ao propor diretrizes
+que se articulam com os novos paradigmas educacionais para o século XXI,
+onde a religião é tratada como um produto cultural dos diferentes povos, a
+partir de suas relações com as dimensões imanentes e transcendentes,
+reconhecendo o direito às diferenças no conjunto dos conhecimentos
+veiculados pela escola.\n
+Este produto, a Matriz Curricular Unificada de Ensino Religioso de
+Altamira e Senador José Porfírio, representa um reflexo dos avanços na área de
+conhecimento e na política educacional da região para o Ensino Religioso. Os
+professores saem na frente nas discussões e prepararam este belo e avançado
+documento.\n
+        </string>
+    <string name="objetivo_geografia">
+      Texto de apresentação da Disciplina de Geografia
+    </string>
+
+    <string name="objetivo_historia">
+       Texto de apresentação da Disciplina de História
+    </string>
+
+    <string name="objetivo_matematica">
+        Dentre todas as disciplinas do currículo escolar em todo o mundo, a
+matemática ocupa o lugar privilegiado. Em primeiro lugar porque está presente
+em todos os currículos de graduação de forma pura ou aplicada e em segundo
+porque carrega consigo o estigma histórico de ser imprescindível para o
+desenvolvimento intelectual do homem. Se a disciplina Matemática ocupa um
+lugar tão especial, deve ser de grande importância para a formação do
+indivíduo como cidadão. Um ensino fragmentado, não contextualizado e por
+fim, muitas vezes ineficiente para os nossos dias. \n
+Como o coração das ciências que alavancam esta tecnologia,
+concordando com Kant, a matemática é cerne destes avanços maravilhosos e,
+portanto de muitas discussões. Falar do ensino de Matemática é falar do
+homem que queremos formar para o futuro e do futuro que queremos formar
+para este homem. Este consenso em torno da matemática como necessária a
+formação do homem, é mundial e por isso devemos discutir a organização do
+ensino desta ciência constantemente. É necessário que se faça uma analise
+permanente dos conteúdos ministrados, trabalhar a essência, os conceitos e
+depois os exercícios.\n
+Analisando os resultados do PISA5, a psicóloga e educadora Léa
+Fagundes aponta dois caminhos que o Brasil deveria seguir para mudar o rumo:\n
+1) conhecimento produtivo em vez de reprodutivo e \n
+2) melhora progressiva das condições para aprender
+(competências) e para continuar aprendendo ao longo da vida.”
+Para Fagundes, é fundamental que o estudante não se limite a
+repetir o que está nos livros, mas que seja capaz de construir
+conceitos que possa usar para compreender e explicar
+propriedades e funções de objetos, situações e fenômenos,
+para então fazer descobertas e criar tecnologia e mais ciência
+(IVANISSEVICH, 2003, p. 28).\n
+O guia para a escolha de uma metodologia eficaz são os objetivos
+propostos no planejamento. E o que apresentamos a seguir é isto:
+planejamento e para dois municípios. Algo novo e desafiador, principalmente
+em se tratando de matemática.\n
+Os docentes e a equipe técnica-pedagógica das SEMEDs produziram,
+com base em documentos nacionais e considerando os contextos locais, uma
+matriz curricular unificada dos municípios de Altamira e Senador José Porfírio,
+por disciplinas e anos de ensino.\n
+O produto final nos conduz ao alinhamento de assuntos e conteúdos nas
+respectivas disciplinas na ordem sugeridas pelos participantes durante a
+formação. Desta forma, todos entre os dois municípios supracitados, seguem
+uma matriz curricular comum na qual os discentes ganham em qualidade e
+oportunidades, mesmo em momento de transferência escolar de uma escola
+para outra instituição de ensino e/ou entre os municípios.\n
+Abaixo, se tem a Matriz Curricular Unificada na área da matemática
+elaborada pelos participantes da referida disciplina com base na orientação da
+Dra. Daniele Esteves Pereira e a Msc. Janaina Carvalho de Sousa. Em sua
+elaboração considerou-se o que expressa o documento oficial:\n
+A Matemática é uma ciência composta por múltiplos conceitos
+que se relacionam, se complementam e que, muitas vezes, são
+interdependentes. Além disso, o corpo de conhecimentos
+matemáticos (que se consolida por ampliações sucessivas ao
+longo da Educação Básica) está fortemente apoiado em suas
+aplicações, tanto aquelas do cotidiano fora da sala de aula
+quanto as que se originam pelo próprio desafio do
+conhecimento, que está sempre em movimento, necessitando
+ser completado, explicado, verificado (BNCC, 2016, p. 119).\n
+O convite é à reflexão. Para uma reflexão – ação constante que se
+confundirá com uma ação – reflexão que culminará com melhorias
+significativas na formação do cidadão de hoje e consequentemente no futuro
+deste estado de coisas.
+    </string>
+
+    <string name="objetivo_portugues">
+        Texto de apresentação da Disciplina de Português
+    </string>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -27,76 +284,6 @@
         "interface that immerse the user in the experience.\n"
         "An emphasis on user actions makes core functionality immediately apparent and provides "
         "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="title_activity_teste">Teste</string>
-    <string name="title_activity_main_ctivity">Painel</string>
-    <string name="title_activity_config_ctivity">Configurações</string>
-    <string name="title_activity_config_activity">Configurações</string>
+
 </resources>

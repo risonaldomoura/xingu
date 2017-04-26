@@ -25,8 +25,6 @@ public class Login_activity extends AppCompatActivity implements View.OnClickLis
         btn_entrar.setOnClickListener(this);
 
         edtEmail = (EditText) findViewById(R.id.edtEmail);
-
-
     }
 
     @Override

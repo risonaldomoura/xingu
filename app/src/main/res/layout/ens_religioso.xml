@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fl_arte"
+    android:id="@+id/fl_ens_religioso"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:drawable/screen_background_dark_transparent"
@@ -44,7 +44,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Arte"
+                        android:text="Ensino Religioso"
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
                         android:textSize="20sp"
@@ -58,7 +58,7 @@
                         android:id="@+id/textView11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/objetivo_arte"
+                        android:text="@string/objetivo_ens_religioso"
                         android:textAlignment="viewStart"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp" />
@@ -77,7 +77,7 @@
             android:layout_height="15dp" />
 
         <Button
-            android:id="@+id/btn_ok_arte"
+            android:id="@+id/btn_ok_ens_religioso"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="290dp"
             android:layout_height="wrap_content"

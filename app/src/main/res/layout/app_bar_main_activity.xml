@@ -17,6 +17,7 @@
         android:layout_height="525dp" />
 
     <FrameLayout
+        android:id="@+id/fl_spinner"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -34,18 +35,15 @@
                 android:id="@+id/spn_disciplina"
                 android:layout_width="87dp"
                 android:layout_height="56dp"
-                android:layout_weight="0.33" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="56dp"
-                android:layout_weight="0.04" />
+                android:layout_weight="0.33"
+                android:textColor="@android:color/white" />
 
             <Spinner
                 android:id="@+id/spn_ano"
                 android:layout_width="87dp"
                 android:layout_height="56dp"
-                android:layout_weight="0.33" />
+                android:layout_weight="0.33"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </FrameLayout>
 
