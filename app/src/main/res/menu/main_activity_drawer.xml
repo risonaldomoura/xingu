@@ -17,35 +17,35 @@
         <menu>
             <item
                 android:id="@+id/arte"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_arte"
                 android:title="Arte" />
             <item
                 android:id="@+id/ciencias"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_ciencias"
                 android:title="Ciências" />
             <item
                 android:id="@+id/ed_fisica"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_ed_fisica"
                 android:title="Ed. física" />
             <item
                 android:id="@+id/ens_religioso"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_ens_religioso"
                 android:title="Ens. Religioso" />
             <item
                 android:id="@+id/geografia"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_geografia"
                 android:title="Geografia" />
             <item
                 android:id="@+id/historia"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_historia"
                 android:title="História" />
             <item
                 android:id="@+id/matematica"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_matematica"
                 android:title="Matemática" />
             <item
                 android:id="@+id/portugues"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_portugues"
                 android:title="Português" />
         </menu>
     </item>
