@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="objetivo_matematica">
+        Dentre todas as disciplinas do currículo escolar em todo o mundo, a
+matemática ocupa o lugar privilegiado. Em primeiro lugar porque está presente
+em todos os currículos de graduação de forma pura ou aplicada e em segundo
+porque carrega consigo o estigma histórico de ser imprescindível para o
+desenvolvimento intelectual do homem. Se a disciplina Matemática ocupa um
+lugar tão especial, deve ser de grande importância para a formação do
+indivíduo como cidadão. Um ensino fragmentado, não contextualizado e por
+fim, muitas vezes ineficiente para os nossos dias. \n
+Como o coração das ciências que alavancam esta tecnologia,
+concordando com Kant, a matemática é cerne destes avanços maravilhosos e,
+portanto de muitas discussões. Falar do ensino de Matemática é falar do
+homem que queremos formar para o futuro e do futuro que queremos formar
+para este homem. Este consenso em torno da matemática como necessária a
+formação do homem, é mundial e por isso devemos discutir a organização do
+ensino desta ciência constantemente. É necessário que se faça uma analise
+permanente dos conteúdos ministrados, trabalhar a essência, os conceitos e
+depois os exercícios.\n
+Analisando os resultados do PISA5, a psicóloga e educadora Léa
+Fagundes aponta dois caminhos que o Brasil deveria seguir para mudar o rumo:\n
+1) conhecimento produtivo em vez de reprodutivo e \n
+2) melhora progressiva das condições para aprender
+(competências) e para continuar aprendendo ao longo da vida.”
+Para Fagundes, é fundamental que o estudante não se limite a
+repetir o que está nos livros, mas que seja capaz de construir
+conceitos que possa usar para compreender e explicar
+propriedades e funções de objetos, situações e fenômenos,
+para então fazer descobertas e criar tecnologia e mais ciência
+(IVANISSEVICH, 2003, p. 28).\n
+O guia para a escolha de uma metodologia eficaz são os objetivos
+propostos no planejamento. E o que apresentamos a seguir é isto:
+planejamento e para dois municípios. Algo novo e desafiador, principalmente
+em se tratando de matemática.\n
+Os docentes e a equipe técnica-pedagógica das SEMEDs produziram,
+com base em documentos nacionais e considerando os contextos locais, uma
+matriz curricular unificada dos municípios de Altamira e Senador José Porfírio,
+por disciplinas e anos de ensino.\n
+O produto final nos conduz ao alinhamento de assuntos e conteúdos nas
+respectivas disciplinas na ordem sugeridas pelos participantes durante a
+formação. Desta forma, todos entre os dois municípios supracitados, seguem
+uma matriz curricular comum na qual os discentes ganham em qualidade e
+oportunidades, mesmo em momento de transferência escolar de uma escola
+para outra instituição de ensino e/ou entre os municípios.\n
+Abaixo, se tem a Matriz Curricular Unificada na área da matemática
+elaborada pelos participantes da referida disciplina com base na orientação da
+Dra. Daniele Esteves Pereira e a Msc. Janaina Carvalho de Sousa. Em sua
+elaboração considerou-se o que expressa o documento oficial:\n
+A Matemática é uma ciência composta por múltiplos conceitos
+que se relacionam, se complementam e que, muitas vezes, são
+interdependentes. Além disso, o corpo de conhecimentos
+matemáticos (que se consolida por ampliações sucessivas ao
+longo da Educação Básica) está fortemente apoiado em suas
+aplicações, tanto aquelas do cotidiano fora da sala de aula
+quanto as que se originam pelo próprio desafio do
+conhecimento, que está sempre em movimento, necessitando
+ser completado, explicado, verificado (BNCC, 2016, p. 119).\n
+O convite é à reflexão. Para uma reflexão – ação constante que se
+confundirá com uma ação – reflexão que culminará com melhorias
+significativas na formação do cidadão de hoje e consequentemente no futuro
+deste estado de coisas.
+    </string>
+
+
+    <string name="title_matematica_sexto_I">
+        Matemática sexto
+    </string>
+
+    <string name="cont_matematica_sexto_I">
+       - Números Naturais;\n
+       - Sistema de numeração decimal;\n
+       - O conjunto dos números naturais;\n
+       - Operações com números naturais;\n
+       - Expressões numéricas;\n
+       - Potenciação de números naturais;\n
+       - Raiz Quadrada de números naturais.\n
+    </string>
+
+    <string name="obj_matematica_sexto_I">
+       1. Perceber a importância dos números;\n
+Identificar as diversas representações dos números;
+       2. Compreender como funciona o sistema de numeração
+decimal e Relacioná-lo com outros sistemas;\n
+       3. Identificar um número natural;\n
+       4. Efetuar as operações com números naturais;\n
+       5. Compreender a potência como um produto cujos fatores
+são iguais;\n
+       6. Reconhecer a importância das potências de base 10;\n
+       7. Desenvolver habilidades com cálculos;\n
+       8. Conhecer algumas raízes quadradas que são números
+naturais;\n
+       9. Conhecer e aplicar os critérios de divisibilidade;\n
+       10. Determinar o MMC e o MMC de números naturais.\n
+    </string>
+
+
+    <string name="title_matematica_sexto_II">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_sexto_II">
+       - Números Racionais;\n
+       - Divisibilidade;\n
+       - MMC e MDC;\n
+       - Frações (conceito, leitura, termos e classificação);\n
+       - Estudo dos números
+        fracionários (equivalência, números mistos e decimais,
+        simplificação, redução ao mesmo denominador);\n
+       - Operações com frações;\n
+    </string>
+
+    <string name="obj_matematica_sexto_II">
+       1. Identificar frações e seus termos;\n
+       2. Representar numericamente e graficamente uma fração;\n
+       3. Classificar e simplificar frações;\n
+       4. Comparar frações entre si;\n
+       5. Efetuar operações com frações;\n
+       6. Reduzir frações a um denominador comum;\n
+       7. Ampliar o conceito de número;\n
+       8. Transferir as técnicas de cálculo com números naturais e
+   frações para efetuar operações com números racionais;\n
+       9. Compreender o significado da divisão não – exata;\n
+       10. Desenvolver a habilidade de calcular e resolver problemas
+   de números racionais.\n
+    </string>
+
+
+    <string name="title_matematica_sexto_III">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_sexto_III">
+       - Geometria;\n
+       - Operações com números decimais;\n
+       - Ponto, reta e plano(identificação);\n
+       - Polígonos;\n
+       - Principais figuras planas;\n
+       - Elementos das principais figuras planas.\n
+    </string>
+
+    <string name="obj_matematica_sexto_III">
+       1. Adquirir os conceitos básicos da geometria;\n
+       2. Observar formas dos objetos que nos cercam e relacioná- las com as figuras geométricas;\n
+       3. Estabelecer critérios de classificação para as figuras geométricas;\n
+       4. Indicar os elementos das principais figuras geométricas planas;\n
+       5. Identificar uma figura com a parte de outras;\n
+       6. Desenvolver a habilidade de decompor e compor figuras planas.\n
+    </string>
+
+
+    <string name="title_matematica_sexto_IV">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_sexto_IV">
+       - Sistema Métrico Decimal;\n
+       - Unidades de medidas de comprimento, superfície, volume, capacidade, massa;\n
+       - Área das principais figuras planas;\n
+       - Medidas agrárias;\n
+       - Área de terra com medidas agrárias.\n
+    </string>
+
+    <string name="obj_matematica_sexto_IV">
+       1. Adquirir o conceito da medida;\n
+       2. Reconhecer medidas de comprimento, superfície, volume, capacidade e massa;\n
+       3. Estabelecer relações entre o calculo de área e as unidades de medida de superfície;\n
+       4. Estabelecer semelhanças e diferenças entre as unidades de medidas, especialmente nas
+        atividades que envolvem mudanças de unidades;\n
+       5. Reconhecer as principais medidas agrárias;\n
+       6. Calcular área de terra com medidas agrárias.\n
+    </string>
+
+
+
+
+
+
+    <string name="title_matematica_setimo_I">
+        Matemática sétimo
+    </string>
+
+    <string name="cont_matematica_setimo_I">
+       - Conjuntos de Números Inteiros (Z);\n
+       - O conjunto dos números inteiros;\n
+       - Módulo de um número inteiro;\n
+       - Comparação de números inteiros;\n
+       - Adição de números inteiros;\n
+       - Subtração de números inteiros;\n
+       - Adição algébrica;\n
+       - Multiplicação de números inteiros;\n
+       - Divisão de números inteiros;\n
+       - Potenciação de números inteiros;\n
+       - Propriedades da potência;\n
+       - Raiz quadrada exata de números inteiros;\n
+       - Expressões numéricas;\n
+       - O Conjunto dos Números Racionais (Q);\n
+       - O conjunto dos números racionais;\n
+       - A reta numérica racional;\n
+       - Adição algébrica de números racionais;\n
+       - Multiplicação de números racionais;\n
+       - Divisão de números racionais;\n
+       - Potenciação de números racionais;\n
+       - Raiz quadrada exata de números racionais;\n
+       - Estudo das médias.\n
+    </string>
+
+    <string name="obj_matematica_setimo_I">
+       1. Reconhecer a necessidade de ampliação do
+conjunto IN;\n
+       2. Reconhecer números opostos;\n
+       3. Identificar números inteiros positivos e
+negativos;\n
+       4. Identificar subconjuntos de Z;\n
+       5. Determinar a soma de dois números inteiros;\n
+       6. Reconhecer expressões numéricas;\n
+       7. Determinar o quociente de dois números
+inteiros;\n
+       8. Resolver expressões numéricas;\n
+       9. Determinar potências de inteiros;\n
+       10. Identificar e aplicar as propriedades das potências;\n
+       11. Identificar a radiciação como operação inversa da potência;\n
+       12. Identifica números racionais;\n
+       13. Reconhecer os subconjuntos de Q;\n
+       14. Determinar a soma de números racionais;\n
+       15. Reduzir ao mesmo denominador comum;\n
+       16. Determinar o produto de racionais;\n
+       17. Determinar o quociente de racionais;\n
+       18. Resolver expressões numéricas envolvendo as 4 operações fundamentais;\n
+       19. Determinar a potência de racionais.\n
+    </string>
+
+
+
+    <string name="title_matematica_setimo_II">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_setimo_II">
+       - Estudando as Equações;\n
+       - Igualdade;\n
+       - Equações;\n
+       - Conjunto universo e conjunto solução de uma equação;\n
+       - Equações equivalentes;\n
+       - Equações do 1º grau com uma incógnita;\n
+       - Resolvendo uma equação do 1º grau com uma incógnita;\n
+       - Usando equações na resolução de problemas;\n
+       - Aplicação das equações: as formulas matemáticas;\n
+       - Equações do 1º grau com duas incógnitas;\n
+       - Sistema de duas equações do 1º grau com duas incógnitas;\n
+       - Introdução à inequação;\n
+       - Introdução a ângulos.\n
+    </string>
+
+    <string name="obj_matematica_setimo_II">
+       1. Identificar equações de 1° grau e seus termos;\n
+       2. Resolver equações de 1° grau;\n
+       3. Reconhecer as propriedades das desigualdades;\n
+       4. Identificar equações com duas variáveis;\n
+       5. Identificar sistemas do 1° grau;\n
+       6. Resolver sistemas do 1° grau com duas variáveis pelo método da adição e da substituição;\n
+       7. Identificar inequações de 1° grau;\n
+       8. Conhecer ângulos, agudos, reto e obtuso;\n
+       9. Calcular grau, minuto e segundo.\n
+    </string>
+
+
+    <string name="title_matematica_setimo_III">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_setimo_III">
+       - Razões e Proporções;\n
+       - Razão;\n
+       - Algumas razões especiais;\n
+       - Proporção;\n
+       - Propriedade fundamental das proporções;\n
+       - Outras propriedades das proporções;\n
+       - Grandezas Proporcionais: Regra de Três;\n
+       - Números direta e inversamente proporcionais;\n
+       - Regra de três simples;\n
+       - Regra de três composta.\n
+       - Porcentagem e Juro Simples;\n
+       - Introdução;\n
+       - Porcentagem;\n
+       - Juro simples.\n
+    </string>
+
+    <string name="obj_matematica_setimo_III">
+       1. Ler uma razão;\n
+       2. Identificar os termos da razão;\n
+       3. Identificar os meios e extremos da uma proporção utilizando a propriedade fundamental;\n
+       4. Resolver problemas aplicando conhecimentos de razão e proporção;\n
+       5. Identificar os tipos de grandezas;\n
+       6. Resolver problemas aplicando regras de três simples e compostas;\n
+       7. Reconhecer razões centesimais e sua simbologia lendo e representando;\n
+       8. Resolver problemas sobre o auxílio de porcentagem;\n
+       9. Reconhecer problemas que envolvem juros;\n
+       10. Resolver problemas cotidianos aplicando os ensinamentos de porcentagem e juros.\n
+    </string>
+
+
+    <string name="title_matematica_setimo_IV">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_setimo_IV">
+       - Estudando Triângulos e Quadriláteros;\n
+       - O triângulo e seus elementos;\n
+       - Reconhecendo triângulos;\n
+       - Uma relação entre as medidas dos ângulos internos do triângulo;\n
+       - Os quadriláteros e seus elementos;\n
+       - Conhecendo alguns quadriláteros especiais;\n
+       - Uma relação entre as medidas dos ângulos internos de um quadrilátero.\n
+    </string>
+
+    <string name="obj_matematica_setimo_IV">
+       1. Identificar os tipos de triângulos;\n
+       2. Resolver problemas envolvendo triângulos e ângulos;\n
+       3. Identificar os tipos de quadriláteros;\n
+       4. Aplicar conhecimentos de quadriláteros em resolução de problemas.\n
+    </string>
+
+
+
+
+
+    <string name="title_matematica_oitavo_I">
+        Matemática oitavo
+    </string>
+
+    <string name="cont_matematica_oitavo_I">
+       - Conjunto dos números reais;\n
+       - Números Reais;\n
+       - Raiz quadrada (exata e inexata);\n
+       - Números racionais e números irracionais;\n
+       - Número real;\n
+       - Representação geométrica dos números reais;\n
+       - Expressões Algébricas;\n
+       - Conceituação;\n
+       - Classificação;\n
+       - Valor numérico;\n
+       - Termos semelhantes;\n
+       - Monômio ou termo algébrico;\n
+       - Grau de um monômio;\n
+       - Operações com monômios.\n
+    </string>
+
+    <string name="obj_matematica_oitavo_I">
+       1. Conceituar e calcular raiz quadrada de um número;\n
+       2. Ampliar o conceito de número com a introdução dos números reais;\n
+       3. Conceituar dízimas periódicas;\n
+       4. Distinguir números racionais e números irracionais;\n
+       5. Conhecer o conjunto dos números reais;\n
+       6. Interpretar a representação dos números reais;\n
+       7. Conceituar expressões algébricas;\n
+       8. Compreender o processo de generalização das propriedades dos números;\n
+       9. Identificar e classificar expressões algébricas;\n
+       10. Determinar valor numérico de expressões algébricas;\n
+       11. Identificar termos semelhantes em expressões algébricas;\n
+       12. Interpretar a definição de monômio;\n
+       13. Distinguir coeficiente numérico e parte literal de um monômio;\n
+       14. Determinar o grau de um monômio;\n
+       15. Realizar operações com monômios;\n
+       16. Desenvolver técnicas e habilidades com cálculo literal.\n
+    </string>
+
+
+
+    <string name="title_matematica_oitavo_II">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_oitavo_II">
+       - Polinômios;\n
+       - Conceito;\n
+       - Termos;\n
+       - Grau de um polinômio;\n
+       - Tipos de polinômios;\n
+       - Operações com polinômios;\n
+       - Produtos notáveis;\n
+       - Fatoração de polinômios;\n
+       - Frações algébricas;\n
+       - Operações com frações algébricas;\n
+       - Equações fracionárias e literais;\n
+       - Sistemas de equações do 1º grau com duas variáveis.\n
+    </string>
+
+    <string name="obj_matematica_oitavo_II">
+       1. Conceituar polinômios;\n
+       2. Identificar os termos de um polinômio;\n
+       3. Escrever polinômios na forma reduzida;\n
+       4. Reconhecer polinômios completos e incompletos;\n
+       5. Classificar polinômios;\n
+       6. Verificar o grau de um polinômio;\n
+       7. Calcular o valor numérico de um polinômio;\n
+       8. Desenvolver técnicas e habilidades de cálculos com polinômios;\n
+       9. Aplicar regras práticas no cálculo de produtos de polinômios;\n
+       10. Identificar e classificar produtos notáveis;\n
+       11. Compreender as vantagens de se memorizar alguns desses produtos notáveis;\n
+       12. Identificar os fatores comuns aos termos de uma
+           expressão algébrica e fatorá-la aplicando o caso mais conveniente;\n
+       13. Reconhecer a forma fatorada de uma expressão algébrica;\n
+       14. Determinar o m.m.c. e o m.d.c. de expressões algébricas;\n
+       15. Identificar frações algébricas;\n
+       16. Simplificar frações algébricas;\n
+       17. Operar com frações algébricas;\n
+       18. Ampliar o estudo de equações do 1º grau;\n
+       19. Identificar e resolver equações fracionárias e literais.\n
+    </string>
+
+
+    <string name="title_matematica_oitavo_III">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_oitavo_III">
+       - Geometria;\n
+       - Princípios da Geometria;\n
+       - Ponto, reta e plano;\n
+       - Segmentos;\n
+       - Ângulos;\n
+       - Polígonos.\n
+    </string>
+
+    <string name="obj_matematica_oitavo_III">
+       1. Reconhecer os entes geométricos;\n
+       2. Distinguir as notações para reta, semi-reta e segmento de reta;\n
+       3. Identificar o ponto médio de um segmento, bem como
+         distinguir segmentos colineares e segmentos consecutivos;\n
+       4. Conceituar ângulo, seus elementos e região angular;\n
+       5. Descrever as posições relativas de duas retas;\n
+       6. Conceituar ângulos complementares, suplementares,
+          adjacentes, opostos pelo - vértice, correspondentes,
+         colaterais e alternos aplicando as suas propriedades na resolução de problemas;\n
+       7. Identificar e classificar os polígonos;\n
+       8. Conhecer os principais elementos de um polígono;\n
+       9. Identificar as relações e propriedades existentes entre os elementos de um polígono.\n
+    </string>
+
+
+    <string name="title_matematica_oitavo_IV">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_oitavo_IV">
+       - Estudo das principais figuras planas;\n
+       - Triângulos;\n
+       - Definição;\n
+       - Elementos;\n
+       - Classificação;\n
+       - Propriedades e/ou relações;\n
+       - Quadriláteros;\n
+       - Definição;\n
+       - Elementos;\n
+       - Classificação;\n
+       - Propriedades e/ou relações;\n
+       - Circunferência;\n
+       - Definição;\n
+       - Elementos;\n
+       - Propriedades e/ou relações;\n
+       - Círculo;\n
+       - Definição;\n
+       - Elementos;\n
+       - Propriedades e/ou relações.\n
+    </string>
+
+    <string name="obj_matematica_oitavo_IV">
+       1. Explorar os triângulos e suas propriedades para
+          descobrir a importância desta figura no estudo da geometria;\n
+       2. Reconhecemos os elementos de um triângulo;\n
+       3. Classificar triângulos quanto aos lados e aos ângulos;\n
+       4. Aplicar as propriedades dos triângulos na resolução de problemas;\n
+       5. Identificar os quadriláteros, seus elementos e propriedades;\n
+       6. Classificar os quadriláteros convexos;\n
+       7. Reconhecer, justificar e aplicar propriedades dos paralelogramos;\n
+       8. Conceituar circunferências e círculo, identificando seus elementos;\n
+       9. Conceituar medidas de arcos;\n
+       10. Estabelecer as relações entre circunferência e ângulos;\n
+       11. Desenvolver técnicas e habilidades para aplicar as
+           propriedades de algumas figuras geométricas na resolução de problemas.\n
+    </string>
+
+
+
+
+
+    <string name="title_matematica_nono_I">
+        Matemática nono
+    </string>
+
+    <string name="cont_matematica_nono_I">
+       - Potências;\n
+       - Potências com expoente inteiro;\n
+       - Propriedades das potências;\n
+       - Notação científica;\n
+       - Raízes;\n
+       - Conceito e propriedades da radiciação;\n
+       - Simplificando radicais;\n
+       - Cálculo com radicais.\n
+    </string>
+
+    <string name="obj_matematica_nono_I">
+       1. Revisar as potências de números reais com
+          expoente negativo e aplicando as propriedades das potências;\n
+       4. Identificar os termos da radiciação aplicando as propriedades dos radicais;\n
+       5. Reconhecer os radicais semelhantes aplicando as propriedades operacionais dos radicais;\n
+       6. Racionalizar o denominador de uma fração identificando o fator racionalizante.\n
+    </string>
+
+
+
+    <string name="title_matematica_nono_II">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_nono_II">
+       - Equações do 2º grau;\n
+       - Resolvendo equações incompletas;\n
+       - Resolvendo equações completas;\n
+       - Resolvendo problemas;\n
+       - Estudado as raízes da equação;\n
+       - Resolvendo equações biquadradas;\n
+       - Resolvendo sistemas de equações do 2º grau;\n
+       - Funções;\n
+       - Noções de probabilidade e estatísticas;\n
+       - Sistema de coordenadas cartesianas;\n
+       - Noção de função;\n
+       - Função do 1º grau;\n
+       - Gráfico da função;\n
+       - Função do 2º grau (quadrática);\n
+       - Gráfico da função;\n
+       - Zeros da função;\n
+       - Concavidade da parábola;\n
+       - Ponto mínimo e máximo.\n
+    </string>
+
+    <string name="obj_matematica_nono_II">
+       1. Reconhecer pares ordenados iguais ou diferentes e representar no plano cartesiano;\n
+       2. Identificar uma função reconhecendo domínio, contradomínio e imagem;\n
+       3. Representar graficamente as funções do 1º grau;\n
+       4. Representar graficamente a função
+          quadrática e determinar os zeros dessa função.\n
+    </string>
+
+
+    <string name="title_matematica_nono_III">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_nono_III">
+       - Semelhança;\n
+       - Polígonos semelhantes;\n
+       - Triângulos semelhantes;\n
+       - Teorema de Pitágoras;\n
+       - Trigonometria;\n
+       - Estudando Tangente;\n
+       - Estudando Seno e Cosseno;\n
+       - Relações trigonométricas no triângulo retângulo.\n
+    </string>
+
+    <string name="obj_matematica_nono_III">
+       1. Reconhecer uma equação do 2º grau
+          completa e incompleta aplicando suas;\n
+       2. fórmulas determinadas;\n
+       3. Resolver equações biquadrada;\n
+       4. Interpretar e solucionar problemas de
+          equações do 2º grau, usando a linguagem matemática;\n
+       5. Identificar uma equação irracional, resolver e eliminar raízes estranhas dessa equação;\n
+       6. Determinar a razão entre dois segmentos proporcionais, aplicando o termo de tales;\n
+       7. Determinar e reconhecer as medidas desconhecidas em triângulos semelhantes;\n
+       8. Identificar os elementos de um triângulo retângulo aplicando o teorema de Pitágoras;\n
+       9. Determinar o seno, o cosseno e a tangente dos ângulos agudos de um triângulo retângulo.\n
+    </string>
+
+
+    <string name="title_matematica_nono_IV">
+        Matemática
+    </string>
+
+    <string name="cont_matematica_nono_IV">
+       - Áreas e Volumes;\n
+       - Área dos polígonos;\n
+       - Volume dos sólidos;\n
+       - Retomada a matemática financeira;\n
+       - Regra de três composta;\n
+       - Problemas financeiros;\n
+       - Classificação dos Números;\n
+       - Conjuntos;\n
+       - Conjuntos numéricos (N, Z, Q, I e R);\n
+       - Circunferência e Círculo;\n
+       - Perímetro da circunferência;\n
+       - Área do círculo.\n
+    </string>
+
+    <string name="obj_matematica_nono_IV">
+       1. Reconhecer as unidades e determinar por
+meio de fórmulas as áreas e volumes de
+figuras planas e sólidas;\n
+       2. Reconhecer os conjuntos dos números
+naturais, inteiros, racionais, irracionais e reais,
+estabelecendo as relações existentes;\n
+       3. Reconhecer as circunferências e os círculos,
+encontrando, respectivamente perímetro e
+área e conhecer seus elementos.\n
+    </string>
+
+
+
+</resources>

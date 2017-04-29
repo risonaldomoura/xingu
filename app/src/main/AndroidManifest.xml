@@ -29,7 +29,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Main_activity"
-            android:label="@string/title_activity_main_activity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Config_activity"
@@ -40,6 +39,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="xingu.inteceleri.xingu.Main_activity" />
         </activity>
+        <activity android:name=".Activity_teste"></activity>
     </application>
 
 </manifest>

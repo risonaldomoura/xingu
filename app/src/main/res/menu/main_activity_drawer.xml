@@ -12,7 +12,7 @@
             android:title="Compartilhar" />
     </group>
 
-    <item android:title="Objetivos das disciplinas"
+    <item android:title="Apresentação das disciplinas"
           android:textSize="18sp">
         <menu>
             <item
