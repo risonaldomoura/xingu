@@ -62,7 +62,7 @@
                                 android:id="@+id/textView8"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Arte nono"
+                                android:text="@string/title_arte_nono_I"
                                 android:textAlignment="center"
                                 android:textColor="?android:attr/textColorPrimaryInverse"
                                 android:textSize="20sp"

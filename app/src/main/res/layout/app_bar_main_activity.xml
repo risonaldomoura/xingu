@@ -28,7 +28,7 @@
             android:weightSum="1">
 
             <Space
-                android:layout_width="50dp"
+                android:layout_width="70dp"
                 android:layout_height="56dp" />
 
             <Spinner
@@ -38,7 +38,7 @@
                 android:layout_weight="0.33"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/spn_ano"
@@ -47,7 +47,7 @@
                 android:layout_weight="0.33"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
     </FrameLayout>
 

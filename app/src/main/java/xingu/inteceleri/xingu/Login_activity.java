@@ -30,7 +30,7 @@ public class Login_activity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v){
 
-        Intent it = new Intent(this, Activity_teste.class);
+        Intent it = new Intent(this, Main_activity.class);
         startActivity(it);
     }
 

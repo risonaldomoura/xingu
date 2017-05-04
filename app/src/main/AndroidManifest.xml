@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icone_prov"
+        android:icon="@drawable/ic_logo_app"
         android:label="M-Xingu"
-        android:roundIcon="@drawable/icone_prov"
+        android:roundIcon="@drawable/ic_logo_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -29,6 +29,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Main_activity"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Config_activity"
@@ -39,7 +40,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="xingu.inteceleri.xingu.Main_activity" />
         </activity>
-        <activity android:name=".Activity_teste"></activity>
+        <activity android:name=".Activity_teste" />
+        <activity
+            android:name=".table_activity"
+            android:label="@string/title_activity_table_activity"
+            android:parentActivityName=".Main_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="xingu.inteceleri.xingu.Main_activity" />
+        </activity>
     </application>
 
 </manifest>

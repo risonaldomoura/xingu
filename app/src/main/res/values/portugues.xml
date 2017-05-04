@@ -6,117 +6,117 @@
     </string>
 
 
-    <string name="title_portuguese_sexto_I">
-    Português sexto
+    <string name="title_portugues_sexto_I">
+        Português sexto
     </string>
 
     <string name="cont_portugues_sexto_I">
-- Leitura, compreensão e interpretação de
-textos: Regimento e Fábulas;
-- Pontuação com ênfase no uso dos dois
-pontos e travessão;
-- Elementos da comunicação;
-- Linguagem: padrão e não padrão/ verbal e
-não verbal;
-- Substantivo;
-- Artigo;
-Ortografia: dígrafos, encontros vocálicos e
+        - Leitura, compreensão e interpretação de
+textos: Regimento e Fábulas;\n
+        - Pontuação com ênfase no uso dos dois
+pontos e travessão;\n
+        - Elementos da comunicação;\n
+        - Linguagem: padrão e não padrão/ verbal e
+não verbal;\n
+        - Substantivo;\n
+        - Artigo;\n
+        - Ortografia: dígrafos, encontros vocálicos e
 consonantais com ênfase na separação
-silábica.
-O uso do dicionário: verbetes.
+silábica;\n
+        - O uso do dicionário: verbetes.\n
     </string>
 
     <string name="obj_portugues_sexto_I">
-Ler textos de diferentes gêneros, literários
+       1. Ler textos de diferentes gêneros, literários
 e não literários (impressos ou eletrônicos),
 que circulam em diferentes esferas
 sociais, mais extensos e com vocabulário
-variado.
-Reconhecer funções sociais de textos que
+variado;\n
+       2. Reconhecer funções sociais de textos que
 circulam em esferas da vida social das
-quais os estudantes participam.
-Processar informações de textos
+quais os estudantes participam;\n
+       3. Processar informações de textos
 instrucionais para realizar ações por eles
-orientadas
+orientadas.\n
     </string>
 
 
     <string name="title_portugues_sexto_II">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_sexto_II">
--Leitura, compreensão e interpretação de
-textos: diário, cartas/e-mail, poema.
-- Adjetivos;
-- Numerais;
-- Pronomes (elementos de coesão);
-- Ortografia: -ez/-eza/ -oso/-osa.
+        - Leitura, compreensão e interpretação de
+textos: diário, cartas/e-mail, poema;\n
+        - Adjetivos;\n
+        - Numerais;\n
+        - Pronomes (elementos de coesão);\n
+        - Ortografia: -ez/-eza/ -oso/-osa.\n
     </string>
 
     <string name="obj_portugues_sexto_II">
-Reconhecer, em textos instrucionais, a
+       1. Reconhecer, em textos instrucionais, a
 hierarquização de informações que
-comandam ações.
-Ler narrativas da literatura juvenil, em
-gêneros diversos.
-Localizar, numa narrativa, os trechos que
+comandam ações;\n
+       2. Ler narrativas da literatura juvenil, em
+gêneros diversos;\n
+       3. Localizar, numa narrativa, os trechos que
 apresentam a orientação, a complicação, o
-clímax e desfecho
+clímax e desfecho.\n
     </string>
 
 
     <string name="title_portugues_sexto_III">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_sexto_III">
-- Leitura, compreensão e interpretação de
-textos: mitos e lendas.
-- Verbos: conjugação do modo indicativo.
-- Regras de acentuação;
-- Figuras de linguagem: comparação e
-metáfora.
-- Ortografia: o emprego do mau/mal.
+        - Leitura, compreensão e interpretação de
+textos: mitos e lendas;\n
+        - Verbos: conjugação do modo indicativo;
+        - Regras de acentuação;\n
+        - Figuras de linguagem: comparação e
+metáfora;\n
+        - Ortografia: o emprego do mau/mal.\n
     </string>
 
     <string name="obj_portugues_sexto_III">
-Comparar, numa narrativa, o uso dos
+       1. Comparar, numa narrativa, o uso dos
 tempos verbais: o pretérito perfeito; o
-pretérito imperfeito; o pretérito mais- queperfeito e suas funções.
-Reconhecer, numa narrativa, os diferentes
+pretérito imperfeito; o pretérito mais- queperfeito e suas funções;\n
+       2. Reconhecer, numa narrativa, os diferentes
 empregos das palavras e expressões –
 denotativas e conotativas – no processo
 de caracterização de cenas de
-personagens.
+personagens.\n
     </string>
 
 
     <string name="title_portugues_sexto_IV">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_sexto_IV">
-- Leitura, compreensão e interpretação de
+        - Leitura, compreensão e interpretação de
 textos: anúncio publicitário, resumo e história
-em quadrinhos.
-- Advérbio;
-- Preposição;
-- Interjeição;
-- Ortografia: sinonímia, antonímia e
-homonímia.
+em quadrinhos;\n
+        - Advérbio;\n
+        - Preposição;\n
+        - Interjeição;\n
+        - Ortografia: sinonímia, antonímia e
+homonímia.\n
     </string>
 
     <string name="obj_portugues_sexto_IV">
-Reconhecer, numa narrativa literária,
+       1. Reconhecer, numa narrativa literária,
 relações de anterioridade e posteridade e
-na construção da passagem do tempo
-Compreender processos figurativos de
+na construção da passagem do tempo;\n
+       2. Compreender processos figurativos de
 produção de sentidos na linguagem, com
-destaque para comparação e metáfora.
-Analisar diálogos que os textos literários
+destaque para comparação e metáfora;\n
+       3. Analisar diálogos que os textos literários
 narrativos e poéticos estabelecem com
-outros textos, no nível temático
+outros textos, no nível temático.\n
     </string>
 
 
@@ -125,127 +125,126 @@ outros textos, no nível temático
 
 
     <string name="title_portugues_setimo_I">
-Português setimo
+        Português setimo
     </string>
 
     <string name="cont_portugues_setimo_I">
-- Leitura, interpretação e produção de
+        - Leitura, interpretação e produção de
 textos: regimento, entrevista, memória
-literária;
-- Revisão das classes gramaticais;
-- Verbos: modo subjuntivo e imperativo;
-- Ortografia: o emprego do x e ch.
+literária;\n
+        - Revisão das classes gramaticais;\n
+        - Verbos: modo subjuntivo e imperativo;\n
+        - Ortografia: o emprego do x e ch.\n
     </string>
 
     <string name="obj_portugues_setimo_I">
-Ler textos de diferentes gêneros, literários e não
+       1. Ler textos de diferentes gêneros, literários e não
 literários (impressos ou eletrônicos), que
 circulam em diferentes esferas sociais, mais
 extensos e com vocabulário pouco usual,
-inclusive com a presença de termos técnicos
-Reconhecer funções sociais de textos que
+inclusive com a presença de termos técnicos;\n
+       2. Reconhecer funções sociais de textos que
 circulam em esferas da vida social, inclusive
 daquelas das quais os estudantes não
 participam diretamente, mas que tratam de
-temas que afetam a vida coletiva
+temas que afetam a vida coletiva.\n
     </string>
 
 
 
     <string name="title_portugues_setimo_II">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_setimo_II">
-- Leitura, interpretação e produção de
+        - Leitura, interpretação e produção de
 textos: memória literária, relato de
 viagem, contos (aventura, mistério e
-suspense);
-- Estrutura da narrativa;
-- Discurso direto, indireto (indireto livre);
-- Frase e oração;
-- Termos essenciais da oração;
-- Classificação do sujeito;
-- Ortografia: o emprego do mas/ mais;
-há/a.
-- Concordância verbal
+suspense);\n
+        - Estrutura da narrativa;\n
+        - Discurso direto, indireto (indireto livre);\n
+        - Frase e oração;\n
+        - Termos essenciais da oração;\n
+        - Classificação do sujeito;\n
+        - Ortografia: o emprego do mas/ mais; há/a;\n
+        - Concordância verbal.\n
     </string>
 
     <string name="obj_portugues_setimo_II">
-Analisar aspectos linguísticos e textuais de
+       1. Analisar aspectos linguísticos e textuais de
 novas formas de escrita da internet, em registro
-informal, que vêm se denominando “internetês”.
-Ler narrativas da literatura juvenil, em gêneros
-diversos.
-Analisar as escolhas lexicais envolvidas na
+informal, que vêm se denominando “internetês”;\n
+       2. Ler narrativas da literatura juvenil, em gêneros
+diversos;\n
+       3. Analisar as escolhas lexicais envolvidas na
 construção de cenas e personagens de uma
-narrativa
+narrativa.\n
     </string>
 
 
     <string name="title_portugues_setimo_III">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_setimo_III">
-- Leitura, interpretação e produção de
+        - Leitura, interpretação e produção de
 textos: história em quadrinho; receita
-culinária; reportagem.
--Ambiguidade;
-- Figura de linguagem: metonímia,
-personificação;
-- Classificação do predicado: verbal e
-nominal;
-- A estrutura do predicado nominal;
-- Verbo de ligação e predicativo do
-sujeito;
-- Ortografia: a gente/ agente; o uso da
-vírgula.
+culinária; reportagem;\n
+        -Ambiguidade;\n
+        - Figura de linguagem: metonímia,
+personificação;\n
+        - Classificação do predicado: verbal e
+nominal;\n
+        - A estrutura do predicado nominal;\n
+        - Verbo de ligação e predicativo do
+sujeito;\n
+        - Ortografia: a gente/ agente; o uso da
+vírgula.\n
     </string>
 
     <string name="obj_portugues_setimo_III">
-Ler poemas de gêneros variados.
-Analisar efeitos produzidos por recursos
+       1. Ler poemas de gêneros variados;\n
+       2. Analisar efeitos produzidos por recursos
 expressivos como rimas, aliterações,
-assonâncias na leitura de poemas.
-Compreender processos figurativos de
+assonâncias na leitura de poemas;\n
+       3. Compreender processos figurativos de
 produção de sentidos na linguagem, com
-destaque para personificação e a metonímia
-Analisar elementos – referências, alusões,
+destaque para personificação e a metonímia;\n
+       4. Analisar elementos – referências, alusões,
 retomadas – que estabelecem intertextualidade
-em textos literários, narrativos e poéticos.
-Analisar criticamente informações que
+em textos literários, narrativos e poéticos;\n
+       5. Analisar criticamente informações que
 constituem o lide (o quê, quem, onde, quando,
 como, por quê) em notícias que circulam em
-diferentes mídias.
+diferentes mídias.\n
     </string>
 
 
     <string name="title_portugues_setimo_IV">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_setimo_IV">
-- Leitura, interpretação e produção
+        - Leitura, interpretação e produção
 textual: anúncio publicitário, texto de
-divulgação científica;
-- A estrutura do predicado verbal;
-- Transitividade verbal;
-- Processo de Formação de Palavras por
-derivação: prefixos e sufixos.
-- Ortografia: onde/ aonde; O som do x
+divulgação científica;\n
+        - A estrutura do predicado verbal;\n
+        - Transitividade verbal;\n
+        - Processo de Formação de Palavras por
+derivação: prefixos e sufixos;\n
+        - Ortografia: onde/ aonde; O som do x.\n
     </string>
 
     <string name="obj_portugues_setimo_IV">
-Identificar, em notícias, recursos
+       1. Identificar, em notícias, recursos
 linguísticodiscursivos responsáveis pela
-ordenação dos eventos.
-Reconhecer os efeitos de sentido produzidos
+ordenação dos eventos;\n
+       2. Reconhecer os efeitos de sentido produzidos
 pelo uso de recursos linguísticodiscursivos da
 prescrição e as relações de causalidade na
 leitura de gêneros que regulam direitos e
 deveres, como o regimento da escola,
-discutindo sobre suas implicações sociais
+discutindo sobre suas implicações sociais.\n
     </string>
 
 
@@ -253,127 +252,127 @@ discutindo sobre suas implicações sociais
 
 
     <string name="title_portugues_oitavo_I">
-Português oitavo
+        Português oitavo
     </string>
 
     <string name="cont_portugues_oitavo_I">
-- Leitura, interpretação e produção de texto:
+        - Leitura, interpretação e produção de texto:
 redes sociais: (Facebook, WhatsApp, Blog,
-Email);
-- Literatura de Cordel (poemas), memórias
-literárias;
-- Figuras de linguagem: comparação, metáforas,
-metonímias, hipérbole, ironia, sinestesia.
-- Frase, oração e período.
-- Revisão dos tipos de sujeito: simples,
-composto e desinencial.
-- Sujeito indeterminado e oração sem sujeito.
-- Revisão do predicado: verbal e nominal.
-- Verbo de ligação e predicativo.
-- Ortografia: o emprego dos porquês.
+Email);\n
+        - Literatura de Cordel (poemas), memórias
+literárias;\n
+        - Figuras de linguagem: comparação, metáforas,
+metonímias, hipérbole, ironia, sinestesia;\n
+        - Frase, oração e período;\n
+        - Revisão dos tipos de sujeito: simples,
+composto e desinencial;\n
+        - Sujeito indeterminado e oração sem sujeito;
+        - Revisão do predicado: verbal e nominal;\n
+        - Verbo de ligação e predicativo;\n
+        - Ortografia: o emprego dos porquês.\n
     </string>
 
     <string name="obj_portugues_oitavo_I">
-Ler textos de diferentes gêneros,
+       1. Ler textos de diferentes gêneros,
 literários e não literários (impressos ou
 eletrônicos), que circulam em diferentes
 esferas sociais, mais extensos e com
 vocabulário pouco usual, inclusive com a
-presença de termos técnicos.
-Avaliar a adequação de textos que
+presença de termos técnicos;\n
+       2. Avaliar a adequação de textos que
 circulam em diferentes esferas da vida
-social às suas funções comunicativas
+social às suas funções comunicativas.\n
     </string>
 
 
 
     <string name="title_portugues_oitavo_II">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_oitavo_II">
--Leitura, interpretação e produção de texto:
-biografia, memórias e entrevistas.
-- Estrutura e elementos da narrativa;
-- Intertextualidade - estrutura composicional e
-estilo;
-- Predicado verbo-nominal;
-- Transitividade verbal;
-- Complementos verbais;
-- Predicativo do objeto;
-- Ortografia: pontuação.
+        - Leitura, interpretação e produção de texto:
+biografia, memórias e entrevistas;\n
+        - Estrutura e elementos da narrativa;\n
+        - Intertextualidade - estrutura composicional e
+estilo;\n
+        - Predicado verbo-nominal;\n
+        - Transitividade verbal;\n
+        - Complementos verbais;\n
+        - Predicativo do objeto;\n
+        - Ortografia: pontuação.\n
     </string>
 
     <string name="obj_portugues_oitavo_II">
-Analisar e comparar argumentos e
+       1. Analisar e comparar argumentos e
 opiniões em comentários de posts
-publicados em redes sociais
-Ler gêneros diversos de narrativas
+publicados em redes sociais;\n
+       2. Ler gêneros diversos de narrativas
 literárias da literatura brasileira e
-mundial.
+mundial.\n
     </string>
 
 
     <string name="title_portugues_oitavo_III">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_oitavo_III">
--Leitura, interpretação e produção de texto:
+        - Leitura, interpretação e produção de texto:
 reportagem, artigo de opinião, infográficos
-(elementos verbais e visuais)
-- Termos acessórios: adjunto adnominal,
-adjunto adverbial, aposto e vocativo;
-- Elementos de coesão: (que marquem relações
+(elementos verbais e visuais);\n
+        - Termos acessórios: adjunto adnominal,
+adjunto adverbial, aposto e vocativo;\n
+        - Elementos de coesão: (que marquem relações
 de oposição, exemplificação, ênfase coerentes
-com o posicionamento sobre o tema);
-- Verbos regulares (conjugação no português
-brasileiro);
-- Polissemia e seus efeitos de sentido;
-- Ortografia: emprego da vírgula; acento grave
+com o posicionamento sobre o tema);\n
+        - Verbos regulares (conjugação no português
+brasileiro);\n
+        - Polissemia e seus efeitos de sentido;\n
+        - Ortografia: emprego da vírgula; acento grave.\n
     </string>
 
     <string name="obj_portugues_oitavo_III">
-Analisar o tipo de narrador (em primeira
+       1. Analisar o tipo de narrador (em primeira
 pessoa – personagem, protagonista,
 testemunha ou terceira pessoa –
 onisciente, observador) em narrativas
 literárias e as diferentes vozes presentes
-na narrativa
-Ler poemas da literatura brasileira e
-mundial
-Comparar variados gêneros de poemas
+na narrativa;\n
+       2. Ler poemas da literatura brasileira e
+mundial;\n
+       3. Comparar variados gêneros de poemas
 (cordel, poesia concreta, lira, soneto,
-dentre outros).
+dentre outros).\n
     </string>
 
 
     <string name="title_portugues_oitavo_IV">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_oitavo_IV">
-- Leitura, interpretação e produção de texto:
+        - Leitura, interpretação e produção de texto:
 texto de divulgação científica, texto publicitário,
 estatuto da criança e do adolescente, resenha
-crítica e resenha descritiva;
-- Processos de formação de palavras:
-aglutinação e justaposição;
-- Revisão: frase, oração e período;
-- Complemento nominal;
-- Orações coordenadas;
-- Uso do hífen;
-- Ortografia: mal/ mau; eu/mim; g/j
+crítica e resenha descritiva;\n
+        - Processos de formação de palavras:
+aglutinação e justaposição;\n
+        - Revisão: frase, oração e período;
+        - Complemento nominal;\n
+        - Orações coordenadas;\n
+        - Uso do hífen;\n
+        - Ortografia: mal/ mau; eu/mim, g/j.\n
     </string>
 
     <string name="obj_portugues_oitavo_IV">
-Compreender processos figurativos de
+       1. Compreender processos figurativos de
 produção de sentidos na linguagem, com
-destaque para a hipérbole e a ironia.
-Analisar, em textos literários narrativos e
+destaque para a hipérbole e a ironia;\n
+       2. Analisar, em textos literários narrativos e
 poéticos, a ocorrência da
 intertextualidade em aspectos da
-estrutura composicional e do estilo
+estrutura composicional e do estilo.\n
     </string>
 
 
@@ -381,143 +380,143 @@ estrutura composicional e do estilo
 
 
     <string name="title_portugues_nono_I">
-Português nono
+        Português nono
     </string>
 
     <string name="cont_portugues_nono_I">
-Leitura, interpretação e produção (coesão e
-coerência) de textos: regimento escolar; crônica;
-- Figuras de linguagem com destaque para:
-ironia, antítese e paradoxo;
-- Variação linguística;
-- Estrutura e Formação de palavras da LP
+        - Leitura, interpretação e produção (coesão e
+coerência) de textos: regimento escolar; crônica;\n
+        - Figuras de linguagem com destaque para:
+ironia, antítese e paradoxo;\n
+        - Variação linguística;\n
+        - Estrutura e Formação de palavras da LP
 (ênfase a formação de palavras por derivação
-imprópria, e estrangeirismo);
-- Colocação Pronominal;
-- Período composto por coordenação;
-- Orações coordenadas sindéticas e
-assindéticas;
-- Pontuação: emprego da vírgula e ponto e
-vírgula
+imprópria, e estrangeirismo);\n
+        - Colocação Pronominal;\n
+        - Período composto por coordenação;\n
+        - Orações coordenadas sindéticas e
+assindéticas;\n
+        - Pontuação: emprego da vírgula e ponto e
+vírgula.\n
     </string>
 
     <string name="obj_portugues_nono_I">
-Ler textos de diferentes gêneros,
+       1. Ler textos de diferentes gêneros,
 literários e não literários (impressos ou
 eletrônicos), que circulam em diferentes
 esferas sociais, mais extensos e com
 vocabulário pouco usual, inclusive com a
-presença de termos técnicos.
-Analisar, em textos do cotidiano, em
+presença de termos técnicos;\n
+       2. Analisar, em textos do cotidiano, em
 registro formal, como cartas e alguns
 tipos de e-mails, a adequação das
 escolhas linguísticodiscursivas (lexicais,
 formas de tratamento, concordância,
-regência) adequadas à interlocução.
-Ler gêneros diversos de narrativas
+regência) adequadas à interlocução;\n
+       3. Ler gêneros diversos de narrativas
 literárias da literatura brasileira e
-mundial
+mundial.\n
     </string>
 
 
 
     <string name="title_portugues_nono_II">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_nono_II">
-- Leitura, interpretação e produção (coesão e
+        - Leitura, interpretação e produção (coesão e
 coerência) de textos: e-mail; crônica; peça
-teatral.
-- Tipos de verbos (ênfase na conjugação dos
-verbos irregulares);
-- Concordância verbal e nominal;
-- Período Composto por Subordinação;
-- Conjunções subordinativas e conectores;
-- Orações subordinadas substantivas;
-- Ortografia: pontuação; emprego do s/z; mas/
-mais/ más; e os porquês.
+teatral;\n
+        - Tipos de verbos (ênfase na conjugação dos
+verbos irregulares);\n
+        - Concordância verbal e nominal;\n
+        - Período Composto por Subordinação;\n
+        - Conjunções subordinativas e conectores;\n
+        - Orações subordinadas substantivas;\n
+        - Ortografia: pontuação; emprego do s/z; mas/
+mais/ más e os porquês.\n
     </string>
 
     <string name="obj_portugues_nono_II">
-Avaliar o ponto de vista a partir do qual
+       1. Avaliar o ponto de vista a partir do qual
 uma história é narrada e as diferentes
-vozes presentes na narrativa
-Compreender, na leitura de narrativas
+vozes presentes na narrativa;\n
+       2. Compreender, na leitura de narrativas
 literárias, figuras de linguagem
 (metáfora, metonímia, paradoxo,
-hipérbole, ironia etc.).
-Comparar diferentes gêneros de
+hipérbole, ironia etc.);\n
+       3. Comparar diferentes gêneros de
 poemas, identificando elementos
 socioculturais envolvidos na sua
-produção
-Analisar os efeitos de sentido
+produção;\n
+       4. Analisar os efeitos de sentido
 decorrentes da articulação entre forma –
 dimensão sonora e imagética – e
 conteúdo – dimensão semântica– em
-poemas
+poemas.\n
     </string>
 
 
     <string name="title_portugues_nono_III">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_nono_III">
-Leitura, interpretação e produção (coesão e
+        - Leitura, interpretação e produção (coesão e
 coerência) de textos: poemas, e código de
-defesa do consumidor;
-- Estrutura do texto;
-- Paródia, paráfrase; Pastiche;
-- Regência Nominal e Verbal;
-- Pronomes relativos;
-- Período composto por subordinação: orações
-subordinadas adjetivas;
-- Ortografia: onde/ aonde; se não/ senão;
+defesa do consumidor;\n
+        - Estrutura do texto;\n
+        - Paródia, paráfrase; Pastiche;\n
+        - Regência Nominal e Verbal;\n
+        - Pronomes relativos;\n
+        - Período composto por subordinação: orações
+subordinadas adjetivas;\n
+        - Ortografia: onde/ aonde; se não/ senão.\n
     </string>
 
     <string name="obj_portugues_nono_III">
-Compreender processos figurativos de
+       1. Compreender processos figurativos de
 produção de sentidos na linguagem, com
 destaque para a ironia, a antítese, o
-paradoxo.
-Reconhecer e analisar, em textos
+paradoxo;\n
+       2. Reconhecer e analisar, em textos
 literários narrativos e poéticos, a
 presença de diferentes tipos de
 intertextualidade, tais como: paródias,
-paráfrases e pastiche.
+paráfrases e pastiche.\n
     </string>
 
 
     <string name="title_portugues_nono_IV">
-Português
+        Português
     </string>
 
     <string name="cont_portugues_nono_IV">
-- Leitura, interpretação e produção (coesão e
+        - Leitura, interpretação e produção (coesão e
 coerência) de textos: artigo de opinião e carta
-de solicitação por e-mail;
-- Tipos de argumento;
-- Tópico frasal e paragrafação;
-- Período composto por subordinação: orações
-subordinadas adverbiais (conjunções);
-- Estruturas complexas: período composto por
-coordenação e subordinação;
-- Ortografia: g/ j; mal/mau; há, a, à.
+de solicitação por e-mail;\n
+        - Tipos de argumento;\n
+        - Tópico frasal e paragrafação;\n
+        - Período composto por subordinação: orações
+subordinadas adverbiais (conjunções);\n
+        - Estruturas complexas: período composto por
+coordenação e subordinação;\n
+        - Ortografia: g/ j; mal/mau; há, a, à.\n
     </string>
 
     <string name="obj_portugues_nono_IV">
-Reconhecer diferentes tipos de
+       1. Reconhecer diferentes tipos de
 argumentos – de autoridade, por
 comprovação, por exemplificação, de
 causa e consequência – em gêneros
-argumentativos diversos
-Analisar a organização textual (artigos,
+argumentativos diversos;\n
+       2. Analisar a organização textual (artigos,
 incisos, capítulos etc.) e a seleção lexical
 e morfossintática, na leitura de gêneros
 como o Código de Defesa do
 Consumidor, avaliando suas implicações
-para a vida em sociedade
+para a vida em sociedade.\n
     </string>
 
 

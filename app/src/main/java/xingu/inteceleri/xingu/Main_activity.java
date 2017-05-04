@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class Main_activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -23,6 +24,7 @@ public class Main_activity extends AppCompatActivity
     private Spinner spn_disciplina;
     private Spinner spn_ano;
 
+    private String disciplina;
     private String ano;
 
     private ArrayAdapter<String> adp_disciplina;
@@ -33,13 +35,13 @@ public class Main_activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        spn_disciplina = (Spinner)findViewById(R.id.spn_disciplina);
-        spn_ano = (Spinner)findViewById(R.id.spn_ano);
+        spn_disciplina = (Spinner) findViewById(R.id.spn_disciplina);
+        spn_ano = (Spinner) findViewById(R.id.spn_ano);
 
-        adp_disciplina = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item);
+        adp_disciplina = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         adp_disciplina.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        adp_ano = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item);
+        adp_ano = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         adp_ano.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spn_disciplina.setAdapter(adp_disciplina);
@@ -63,6 +65,52 @@ public class Main_activity extends AppCompatActivity
         //FrameLayout das spinners
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
 
+
+        //final FrameLayout fl_conteudo = (FrameLayout) findViewById(R.id.fl_conteudo);
+
+
+        final FrameLayout fl_cont_arte_sexto = (FrameLayout) findViewById(R.id.fl_cont_arte_sexto);
+        final FrameLayout fl_cont_arte_setimo = (FrameLayout) findViewById(R.id.fl_cont_arte_setimo);
+        final FrameLayout fl_cont_arte_oitavo = (FrameLayout) findViewById(R.id.fl_cont_arte_oitavo);
+        final FrameLayout fl_cont_arte_nono = (FrameLayout) findViewById(R.id.fl_cont_arte_nono);
+
+
+        final FrameLayout fl_cont_ciencias_sexto = (FrameLayout) findViewById(R.id.fl_cont_ciencias_sexto);
+        final FrameLayout fl_cont_ciencias_setimo = (FrameLayout) findViewById(R.id.fl_cont_ciencias_setimo);
+        final FrameLayout fl_cont_ciencias_oitavo = (FrameLayout) findViewById(R.id.fl_cont_ciencias_oitavo);
+        final FrameLayout fl_cont_ciencias_nono = (FrameLayout) findViewById(R.id.fl_cont_ciencias_nono);
+
+        final FrameLayout fl_cont_ed_fisica_sexto = (FrameLayout) findViewById(R.id.fl_cont_ed_fisica_sexto);
+        final FrameLayout fl_cont_ed_fisica_setimo = (FrameLayout) findViewById(R.id.fl_cont_ed_fisica_setimo);
+        final FrameLayout fl_cont_ed_fisica_oitavo = (FrameLayout) findViewById(R.id.fl_cont_ed_fisica_oitavo);
+        final FrameLayout fl_cont_ed_fisica_nono = (FrameLayout) findViewById(R.id.fl_cont_ed_fisica_nono);
+
+        final FrameLayout fl_cont_ens_religioso_sexto = (FrameLayout) findViewById(R.id.fl_cont_ens_religioso_sexto);
+        final FrameLayout fl_cont_ens_religioso_setimo = (FrameLayout) findViewById(R.id.fl_cont_ens_religioso_setimo);
+        final FrameLayout fl_cont_ens_religioso_oitavo = (FrameLayout) findViewById(R.id.fl_cont_ens_religioso_oitavo);
+        final FrameLayout fl_cont_ens_religioso_nono = (FrameLayout) findViewById(R.id.fl_cont_ens_religioso_nono);
+
+        final FrameLayout fl_cont_geografia_sexto = (FrameLayout) findViewById(R.id.fl_cont_geografia_sexto);
+        final FrameLayout fl_cont_geografia_setimo = (FrameLayout) findViewById(R.id.fl_cont_geografia_setimo);
+        final FrameLayout fl_cont_geografia_oitavo = (FrameLayout) findViewById(R.id.fl_cont_geografia_oitavo);
+        final FrameLayout fl_cont_geografia_nono = (FrameLayout) findViewById(R.id.fl_cont_geografia_nono);
+
+        final FrameLayout fl_cont_historia_sexto = (FrameLayout) findViewById(R.id.fl_cont_historia_sexto);
+        final FrameLayout fl_cont_historia_setimo = (FrameLayout) findViewById(R.id.fl_cont_historia_setimo);
+        final FrameLayout fl_cont_historia_oitavo = (FrameLayout) findViewById(R.id.fl_cont_historia_oitavo);
+        final FrameLayout fl_cont_historia_nono = (FrameLayout) findViewById(R.id.fl_cont_historia_nono);
+
+        final FrameLayout fl_cont_matematica_sexto = (FrameLayout) findViewById(R.id.fl_cont_matematica_sexto);
+        final FrameLayout fl_cont_matematica_setimo = (FrameLayout) findViewById(R.id.fl_cont_matematica_setimo);
+        final FrameLayout fl_cont_matematica_oitavo = (FrameLayout) findViewById(R.id.fl_cont_matematica_oitavo);
+        final FrameLayout fl_cont_matematica_nono = (FrameLayout) findViewById(R.id.fl_cont_matematica_nono);
+
+        final FrameLayout fl_cont_portugues_sexto = (FrameLayout) findViewById(R.id.fl_cont_portugues_sexto);
+        final FrameLayout fl_cont_portugues_setimo = (FrameLayout) findViewById(R.id.fl_cont_portugues_setimo);
+        final FrameLayout fl_cont_portugues_oitavo = (FrameLayout) findViewById(R.id.fl_cont_portugues_oitavo);
+        final FrameLayout fl_cont_portugues_nono = (FrameLayout) findViewById(R.id.fl_cont_portugues_nono);
+
+
         //FrameLayout Arte
         final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
         Button btn_ok_arte;
@@ -70,8 +118,8 @@ public class Main_activity extends AppCompatActivity
         btn_ok_arte.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View v) {
-                                                   fl_arte.setVisibility(View.GONE);
-                                                   fl_spinner.setVisibility(View.VISIBLE);
+                                               fl_arte.setVisibility(View.GONE);
+                                               fl_spinner.setVisibility(View.VISIBLE);
                                            }
                                        }
         );
@@ -82,14 +130,13 @@ public class Main_activity extends AppCompatActivity
         Button btn_ok_ciencias;
         btn_ok_ciencias = (Button) findViewById(R.id.btn_ok_ciencias);
         btn_ok_ciencias.setOnClickListener(new View.OnClickListener() {
-                                           @Override
-                                           public void onClick(View v) {
-                                               fl_ciencias.setVisibility(View.GONE);
-                                               fl_spinner.setVisibility(View.VISIBLE);
+                                               @Override
+                                               public void onClick(View v) {
+                                                   fl_ciencias.setVisibility(View.GONE);
+                                                   fl_spinner.setVisibility(View.VISIBLE);
+                                               }
                                            }
-                                       }
         );
-
 
 
         //FrameLayout ed_fisica
@@ -97,12 +144,12 @@ public class Main_activity extends AppCompatActivity
         Button btn_ok_ed_fisica;
         btn_ok_ed_fisica = (Button) findViewById(R.id.btn_ok_ed_fisica);
         btn_ok_ed_fisica.setOnClickListener(new View.OnClickListener() {
-                                               @Override
-                                               public void onClick(View v) {
-                                                   fl_ed_fisica.setVisibility(View.GONE);
-                                                   fl_spinner.setVisibility(View.VISIBLE);
-                                               }
-                                           }
+                                                @Override
+                                                public void onClick(View v) {
+                                                    fl_ed_fisica.setVisibility(View.GONE);
+                                                    fl_spinner.setVisibility(View.VISIBLE);
+                                                }
+                                            }
         );
 
         //FrameLayout ens_religioso
@@ -110,12 +157,12 @@ public class Main_activity extends AppCompatActivity
         Button btn_ok_ens_religioso;
         btn_ok_ens_religioso = (Button) findViewById(R.id.btn_ok_ens_religioso);
         btn_ok_ens_religioso.setOnClickListener(new View.OnClickListener() {
-                                                @Override
-                                                public void onClick(View v) {
-                                                    fl_ens_religioso.setVisibility(View.GONE);
-                                                    fl_spinner.setVisibility(View.VISIBLE);
+                                                    @Override
+                                                    public void onClick(View v) {
+                                                        fl_ens_religioso.setVisibility(View.GONE);
+                                                        fl_spinner.setVisibility(View.VISIBLE);
+                                                    }
                                                 }
-                                            }
         );
 
         //FrameLayout geografia
@@ -123,12 +170,12 @@ public class Main_activity extends AppCompatActivity
         Button btn_ok_geografia;
         btn_ok_geografia = (Button) findViewById(R.id.btn_ok_geografia);
         btn_ok_geografia.setOnClickListener(new View.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        fl_geografia.setVisibility(View.GONE);
-                                                        fl_spinner.setVisibility(View.VISIBLE);
-                                                    }
+                                                @Override
+                                                public void onClick(View v) {
+                                                    fl_geografia.setVisibility(View.GONE);
+                                                    fl_spinner.setVisibility(View.VISIBLE);
                                                 }
+                                            }
         );
 
         //FrameLayout historia
@@ -136,12 +183,12 @@ public class Main_activity extends AppCompatActivity
         Button btn_ok_historia;
         btn_ok_historia = (Button) findViewById(R.id.btn_ok_historia);
         btn_ok_historia.setOnClickListener(new View.OnClickListener() {
-                                                @Override
-                                                public void onClick(View v) {
-                                                    fl_historia.setVisibility(View.GONE);
-                                                    fl_spinner.setVisibility(View.VISIBLE);
-                                                }
-                                            }
+                                               @Override
+                                               public void onClick(View v) {
+                                                   fl_historia.setVisibility(View.GONE);
+                                                   fl_spinner.setVisibility(View.VISIBLE);
+                                               }
+                                           }
         );
 
         //FrameLayout matematica
@@ -149,12 +196,12 @@ public class Main_activity extends AppCompatActivity
         Button btn_ok_matematica;
         btn_ok_matematica = (Button) findViewById(R.id.btn_ok_matematica);
         btn_ok_matematica.setOnClickListener(new View.OnClickListener() {
-                                               @Override
-                                               public void onClick(View v) {
-                                                   fl_matematica.setVisibility(View.GONE);
-                                                   fl_spinner.setVisibility(View.VISIBLE);
-                                               }
-                                           }
+                                                 @Override
+                                                 public void onClick(View v) {
+                                                     fl_matematica.setVisibility(View.GONE);
+                                                     fl_spinner.setVisibility(View.VISIBLE);
+                                                 }
+                                             }
         );
 
         //FrameLayout portugues
@@ -162,12 +209,12 @@ public class Main_activity extends AppCompatActivity
         Button btn_ok_portugues;
         btn_ok_portugues = (Button) findViewById(R.id.btn_ok_portugues);
         btn_ok_portugues.setOnClickListener(new View.OnClickListener() {
-                                                 @Override
-                                                 public void onClick(View v) {
-                                                     fl_portugues.setVisibility(View.GONE);
-                                                     fl_spinner.setVisibility(View.VISIBLE);
-                                                 }
-                                             }
+                                                @Override
+                                                public void onClick(View v) {
+                                                    fl_portugues.setVisibility(View.GONE);
+                                                    fl_spinner.setVisibility(View.VISIBLE);
+                                                }
+                                            }
         );
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -175,12 +222,15 @@ public class Main_activity extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-               this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        //Método do spinner para capturar o item selecionado
 
         spn_ano.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
@@ -193,17 +243,53 @@ public class Main_activity extends AppCompatActivity
                 //Toast.makeText(Activity_teste.this, "Disciplina: " + nome, Toast.LENGTH_LONG).show();
                 //Toast.makeText(Activity_teste.this, "Id:" + posicao, Toast.LENGTH_SHORT).show();
 
+                // Toast.makeText(Activity_teste.this,"Id:"+serie,Toast.LENGTH_SHORT).show();
 
-                //if (posicao == 2){
+                // Toast.makeText(Activity_teste.this, "Id:" + posicao, Toast.LENGTH_SHORT).show();
 
-                //  fl_conteudo.setVisibility(View.VISIBLE);
-                //  }
+                //disciplina = posicao;
 
-                //  else {
 
-                //  fl_conteudo.setVisibility(View.GONE);
+                if (posicao == 0){
 
-                //  }
+                    fl_cont_ciencias_sexto.setVisibility(View.VISIBLE);
+                    fl_cont_ciencias_setimo.setVisibility(View.GONE);
+                    fl_cont_ciencias_oitavo.setVisibility(View.GONE);
+                    fl_cont_ciencias_nono.setVisibility(View.GONE);
+
+
+                }
+
+                if (posicao == 1){
+
+                    fl_cont_ciencias_sexto.setVisibility(View.GONE);
+                    fl_cont_ciencias_setimo.setVisibility(View.VISIBLE);
+                    fl_cont_ciencias_oitavo.setVisibility(View.GONE);
+                    fl_cont_ciencias_nono.setVisibility(View.GONE);
+
+
+                }
+
+                if (posicao == 2){
+
+                    fl_cont_ciencias_sexto.setVisibility(View.GONE);
+                    fl_cont_ciencias_setimo.setVisibility(View.GONE);
+                    fl_cont_ciencias_oitavo.setVisibility(View.VISIBLE);
+                    fl_cont_ciencias_nono.setVisibility(View.GONE);
+
+
+                }
+
+                if (posicao == 3){
+
+                    fl_cont_ciencias_sexto.setVisibility(View.GONE);
+                    fl_cont_ciencias_setimo.setVisibility(View.GONE);
+                    fl_cont_ciencias_oitavo.setVisibility(View.GONE);
+                    fl_cont_ciencias_nono.setVisibility(View.VISIBLE);
+
+
+                }
+
 
             }
 
@@ -214,8 +300,11 @@ public class Main_activity extends AppCompatActivity
 
         });
 
-
     }
+
+
+
+
 
     @Override
     public void onBackPressed() {
@@ -252,49 +341,52 @@ public class Main_activity extends AppCompatActivity
             shareIntent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=air.MatematicandoEducation&hl=pt_BR");
             startActivity(Intent.createChooser(shareIntent, "Compartilhar"));
             //Abrir opçoes de compartilhar
-        } else if (id == R.id.arte) {
-            FrameLayout fl = (FrameLayout) findViewById(R.id.fl_arte);
-            FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
+        } if (id == R.id.arte) {
+           FrameLayout fl = (FrameLayout) findViewById(R.id.fl_arte);
+           FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
+
+
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
             //Abrir a mensagem de objetivos de arte
-        } else if (id == R.id.ciencias) {
+
+        } if (id == R.id.ciencias) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_ciencias);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
 
-        } else if (id == R.id.ed_fisica) {
+        } if (id == R.id.ed_fisica) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_ed_fisica);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
 
-        } else if (id == R.id.ens_religioso) {
+        } if (id == R.id.ens_religioso) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_ens_religioso);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
 
-        } else if (id == R.id.geografia) {
+        } if (id == R.id.geografia) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_geografia);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
 
-        } else if (id == R.id.historia) {
+        } if (id == R.id.historia) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_historia);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
 
-        } else if (id == R.id.matematica) {
+        } if (id == R.id.matematica) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_matematica);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
 
-        } else if (id == R.id.portugues) {
+        } if (id == R.id.portugues) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_portugues);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
             fl.setVisibility(View.VISIBLE);
