@@ -36,5 +36,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_table_activity">table_activity</string>
+    <string name="title_activity_tab_">Menu de tabelas</string>
+    <string name="title_activity_tab_activity">Tab_activity</string>
+    <string name="title_activity_teste_spinner">Teste_spinner</string>
 
 </resources>

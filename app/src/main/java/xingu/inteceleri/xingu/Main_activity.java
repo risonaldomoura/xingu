@@ -18,34 +18,55 @@ import android.widget.FrameLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.os.Bundle;
+
+
 public class Main_activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
+    private SectionsPagerAdapter mSectionsPagerAdapter;
+    private ViewPager mViewPager;
+
+
     private Spinner spn_disciplina;
-    private Spinner spn_ano;
-
-    private String disciplina;
-    private String ano;
-
+    public String disciplina;
+    public int ID;
     private ArrayAdapter<String> adp_disciplina;
-    private ArrayAdapter<String> adp_ano;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        // Create the adapter that will return a fragment for each of the three
+        // primary sections of the activity.
+        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+
+        // Set up the ViewPager with the sections adapter.
+        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(mViewPager);
+
+
+
         spn_disciplina = (Spinner) findViewById(R.id.spn_disciplina);
-        spn_ano = (Spinner) findViewById(R.id.spn_ano);
 
         adp_disciplina = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         adp_disciplina.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        adp_ano = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
-        adp_ano.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
         spn_disciplina.setAdapter(adp_disciplina);
-        spn_ano.setAdapter(adp_ano);
 
         adp_disciplina.add("Arte");
         adp_disciplina.add("Ens. Religioso");
@@ -56,19 +77,13 @@ public class Main_activity extends AppCompatActivity
         adp_disciplina.add("Português");
         adp_disciplina.add("Matemática");
 
-        adp_ano.add("6º ano");
-        adp_ano.add("7º ano");
-        adp_ano.add("8º ano");
-        adp_ano.add("9º ano");
-
-
-        //FrameLayout das spinners
+        //FrameLayout da spinner
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
 
 
         //final FrameLayout fl_conteudo = (FrameLayout) findViewById(R.id.fl_conteudo);
 
-
+        /*
         final FrameLayout fl_cont_arte_sexto = (FrameLayout) findViewById(R.id.fl_cont_arte_sexto);
         final FrameLayout fl_cont_arte_setimo = (FrameLayout) findViewById(R.id.fl_cont_arte_setimo);
         final FrameLayout fl_cont_arte_oitavo = (FrameLayout) findViewById(R.id.fl_cont_arte_oitavo);
@@ -109,7 +124,7 @@ public class Main_activity extends AppCompatActivity
         final FrameLayout fl_cont_portugues_setimo = (FrameLayout) findViewById(R.id.fl_cont_portugues_setimo);
         final FrameLayout fl_cont_portugues_oitavo = (FrameLayout) findViewById(R.id.fl_cont_portugues_oitavo);
         final FrameLayout fl_cont_portugues_nono = (FrameLayout) findViewById(R.id.fl_cont_portugues_nono);
-
+         */
 
         //FrameLayout Arte
         final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
@@ -217,8 +232,8 @@ public class Main_activity extends AppCompatActivity
                                             }
         );
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -229,16 +244,16 @@ public class Main_activity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
         //Método do spinner para capturar o item selecionado
 
-        spn_ano.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spn_disciplina.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
                 //pega nome pela posicao
-                ano = parent.getItemAtPosition(posicao).toString();
+                disciplina = parent.getItemAtPosition(posicao).toString();
+
                 //imprime um Toast na tela com o nome e posição do item selecionado
                 //Toast.makeText(Activity_teste.this, "Disciplina: " + nome, Toast.LENGTH_LONG).show();
                 //Toast.makeText(Activity_teste.this, "Id:" + posicao, Toast.LENGTH_SHORT).show();
@@ -247,45 +262,33 @@ public class Main_activity extends AppCompatActivity
 
                 // Toast.makeText(Activity_teste.this, "Id:" + posicao, Toast.LENGTH_SHORT).show();
 
-                //disciplina = posicao;
-
 
                 if (posicao == 0){
-
+/*
                     fl_cont_ciencias_sexto.setVisibility(View.VISIBLE);
                     fl_cont_ciencias_setimo.setVisibility(View.GONE);
                     fl_cont_ciencias_oitavo.setVisibility(View.GONE);
-                    fl_cont_ciencias_nono.setVisibility(View.GONE);
+                    fl_cont_ciencias_nono.setVisibility(View.GONE); */
+
+
 
 
                 }
 
                 if (posicao == 1){
 
-                    fl_cont_ciencias_sexto.setVisibility(View.GONE);
-                    fl_cont_ciencias_setimo.setVisibility(View.VISIBLE);
-                    fl_cont_ciencias_oitavo.setVisibility(View.GONE);
-                    fl_cont_ciencias_nono.setVisibility(View.GONE);
-
 
                 }
 
                 if (posicao == 2){
 
-                    fl_cont_ciencias_sexto.setVisibility(View.GONE);
-                    fl_cont_ciencias_setimo.setVisibility(View.GONE);
-                    fl_cont_ciencias_oitavo.setVisibility(View.VISIBLE);
-                    fl_cont_ciencias_nono.setVisibility(View.GONE);
 
 
                 }
 
                 if (posicao == 3){
 
-                    fl_cont_ciencias_sexto.setVisibility(View.GONE);
-                    fl_cont_ciencias_setimo.setVisibility(View.GONE);
-                    fl_cont_ciencias_oitavo.setVisibility(View.GONE);
-                    fl_cont_ciencias_nono.setVisibility(View.VISIBLE);
+
 
 
                 }
@@ -295,12 +298,65 @@ public class Main_activity extends AppCompatActivity
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
+             return;
             }
-
         });
 
     }
+
+
+    public static class SectionsPagerAdapter extends FragmentPagerAdapter {
+
+        public SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+
+            switch (position) {
+                case 0:
+                    Tab1_sexto tab1 = new Tab1_sexto();
+                    return tab1;
+                case 1:
+                    Tab2_setimo tab2 = new Tab2_setimo();
+                    return tab2;
+                case 2:
+                    Tab3_oitavo tab3 = new Tab3_oitavo();
+                    return tab3;
+                case 3:
+                    Tab4_nono tab4 = new Tab4_nono();
+                    return tab4;
+            }
+            return null;
+
+        }
+
+        @Override
+        public int getCount() {
+            // Show 3 total pages.
+            return 4;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return "Sexto";
+                case 1:
+                    return "Sétimo";
+                case 2:
+                    return "Oitavo";
+                case 3:
+                    return "Nono";
+            }
+            return null;
+        }
+    }
+
+
+
+
 
 
 
@@ -336,6 +392,7 @@ public class Main_activity extends AppCompatActivity
         } else if (id == R.id.compartilhar) {
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("set/plain");
+
             shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Compartilhe o M-Xingu com seus amigos!");
             shareIntent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=air.MatematicandoEducation&hl=pt_BR");
