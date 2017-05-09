@@ -51,13 +51,13 @@
                 android:value="xingu.inteceleri.xingu.Main_activity" />
         </activity>
         <activity
-            android:name=".Teste_spinner"
-            android:label="@string/title_activity_teste_spinner"
-            android:parentActivityName=".Main_activity"
+            android:name=".Config_bimestre_activity"
+            android:label="@string/title_activity_config_bimestre"
+            android:parentActivityName=".Config_activity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="xingu.inteceleri.xingu.Main_activity" />
+                android:value="xingu.inteceleri.xingu.Config_activity" />
         </activity>
     </application>
 

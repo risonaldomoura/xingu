@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -25,6 +26,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 
+//import static android.widget.Toast.*;
+
 
 public class Main_activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -34,8 +37,8 @@ public class Main_activity extends AppCompatActivity
 
 
     private Spinner spn_disciplina;
-    public String disciplina;
-    public int ID;
+    public static String disciplina;
+    public static int ID;
     private ArrayAdapter<String> adp_disciplina;
 
     @Override
@@ -60,7 +63,6 @@ public class Main_activity extends AppCompatActivity
         tabLayout.setupWithViewPager(mViewPager);
 
 
-
         spn_disciplina = (Spinner) findViewById(R.id.spn_disciplina);
 
         adp_disciplina = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
@@ -74,7 +76,7 @@ public class Main_activity extends AppCompatActivity
         adp_disciplina.add("Ed. Física");
         adp_disciplina.add("Geografia");
         adp_disciplina.add("História");
-        adp_disciplina.add("Português");
+        adp_disciplina.add("Ling. Portuguesa");
         adp_disciplina.add("Matemática");
 
         //FrameLayout da spinner
@@ -82,6 +84,14 @@ public class Main_activity extends AppCompatActivity
 
 
         //final FrameLayout fl_conteudo = (FrameLayout) findViewById(R.id.fl_conteudo);
+
+
+
+        final FrameLayout tab1_sexto = (FrameLayout) findViewById(R.id.tab1_sexto);
+        final LinearLayout tab2_setimo = (LinearLayout) findViewById(R.id.tab2_setimo);
+        final LinearLayout tab3_oitavo = (LinearLayout) findViewById(R.id.tab3_oitavo);
+        final LinearLayout tab4_nono = (LinearLayout) findViewById(R.id.tab4_nono);
+
 
         /*
         final FrameLayout fl_cont_arte_sexto = (FrameLayout) findViewById(R.id.fl_cont_arte_sexto);
@@ -247,39 +257,43 @@ public class Main_activity extends AppCompatActivity
         //Método do spinner para capturar o item selecionado
 
         spn_disciplina.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
                 //pega nome pela posicao
-                disciplina = parent.getItemAtPosition(posicao).toString();
+                disciplina = parent.getSelectedItem().toString();
+                
+                ID = posicao;
+
+                mostrarid();
 
                 //imprime um Toast na tela com o nome e posição do item selecionado
-                //Toast.makeText(Activity_teste.this, "Disciplina: " + nome, Toast.LENGTH_LONG).show();
-                //Toast.makeText(Activity_teste.this, "Id:" + posicao, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Main_activity.this, "Disciplina: " + nome, Toast.LENGTH_LONG).show();
+                //Toast.makeText(Main_activity.this, "Disciplina:" + posicao, Toast.LENGTH_SHORT).show();
 
                 // Toast.makeText(Activity_teste.this,"Id:"+serie,Toast.LENGTH_SHORT).show();
 
                 // Toast.makeText(Activity_teste.this, "Id:" + posicao, Toast.LENGTH_SHORT).show();
 
-
+                /*
                 if (posicao == 0){
-/*
+
                     fl_cont_ciencias_sexto.setVisibility(View.VISIBLE);
                     fl_cont_ciencias_setimo.setVisibility(View.GONE);
                     fl_cont_ciencias_oitavo.setVisibility(View.GONE);
-                    fl_cont_ciencias_nono.setVisibility(View.GONE); */
+                    fl_cont_ciencias_nono.setVisibility(View.GONE);
 
 
 
 
-                }
+
 
                 if (posicao == 1){
 
+                    fl_cont_arte_sexto.setVisibility(View.VISIBLE);
 
                 }
 
+                /*
                 if (posicao == 2){
 
 
@@ -291,9 +305,13 @@ public class Main_activity extends AppCompatActivity
 
 
 
-                }
+                } */
 
 
+            }
+
+            public int getId(){
+                return ID;
             }
 
             @Override
@@ -304,27 +322,39 @@ public class Main_activity extends AppCompatActivity
 
     }
 
+    public void mostrarid (){
 
-    public static class SectionsPagerAdapter extends FragmentPagerAdapter {
+        Toast.makeText(Main_activity.this,"Id:"+ID,Toast.LENGTH_SHORT).show();
+    }
+
+
+
+    public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
         }
-
-        @Override
-        public Fragment getItem(int position) {
+           @Override
+            public Fragment getItem ( int position){
 
             switch (position) {
+
                 case 0:
+
                     Tab1_sexto tab1 = new Tab1_sexto();
                     return tab1;
+
                 case 1:
                     Tab2_setimo tab2 = new Tab2_setimo();
                     return tab2;
+
                 case 2:
+
                     Tab3_oitavo tab3 = new Tab3_oitavo();
                     return tab3;
+
                 case 3:
+
                     Tab4_nono tab4 = new Tab4_nono();
                     return tab4;
             }
@@ -334,7 +364,7 @@ public class Main_activity extends AppCompatActivity
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 4 total pages.
             return 4;
         }
 

@@ -39,5 +39,6 @@
     <string name="title_activity_tab_">Menu de tabelas</string>
     <string name="title_activity_tab_activity">Tab_activity</string>
     <string name="title_activity_teste_spinner">Teste_spinner</string>
+    <string name="title_activity_config_bimestre">Configuração de bimestre</string>
 
 </resources>
