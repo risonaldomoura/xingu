@@ -42,7 +42,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/cantoarredondado"
-            android:backgroundTint="@color/apresentacao_tela_bg"
+            android:backgroundTint="@color/Botao_login"
             android:text="Entrar"
             android:textColor="@android:color/background_light"
             android:textSize="20sp"

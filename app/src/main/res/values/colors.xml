@@ -3,5 +3,7 @@
     <color name="colorPrimary">#FF99cc00</color>
     <color name="colorPrimaryDark">#FF669900</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="apresentacao_tela_bg">#f54242</color>
+    <color name="apresentacao_tela_bg">#fdd451</color>
+    <color name ="Botao_login">#f54d27</color>
+
 </resources>
