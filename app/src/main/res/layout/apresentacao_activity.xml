@@ -52,16 +52,15 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:text="Apresentação"
-            android:textColor="#2771b8"
             android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
             android:textSize="26sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/textView3"
-            app:layout_constraintHorizontal_bias="0.182"
+            app:layout_constraintHorizontal_bias="0.248"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.904" />
 
         <TextView
             android:id="@+id/textView3"
@@ -70,12 +69,10 @@
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:text="Saberes e Fazeres é um projeto digital da matriz curricular unificada para auxiliar professores e educadores no acompanhamento dos conteúdos a serem lecionados em sala de aula."
-
             android:textAlignment="textStart"
             android:textAllCaps="false"
-
             android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
-            android:textColor="@color/Botao_login"
+            android:textColor="@android:color/background_light"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.504"

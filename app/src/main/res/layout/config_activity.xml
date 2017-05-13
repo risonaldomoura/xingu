@@ -4,68 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="xingu.inteceleri.xingu.Main_activity">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@android:color/holo_green_light"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:title="           Configurações" />
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-            <Space
-                android:layout_width="13dp"
-                android:layout_height="10dp"
-                android:layout_weight="0.01" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.01"
-                android:orientation="vertical"
-                android:weightSum="1">
-
-                <Space
-                    android:layout_width="30dp"
-                    android:layout_height="13dp" />
-
-                <Button
-                    android:id="@+id/btn_voltar"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_weight="0.03"
-                    android:background="@drawable/botao_voltar" />
-            </LinearLayout>
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="56dp"
-                android:layout_weight="0.04" />
-
-        </LinearLayout>
-
-    </FrameLayout>
+    tools:context="xingu.inteceleri.xingu.Config_activity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="344dp"
+        android:layout_height="495dp"
         android:orientation="vertical"
-        android:weightSum="1">
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="56dp" />
+        android:weightSum="1"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -212,8 +159,8 @@
                 android:id="@+id/imageView9"
                 android:layout_width="100dp"
                 android:layout_height="38dp"
-                app:srcCompat="@drawable/logo_inteceleri"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo_inteceleri" />
 
             <ImageView
                 android:id="@+id/imageView10"
@@ -230,13 +177,11 @@
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Versão 0.01"
-                android:textColor="@android:color/black"
-                android:layout_gravity="center"/>
+                android:textColor="@android:color/black" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-
 </android.support.design.widget.CoordinatorLayout>

@@ -24,7 +24,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
 
 //import static android.widget.Toast.*;
 
@@ -81,7 +80,6 @@ public class Main_activity extends AppCompatActivity
 
         //FrameLayout da spinner
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
-
 
         //final FrameLayout fl_conteudo = (FrameLayout) findViewById(R.id.fl_conteudo);
 
@@ -341,10 +339,21 @@ public class Main_activity extends AppCompatActivity
 
                 case 0:
 
-                    Tab1_sexto tab1 = new Tab1_sexto();
-                    return tab1;
+                    if (ID == 0){
+
+                        Tab1_sexto tab1 = new Tab1_sexto();
+                        return tab1;
+                    }
+
+                    else if (ID == 1){
+
+                        Tab1_teste tab5 = new Tab1_teste();
+                        return tab5;
+                    }
+
 
                 case 1:
+
                     Tab2_setimo tab2 = new Tab2_setimo();
                     return tab2;
 
@@ -372,13 +381,13 @@ public class Main_activity extends AppCompatActivity
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Sexto";
+                    return "6º ANO";
                 case 1:
-                    return "Sétimo";
+                    return "7º ANO";
                 case 2:
-                    return "Oitavo";
+                    return "8º ANO";
                 case 3:
-                    return "Nono";
+                    return "9º ANO";
             }
             return null;
         }

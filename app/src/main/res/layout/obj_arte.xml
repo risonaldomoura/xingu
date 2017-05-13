@@ -15,22 +15,21 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="406dp"
-            android:layout_weight="0.90"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="match_parent" />
-
             <ScrollView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/cantoarredconteudo">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -39,6 +38,10 @@
                     android:backgroundTint="@android:color/white"
                     android:orientation="vertical"
                     android:weightSum="1">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -58,39 +61,42 @@
                         android:id="@+id/textView11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:lineSpacingExtra="5sp"
                         android:text="@string/objetivo_arte"
                         android:textAlignment="viewStart"
                         android:textColor="@android:color/background_dark"
                         android:textSize="18sp" />
 
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
                 </LinearLayout>
             </ScrollView>
-
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="match_parent" />
 
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15dp" />
+            android:layout_height="10dp" />
 
         <Button
             android:id="@+id/btn_ok_arte"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="290dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/cantoarredondado"
-            android:backgroundTint="@color/Botao_login"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cantoarredconteudo"
+            android:backgroundTint="@color/apresentacao_tela_bg"
             android:text="OK"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
     </LinearLayout>
+
 </FrameLayout>

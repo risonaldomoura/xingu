@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/cantoarredondado"
-            android:backgroundTint="@color/Botao_login"
+            android:backgroundTint="@color/apresentacao_tela_bg"
             android:text="OK"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
