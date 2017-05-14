@@ -53,4 +53,5 @@
         <activity android:name=".Config_activity"></activity>
     </application>
 
+
 </manifest>
