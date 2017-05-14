@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF99cc00</color>
+    <color name="colorPrimary">#99cc00</color>
     <color name="colorPrimaryDark">#FF669900</color>
     <color name="colorAccent">#FF4081</color>
     <color name="apresentacao_tela_bg">#f34c4c</color>
