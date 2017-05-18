@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#669900</color>
     <color name="colorAccent">#FF4081</color>
     <color name="apresentacao_tela_bg">#f34c4c</color>
+    <color name="elementos_conteudo">#33b5e5</color>
+    <color name="fundo_bloco_bimestre">#00ddff</color>
+
 </resources>

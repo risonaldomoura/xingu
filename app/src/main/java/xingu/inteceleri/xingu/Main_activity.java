@@ -75,7 +75,7 @@ public class Main_activity extends AppCompatActivity
         adp_disciplina.add("Ed. Física");
         adp_disciplina.add("Geografia");
         adp_disciplina.add("História");
-        adp_disciplina.add("Ling. Portuguesa");
+        adp_disciplina.add("Língua Portuguesa");
         adp_disciplina.add("Matemática");
 
         //FrameLayout da spinner

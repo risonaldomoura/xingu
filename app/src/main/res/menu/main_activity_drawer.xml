@@ -40,13 +40,14 @@
                 android:icon="@drawable/ic_historia"
                 android:title="História" />
             <item
+                android:id="@+id/portugues"
+                android:icon="@drawable/ic_portugues"
+                android:title="Língua Portuguesa" />
+            <item
                 android:id="@+id/matematica"
                 android:icon="@drawable/ic_matematica"
                 android:title="Matemática" />
-            <item
-                android:id="@+id/portugues"
-                android:icon="@drawable/ic_portugues"
-                android:title="Português" />
+
         </menu>
     </item>
 

@@ -13,84 +13,76 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="406dp"
-            android:layout_weight="0.90"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/cantoarredondado"
+                android:backgroundTint="@android:color/white"
+                android:orientation="vertical">
 
-            <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/cantoarredconteudo"
-                    android:backgroundTint="@android:color/white"
-                    android:orientation="vertical"
-                    android:weightSum="1">
+                    android:text="Educação Física"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Educação Física"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/background_dark"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp" />
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/objetivo_ed_fisica"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/objetivo_ed_fisica"
-                        android:textAlignment="viewStart"
-                        android:textColor="@android:color/background_dark"
-                        android:textSize="18sp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                </LinearLayout>
-            </ScrollView>
-
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="match_parent" />
+            </LinearLayout>
 
         </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
 
         <Button
             android:id="@+id/btn_ok_ed_fisica"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="290dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/cantoarredondado"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/cantoarredconteudo"
             android:backgroundTint="@color/apresentacao_tela_bg"
             android:text="OK"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
     </LinearLayout>
+
 </FrameLayout>
