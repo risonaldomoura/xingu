@@ -343,6 +343,7 @@ public class Main_activity extends AppCompatActivity
 
                         Tab1_sexto tab1 = new Tab1_sexto();
                         return tab1;
+
                     }
 
                     else if (ID == 1){
@@ -368,8 +369,8 @@ public class Main_activity extends AppCompatActivity
                     return tab4;
             }
             return null;
-
         }
+
 
         @Override
         public int getCount() {

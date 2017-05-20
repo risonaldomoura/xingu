@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo_login"
+    android:background="@drawable/bg_login2"
     app:layout_collapseParallaxMultiplier="1.0"
     tools:context="xingu.inteceleri.xingu.Login_activity">
 
@@ -19,7 +19,7 @@
             android:layout_height="0dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="388dp"
+            android:layout_marginTop="340dp"
             android:ems="10"
             android:hint="  Email"
             android:inputType="textEmailAddress"
@@ -34,6 +34,30 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+        <EditText
+            android:id="@+id/edtSenha"
+            style="@android:style/Widget.Holo.Light"
+            android:layout_width="210dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint=" Senha"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:textSize="24sp"
+            android:visibility="visible"
+
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
         <Button
             android:id="@+id/btn_entrar"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -42,15 +66,14 @@
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/cantoarredconteudo"
-            android:backgroundTint="@color/apresentacao_tela_bg"
+            android:backgroundTint="@color/btn_login"
             android:text="Entrar"
             android:textColor="@android:color/background_light"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edtEmail"
-            app:layout_constraintVertical_bias="0.258" />
+            app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
 
         <TextView
             android:id="@+id/textView4"
