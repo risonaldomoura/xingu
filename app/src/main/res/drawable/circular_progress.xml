@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <rotate xmlns:android="http://schemas.android.com/apk/res/android"
     android:fromDegrees="90"
     android:pivotX="50%"
@@ -22,8 +21,3 @@
 
 
 </rotate>
-=======
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-</selector>
->>>>>>> origin/master
