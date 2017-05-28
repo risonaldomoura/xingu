@@ -19,7 +19,10 @@ import android.widget.ProgressBar;
 
 
 public class Splash_activity extends AppCompatActivity {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
     ProgressBar pBar;
 
 
@@ -28,9 +31,13 @@ public class Splash_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_activity);
 
+<<<<<<< HEAD
 
         pBar = (ProgressBar) findViewById(R.id.progressBar);
         pBar.setVisibility(View.VISIBLE);
+=======
+        pBar = (ProgressBar) findViewById(R.id.progressBar);
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
        Thread timerThread = new Thread() {
            public void run(){

@@ -87,7 +87,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Jan"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -99,7 +99,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Fev"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -131,7 +131,7 @@
                                     android:layout_height="wrap_content"
                                     android:lineSpacingExtra="3sp"
                                     android:text="@string/cont_ed_fisica_nono_I"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp" />
 
                             </LinearLayout>
@@ -185,7 +185,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Mar"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -197,7 +197,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Abr"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -229,7 +229,7 @@
                                     android:layout_height="wrap_content"
                                     android:lineSpacingExtra="3sp"
                                     android:text="@string/cont_ed_fisica_nono_II"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp" />
 
                             </LinearLayout>
@@ -282,7 +282,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Mai"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -294,7 +294,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Jun"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -326,7 +326,7 @@
                                     android:layout_height="wrap_content"
                                     android:lineSpacingExtra="3sp"
                                     android:text="@string/cont_ed_fisica_nono_III"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp" />
 
                             </LinearLayout>
@@ -379,7 +379,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Ago"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -391,7 +391,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Set"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="30sp" />
 
                                 <Space
@@ -423,7 +423,7 @@
                                     android:layout_height="wrap_content"
                                     android:lineSpacingExtra="3sp"
                                     android:text="@string/cont_ed_fisica_nono_IV"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp" />
 
                             </LinearLayout>

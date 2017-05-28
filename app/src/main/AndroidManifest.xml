@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="xingu.inteceleri.xingu">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_logo_app"
@@ -41,6 +43,14 @@
                 android:value="xingu.inteceleri.xingu.Config_activity" />
         </activity>
         <activity android:name=".Config_activity" />
+<<<<<<< HEAD
+=======
+        <activity
+            android:name=".Registro_activity"
+            android:label=" "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AppBarMainActivity"></activity>
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
     </application>
 
 </manifest>

@@ -3,6 +3,8 @@ package xingu.inteceleri.xingu;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.text.Layout;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -24,6 +27,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import java.util.Calendar;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 //import static android.widget.Toast.*;
 
@@ -36,6 +42,7 @@ public class Main_activity extends AppCompatActivity
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
 
+<<<<<<< HEAD
     public String mes_1 = "JAN";
     public String mes_2 = "FEV";
     public String mes_3 = "MAR";
@@ -48,6 +55,11 @@ public class Main_activity extends AppCompatActivity
     public String mes_10 = "OUT";
     public String mes_11 = "NOV";
     public String mes_12 = "DEZ";
+=======
+    //FireBase
+    private FirebaseAuth fbAuth;
+    private TextView emailUsuario;
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
     private Spinner spn_disciplina;
     public static int IDAtual;
@@ -84,6 +96,7 @@ public class Main_activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
+        fbAuth = FirebaseAuth.getInstance();
 
 
         //final CheckBox checkbox1 = (CheckBox) findViewById(R.id.checkbox1);
@@ -263,7 +276,13 @@ public class Main_activity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        //------------------------------------------------------------------------------------------
+        //Pegando um layout de xml acessado por outro xml
+        /*
+        FirebaseUser fbUsuario = fbAuth.getCurrentUser();
+        //View nav_header = (View) navigationView.getHeaderView(R.layout.nav_header_main_activity);
 
+<<<<<<< HEAD
         /*
         //Método para limpar o arquivo SharedPreferences
         SharedPreferences settings = getSharedPreferences("disciplina", 0);
@@ -271,6 +290,13 @@ public class Main_activity extends AppCompatActivity
         e.clear();
         e.commit();
         */
+=======
+        navigationView.findViewById(R.id.textViewEmailUsuario);
+        emailUsuario.setText(fbUsuario.getEmail());
+        */
+        //------------------------------------------------------------------------------------------
+        //Método do spinner para capturar o item selecionado
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
         //=============== CARREGAMENTO DAS DATAS DOS BIMESTRES =====================================
 

@@ -66,6 +66,7 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
+<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
@@ -76,6 +77,36 @@
                                     android:textColor="@android:color/white"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
+=======
+                                    android:layout_height="wrap_content"
+                                    android:text="Jan"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fev"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/objetivos_icon"
+                                    android:elevation="8dp" />
+
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -88,6 +119,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -326,6 +358,12 @@
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
+=======
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="@string/cont_ens_religioso_sexto_I"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp" />
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 
@@ -355,6 +393,7 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
+<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
@@ -365,6 +404,36 @@
                                     android:textColor="@android:color/white"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
+=======
+                                    android:layout_height="wrap_content"
+                                    android:text="Mar"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Abr"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/objetivos_icon"
+                                    android:elevation="8dp" />
+
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -377,6 +446,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -614,6 +684,12 @@
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
+=======
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="@string/cont_ens_religioso_sexto_II"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp" />
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 
@@ -643,6 +719,7 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
+<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
@@ -653,6 +730,36 @@
                                     android:textColor="@android:color/white"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
+=======
+                                    android:layout_height="wrap_content"
+                                    android:text="Mai"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jun"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/objetivos_icon"
+                                    android:elevation="8dp" />
+
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -665,6 +772,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -902,6 +1010,12 @@
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
+=======
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="@string/cont_ens_religioso_sexto_III"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp" />
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 
@@ -931,6 +1045,7 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
+<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
@@ -941,6 +1056,36 @@
                                     android:textColor="@android:color/white"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
+=======
+                                    android:layout_height="wrap_content"
+                                    android:text="Ago"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Set"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="30sp" />
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/objetivos_icon"
+                                    android:elevation="8dp" />
+
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -953,6 +1098,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1190,6 +1336,12 @@
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
+=======
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="@string/cont_ens_religioso_sexto_IV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp" />
+>>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 
