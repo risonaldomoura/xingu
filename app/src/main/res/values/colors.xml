@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#99cc00</color>
-    <color name="colorPrimaryDark">#669900</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#32b0de</color>
+    <color name="colorPrimaryDark">#2873b8</color>
+    <color name="colorAccent">#fdd451</color>
     <color name="apresentacao_tela_bg">#fdd451</color>
-    <color name="elementos_conteudo">#33b5e5</color>
-    <color name="fundo_bloco_bimestre">#00ddff</color>
+    <color name="elementos_conteudo">#cccccc</color>
+    <color name="fundo_bloco_bimestre">#e5e5e5</color>
     <color name="btn_login">#d63518</color>
+    <color name="btn_registrar">#2873b8</color>
 
 
 </resources>

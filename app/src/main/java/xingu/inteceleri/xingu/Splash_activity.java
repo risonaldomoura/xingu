@@ -15,25 +15,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 
 public class Splash_activity extends AppCompatActivity {
-    ImageView imageView;
-    AnimationDrawable anim;
+    ProgressBar pBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_activity);
 
-
-        //imageView = (ImageView) findViewById(R.id.imageView6);
-       // if (imageView == null ) throw new AssertionError();
-        //imageView.setBackgroundResource(R.drawable.splash_loading_animation);
-
-
-        //anim = (AnimationDrawable) imageView.getBackground();
-        //anim.start();
+        pBar = (ProgressBar) findViewById(R.id.progressBar);
 
        Thread timerThread = new Thread() {
            public void run(){

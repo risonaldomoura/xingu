@@ -2,6 +2,8 @@ package xingu.inteceleri.xingu;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.text.Layout;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +19,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import android.support.design.widget.TabLayout;
@@ -24,6 +27,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 //import static android.widget.Toast.*;
 
@@ -34,6 +40,9 @@ public class Main_activity extends AppCompatActivity
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
 
+    //FireBase
+    private FirebaseAuth fbAuth;
+    private TextView emailUsuario;
 
     private Spinner spn_disciplina;
     public static String disciplina;
@@ -45,6 +54,7 @@ public class Main_activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
+        fbAuth = FirebaseAuth.getInstance();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -251,7 +261,16 @@ public class Main_activity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        //------------------------------------------------------------------------------------------
+        //Pegando um layout de xml acessado por outro xml
+        /*
+        FirebaseUser fbUsuario = fbAuth.getCurrentUser();
+        //View nav_header = (View) navigationView.getHeaderView(R.layout.nav_header_main_activity);
 
+        navigationView.findViewById(R.id.textViewEmailUsuario);
+        emailUsuario.setText(fbUsuario.getEmail());
+        */
+        //------------------------------------------------------------------------------------------
         //Método do spinner para capturar o item selecionado
 
         spn_disciplina.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

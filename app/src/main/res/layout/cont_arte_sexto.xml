@@ -73,7 +73,7 @@
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="@string/title_arte_sexto_I"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -98,7 +98,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -135,7 +135,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -144,7 +144,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -176,7 +176,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -184,7 +184,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -192,7 +192,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -200,7 +200,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -240,7 +240,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -249,7 +249,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -281,7 +281,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -289,7 +289,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -297,7 +297,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -322,7 +322,7 @@
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:elevation="0dp"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
@@ -362,7 +362,7 @@
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="@string/title_arte_sexto_I"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -387,7 +387,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -424,7 +424,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -433,7 +433,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -465,7 +465,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -473,7 +473,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -481,7 +481,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -489,7 +489,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -529,7 +529,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -538,7 +538,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -570,7 +570,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -578,7 +578,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -586,7 +586,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -610,7 +610,7 @@
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
@@ -650,7 +650,7 @@
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="@string/title_arte_sexto_I"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -675,7 +675,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -712,7 +712,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -721,7 +721,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -753,7 +753,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -761,7 +761,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -769,7 +769,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -777,7 +777,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -817,7 +817,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -826,7 +826,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -858,7 +858,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -866,7 +866,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -874,7 +874,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -898,7 +898,7 @@
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
@@ -938,7 +938,7 @@
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="@string/title_arte_sexto_I"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -963,7 +963,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -1000,7 +1000,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -1009,7 +1009,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -1041,7 +1041,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -1049,7 +1049,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -1057,7 +1057,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -1065,7 +1065,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -1105,7 +1105,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
@@ -1114,7 +1114,7 @@
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -1146,7 +1146,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -1154,7 +1154,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -1162,7 +1162,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -1186,7 +1186,7 @@
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>

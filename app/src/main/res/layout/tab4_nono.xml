@@ -4,13 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="xingu.inteceleri.xingu.Tab_activity$PlaceholderFragment">
+    tools:context="xingu.inteceleri.xingu.Tab_activity$PlaceholderFragment"
+
+    >
 
 
     <include
         android:id="@+id/fl_cont_arte_nono"
         layout="@layout/cont_arte_nono"
-        layout_weight="1"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />
