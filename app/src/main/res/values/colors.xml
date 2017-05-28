@@ -7,6 +7,7 @@
     <color name="elementos_conteudo">#33b5e5</color>
     <color name="fundo_bloco_bimestre">#00ddff</color>
     <color name="btn_login">#d63518</color>
+    <color name="sombra_bimestre">#80000000</color>
 
 
 </resources>

@@ -31,16 +31,6 @@
             android:name=".Main_activity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activity_teste" />
-        <activity
-            android:name=".Tab_activity"
-            android:label="@string/title_activity_tab_activity"
-            android:parentActivityName=".Main_activity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="xingu.inteceleri.xingu.Main_activity" />
-        </activity>
         <activity
             android:name=".Config_bimestre_activity"
             android:label="@string/title_activity_config_bimestre"
@@ -50,8 +40,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="xingu.inteceleri.xingu.Config_activity" />
         </activity>
-        <activity android:name=".Config_activity"></activity>
+        <activity android:name=".Config_activity" />
     </application>
-
 
 </manifest>

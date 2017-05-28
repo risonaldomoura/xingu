@@ -15,11 +15,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 
 public class Splash_activity extends AppCompatActivity {
-    ImageView imageView;
-    AnimationDrawable anim;
+
+    ProgressBar pBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,22 +29,17 @@ public class Splash_activity extends AppCompatActivity {
         setContentView(R.layout.splash_activity);
 
 
-        //imageView = (ImageView) findViewById(R.id.imageView6);
-       // if (imageView == null ) throw new AssertionError();
-        //imageView.setBackgroundResource(R.drawable.splash_loading_animation);
-
-
-        //anim = (AnimationDrawable) imageView.getBackground();
-        //anim.start();
+        pBar = (ProgressBar) findViewById(R.id.progressBar);
+        pBar.setVisibility(View.VISIBLE);
 
        Thread timerThread = new Thread() {
            public void run(){
                try{
-                   sleep (4000);
+                   sleep (500);
                } catch (InterruptedException e){
                    e.printStackTrace();
                } finally{
-                   Intent intent = new Intent(Splash_activity.this, Apresentacao_activity.class);
+                   Intent intent = new Intent(Splash_activity.this, Main_activity.class);
                    startActivity(intent);
                }
            }

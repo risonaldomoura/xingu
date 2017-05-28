@@ -7,7 +7,7 @@
 
 
     <string name="title_portugues_sexto_I">
-        Português sexto
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_sexto_I">
@@ -42,7 +42,7 @@ orientadas.\n
 
 
     <string name="title_portugues_sexto_II">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_sexto_II">
@@ -67,7 +67,7 @@ clímax e desfecho.\n
 
 
     <string name="title_portugues_sexto_III">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_sexto_III">
@@ -93,7 +93,7 @@ personagens.\n
 
 
     <string name="title_portugues_sexto_IV">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_sexto_IV">
@@ -125,7 +125,7 @@ outros textos, no nível temático.\n
 
 
     <string name="title_portugues_setimo_I">
-        Português setimo
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_setimo_I">
@@ -153,7 +153,7 @@ temas que afetam a vida coletiva.\n
 
 
     <string name="title_portugues_setimo_II">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_setimo_II">
@@ -183,7 +183,7 @@ narrativa.\n
 
 
     <string name="title_portugues_setimo_III">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_setimo_III">
@@ -221,7 +221,7 @@ diferentes mídias.\n
 
 
     <string name="title_portugues_setimo_IV">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_setimo_IV">
@@ -252,7 +252,7 @@ discutindo sobre suas implicações sociais.\n
 
 
     <string name="title_portugues_oitavo_I">
-        Português oitavo
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_oitavo_I">
@@ -287,7 +287,7 @@ social às suas funções comunicativas.\n
 
 
     <string name="title_portugues_oitavo_II">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_oitavo_II">
@@ -314,7 +314,7 @@ mundial.\n
 
 
     <string name="title_portugues_oitavo_III">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_oitavo_III">
@@ -348,7 +348,7 @@ dentre outros).\n
 
 
     <string name="title_portugues_oitavo_IV">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_oitavo_IV">
@@ -380,7 +380,7 @@ estrutura composicional e do estilo.\n
 
 
     <string name="title_portugues_nono_I">
-        Português nono
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_nono_I">
@@ -421,7 +421,7 @@ mundial.\n
 
 
     <string name="title_portugues_nono_II">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_nono_II">
@@ -459,7 +459,7 @@ poemas.\n
 
 
     <string name="title_portugues_nono_III">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_nono_III">
@@ -489,7 +489,7 @@ paráfrases e pastiche.\n
 
 
     <string name="title_portugues_nono_IV">
-        Português
+        Eixo: Português
     </string>
 
     <string name="cont_portugues_nono_IV">
@@ -518,7 +518,5 @@ como o Código de Defesa do
 Consumidor, avaliando suas implicações
 para a vida em sociedade.\n
     </string>
-
-
 
 </resources>

@@ -1,8 +1,11 @@
 package xingu.inteceleri.xingu;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -14,13 +17,14 @@ import android.widget.Toast;
 import android.content.Intent;
 import java.util.ArrayList;
 import java.util.List;
+import android.support.v7.app.AlertDialog;
 
 public class Config_bimestre_activity extends AppCompatActivity{
 
-    public static int ID1_I;
-    public static int ID2_I;
-    public static int ID3_I;
-    public static int ID4_I;
+    public static int ID1_I;//dia_inicio_I_bimestre
+    public static int ID2_I;//dia_termino_I_bimestre
+    public static int ID3_I;//mes_inicio_I_bimestre
+    public static int ID4_I;//mes_termino_I_bimestre
 
     public static int ID1_II;
     public static int ID2_II;
@@ -57,6 +61,53 @@ public class Config_bimestre_activity extends AppCompatActivity{
     private Spinner spn_mes_inicio_IV;
     private Spinner spn_mes_termino_IV;
 
+
+
+    public int ID_salvo_dia_inicio_I;
+    public int ID_salvo_dia_termino_I;
+    public int ID_salvo_mes_inicio_I;
+    public int ID_salvo_mes_termino_I;
+
+    public int ID_salvo_dia_inicio_II;
+    public int ID_salvo_dia_termino_II;
+    public int ID_salvo_mes_inicio_II;
+    public int ID_salvo_mes_termino_II;
+
+    public int ID_salvo_dia_inicio_III;
+    public int ID_salvo_dia_termino_III;
+    public int ID_salvo_mes_inicio_III;
+    public int ID_salvo_mes_termino_III;
+
+    public int ID_salvo_dia_inicio_IV;
+    public int ID_salvo_dia_termino_IV;
+    public int ID_salvo_mes_inicio_IV;
+    public int ID_salvo_mes_termino_IV;
+
+    public int dia_inicio_I;
+    public int dia_termino_I;
+    public int mes_inicio_I;
+    public int mes_termino_I;
+
+    public int dia_inicio_II;
+    public int dia_termino_II;
+    public int mes_inicio_II;
+    public int mes_termino_II;
+
+    public int dia_inicio_III;
+    public int dia_termino_III;
+    public int mes_inicio_III;
+    public int mes_termino_III;
+
+    public int dia_inicio_IV;
+    public int dia_termino_IV;
+    public int mes_inicio_IV;
+    public int mes_termino_IV;
+
+    private AlertDialog ErroDataI;//atributo da classe BuscaErroData
+    private AlertDialog ErroDataII;
+    private AlertDialog ErroDataIII;
+    private AlertDialog ErroDataIV;
+
     private List<String> adp_dia = new ArrayList<String>();
     private List<String> adp_mes = new ArrayList<String>();
     //private String[] id1_I;
@@ -67,6 +118,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
         setContentView(R.layout.config_bimestre);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Mostrar o botão
         getSupportActionBar().setHomeButtonEnabled(true);      //Ativar o botão
@@ -153,32 +205,44 @@ public class Config_bimestre_activity extends AppCompatActivity{
         spnAdapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_mes_termino_I.setAdapter(spnAdapter4);
 
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_inicio_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_inicio_I = sharedPref_dia_inicio_I.getInt("dia_inicio_I",-1);
+        if(ID_salvo_dia_inicio_I != -1)
+            // set the value of the spinner
+            spn_dia_inicio_I.setSelection(ID_salvo_dia_inicio_I);
+
         //Leitura spn_dia_inicio_I
         spn_dia_inicio_I.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                //pega nome pela posicao
-                //dia = parent.getItemAtPosition(posicao).toString();
 
-                ID1_I = posicao;
+                //Save do ID da spinner no sharedPreferences
+                dia_inicio_I = spn_dia_inicio_I.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_inicio_I = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_inicio_I.edit();
+                prefEditor.putInt("dia_inicio_I",dia_inicio_I);
+                prefEditor.commit();
 
-                mostrarid1_I();
-
-            }
-
-
-            public int getId(){
-                return ID1_I;
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
+        });//end leitura
 
-        });
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_termino_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_termino_I = sharedPref_dia_termino_I.getInt("dia_termino_I",-1);
+        if(ID_salvo_dia_termino_I != -1)
+            // set the value of the spinner
+            spn_dia_termino_I.setSelection(ID_salvo_dia_termino_I);
+
 
         //Leitura spn_dia_termino_I
         spn_dia_termino_I.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -186,22 +250,28 @@ public class Config_bimestre_activity extends AppCompatActivity{
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID2_I = posicao;
-
-                mostrarid2_I();
-
-            }
-
-            public int getId(){
-                return ID2_I;
+                //Save do ID da spinner no sharedPreferences
+                dia_termino_I = spn_dia_termino_I.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_termino_I = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_termino_I.edit();
+                prefEditor.putInt("dia_termino_I",dia_termino_I);
+                prefEditor.commit();
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
-
         });
+
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_inicio_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_inicio_I = sharedPref_mes_inicio_I.getInt("mes_inicio_I",-1);
+        if(ID_salvo_mes_inicio_I != -1)
+            // set the value of the spinner
+            spn_mes_inicio_I.setSelection(ID_salvo_mes_inicio_I);
 
         //Leitura spn_mes_inicio_I
         spn_mes_inicio_I.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -209,14 +279,15 @@ public class Config_bimestre_activity extends AppCompatActivity{
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID3_I = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_inicio_I = spn_mes_inicio_I.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_inicio_I = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_inicio_I.edit();
+                prefEditor.putInt("mes_inicio_I",mes_inicio_I);
+                prefEditor.commit();
 
-                mostrarid3_I();
+                //BuscaErroData();
 
-            }
-
-            public int getId(){
-                return ID3_I;
             }
 
             @Override
@@ -226,20 +297,40 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_termino_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_termino_I = sharedPref_mes_termino_I.getInt("mes_termino_I",-1);
+        if(ID_salvo_mes_termino_I != -1)
+            // set the value of the spinner
+            spn_mes_termino_I.setSelection(ID_salvo_mes_termino_I);
+
         //Leitura spn_mes_termino_I
         spn_mes_termino_I.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID4_I = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_termino_I = spn_mes_termino_I.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_termino_I = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_termino_I.edit();
+                prefEditor.putInt("mes_termino_I",mes_termino_I);
+                prefEditor.commit();
 
-                mostrarid4_I();
+                //BuscaErroData();
 
-            }
+                if (mes_termino_I < mes_inicio_I) {
 
-            public int getId(){
-                return ID4_I;
+                    String mensagem = "O mês de término do 1º bimestre está errado. Configure-o novamente.";
+                    AlertDialog.Builder dlg1 = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    dlg1.setTitle("Erro");
+                    dlg1.setMessage(mensagem);
+                    dlg1.setNeutralButton("OK", null);
+                    dlg1.show();
+                }
+
             }
 
             @Override
@@ -284,24 +375,28 @@ public class Config_bimestre_activity extends AppCompatActivity{
         spnAdapter8.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_mes_termino_II.setAdapter(spnAdapter8);
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_inicio_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_inicio_II = sharedPref_dia_inicio_II.getInt("dia_inicio_II",-1);
+        if(ID_salvo_dia_inicio_II != -1)
+            // set the value of the spinner
+            spn_dia_inicio_II.setSelection(ID_salvo_dia_inicio_II);
+
         //Leitura spn_dia_inicio_II
         spn_dia_inicio_II.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                //pega nome pela posicao
-                //dia = parent.getItemAtPosition(posicao).toString();
+                //Save do ID da spinner no sharedPreferences
+                dia_inicio_II = spn_dia_inicio_II.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_inicio_II = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_inicio_II.edit();
+                prefEditor.putInt("dia_inicio_II",dia_inicio_II);
+                prefEditor.commit();
 
-                ID1_II = posicao;
-
-                //mostrarid1_II();
-
-            }
-
-
-            public int getId(){
-                return ID1_II;
             }
 
             @Override
@@ -310,6 +405,15 @@ public class Config_bimestre_activity extends AppCompatActivity{
             }
 
         });
+
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_termino_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_termino_II = sharedPref_dia_termino_II.getInt("dia_termino_II",-1);
+        if(ID_salvo_dia_termino_II != -1)
+            // set the value of the spinner
+            spn_dia_termino_II.setSelection(ID_salvo_dia_termino_II);
 
         //Leitura spn_dia_termino_II
         spn_dia_termino_II.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -317,14 +421,13 @@ public class Config_bimestre_activity extends AppCompatActivity{
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID2_II = posicao;
+                //Save do ID da spinner no sharedPreferences
+                dia_termino_II = spn_dia_termino_II.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_termino_II = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_termino_II.edit();
+                prefEditor.putInt("dia_termino_II",dia_termino_II);
+                prefEditor.commit();
 
-               // mostrarid2_II();
-
-            }
-
-            public int getId(){
-                return ID2_II;
             }
 
             @Override
@@ -333,6 +436,15 @@ public class Config_bimestre_activity extends AppCompatActivity{
             }
 
         });
+
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_inicio_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_inicio_II = sharedPref_mes_inicio_II.getInt("mes_inicio_II",-1);
+        if(ID_salvo_mes_inicio_II != -1)
+            // set the value of the spinner
+            spn_mes_inicio_II.setSelection(ID_salvo_mes_inicio_II);
 
         //Leitura spn_mes_inicio_II
         spn_mes_inicio_II.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -340,14 +452,24 @@ public class Config_bimestre_activity extends AppCompatActivity{
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID3_II = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_inicio_II = spn_mes_inicio_II.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_inicio_II = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_inicio_II.edit();
+                prefEditor.putInt("mes_inicio_II",mes_inicio_II);
+                prefEditor.commit();
 
-              //  mostrarid3_II();
+                if (mes_inicio_II < mes_termino_I ){
 
-            }
+                    String mensagem = "O mês de início do 2º bimestre está errado. Configure-o novamente.";
+                    AlertDialog.Builder dlg2 = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    dlg2.setTitle("Erro");
+                    dlg2.setMessage(mensagem);
+                    dlg2.setNeutralButton("OK", null);
+                    dlg2.show();
+                }
 
-            public int getId(){
-                return ID3_II;
+
             }
 
             @Override
@@ -357,15 +479,37 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_termino_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_termino_II = sharedPref_mes_termino_II.getInt("mes_termino_II",-1);
+        if(ID_salvo_mes_termino_II != -1)
+            // set the value of the spinner
+            spn_mes_termino_II.setSelection(ID_salvo_mes_termino_II);
+
         //Leitura spn_mes_termino_II
         spn_mes_termino_II.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID4_II = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_termino_II = spn_mes_termino_II.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_termino_II = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_termino_II.edit();
+                prefEditor.putInt("mes_termino_II",mes_termino_II);
+                prefEditor.commit();
 
-               // mostrarid4_II();
+                if (mes_termino_II < mes_inicio_II ){
+
+                    String mensagem = "O mês de término do 2º bimestre está errado. Configure-o novamente.";
+                    AlertDialog.Builder dlg2 = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    dlg2.setTitle("Erro");
+                    dlg2.setMessage(mensagem);
+                    dlg2.setNeutralButton("OK", null);
+                    dlg2.show();
+                }
 
             }
 
@@ -379,6 +523,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
             }
 
         });
+
         //==========================================================================================
 
         //======================================SPINNERS DO III BIMESTRE============================
@@ -414,25 +559,32 @@ public class Config_bimestre_activity extends AppCompatActivity{
         spnAdapter12.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_mes_termino_III.setAdapter(spnAdapter12);
 
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_inicio_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_inicio_III = sharedPref_dia_inicio_III.getInt("dia_inicio_III",-1);
+        if(ID_salvo_dia_inicio_III != -1)
+            // set the value of the spinner
+            spn_dia_inicio_III.setSelection(ID_salvo_dia_inicio_III);
+
         //Leitura spn_dia_inicio_III
         spn_dia_inicio_III.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                //pega nome pela posicao
-                //dia = parent.getItemAtPosition(posicao).toString();
-
-                ID1_III = posicao;
-
-                //mostrarid1_III();
+                //Save do ID da spinner no sharedPreferences
+                dia_inicio_III = spn_dia_inicio_III.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_inicio_III = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_inicio_III.edit();
+                prefEditor.putInt("dia_inicio_III",dia_inicio_III);
+                prefEditor.commit();
 
             }
 
 
-            public int getId(){
-                return ID1_III;
-            }
+            //public int getId(){
+            //  return ID1_III;
+            //}
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
@@ -441,15 +593,28 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_termino_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_termino_III = sharedPref_dia_termino_III.getInt("dia_termino_III",-1);
+        if(ID_salvo_dia_termino_III != -1)
+            // set the value of the spinner
+            spn_dia_termino_III.setSelection(ID_salvo_dia_termino_III);
+
         //Leitura spn_dia_termino_III
         spn_dia_termino_III.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID2_III = posicao;
+                //Save do ID da spinner no sharedPreferences
+                dia_termino_III = spn_dia_termino_III.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_termino_III = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_termino_III.edit();
+                prefEditor.putInt("dia_termino_III",dia_termino_III);
+                prefEditor.commit();
 
-                //mostrarid2_III();
 
             }
 
@@ -464,15 +629,37 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_inicio_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_inicio_III = sharedPref_mes_inicio_III.getInt("mes_inicio_III",-1);
+        if(ID_salvo_mes_inicio_III != -1)
+            // set the value of the spinner
+            spn_mes_inicio_III.setSelection(ID_salvo_mes_inicio_III);
+
         //Leitura spn_mes_inicio_III
         spn_mes_inicio_III.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID3_III = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_inicio_III = spn_mes_inicio_III.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_inicio_III = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_inicio_III.edit();
+                prefEditor.putInt("mes_inicio_III",mes_inicio_III);
+                prefEditor.commit();
 
-                //mostrarid3_III();
+                if (mes_inicio_III < mes_termino_II ){
+
+                    String mensagem = "O mês de início do 3º bimestre está errado. Configure-o novamente.";
+                    AlertDialog.Builder dlg2 = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    dlg2.setTitle("Erro");
+                    dlg2.setMessage(mensagem);
+                    dlg2.setNeutralButton("OK", null);
+                    dlg2.show();
+                }
 
             }
 
@@ -487,20 +674,38 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_termino_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_termino_III = sharedPref_mes_termino_III.getInt("mes_termino_III",-1);
+        if(ID_salvo_mes_termino_III != -1)
+            // set the value of the spinner
+            spn_mes_termino_III.setSelection(ID_salvo_mes_termino_III);
+
         //Leitura spn_mes_termino_III
         spn_mes_termino_III.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID4_III = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_termino_III = spn_mes_termino_III.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_termino_III = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_termino_III.edit();
+                prefEditor.putInt("mes_termino_III",mes_termino_III);
+                prefEditor.commit();
 
-                //mostrarid4_III();
+                if (mes_termino_III < mes_inicio_III ){
 
-            }
+                    String mensagem = "O mês de término do 3º bimestre está errado. Configure-o novamente.";
+                    AlertDialog.Builder dlg3 = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    dlg3.setTitle("Erro");
+                    dlg3.setMessage(mensagem);
+                    dlg3.setNeutralButton("OK", null);
+                    dlg3.show();
+                }
 
-            public int getId(){
-                return ID4_III;
             }
 
             @Override
@@ -509,6 +714,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
             }
 
         });
+
         //==========================================================================================
 
         //======================================SPINNERS DO IV BIMESTRE==============================
@@ -544,24 +750,26 @@ public class Config_bimestre_activity extends AppCompatActivity{
         spnAdapter16.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_mes_termino_IV.setAdapter(spnAdapter16);
 
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_inicio_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_inicio_IV = sharedPref_dia_inicio_IV.getInt("dia_inicio_IV",-1);
+        if(ID_salvo_dia_inicio_IV != -1)
+            // set the value of the spinner
+            spn_dia_inicio_IV.setSelection(ID_salvo_dia_inicio_IV);
+
+
         //Leitura spn_dia_inicio_IV
         spn_dia_inicio_IV.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                //pega nome pela posicao
-                //dia = parent.getItemAtPosition(posicao).toString();
-
-                ID1_IV = posicao;
-
-               // mostrarid1_IV();
-
-            }
-
-
-            public int getId(){
-                return ID1_IV;
+                //Save do ID da spinner no sharedPreferences
+                dia_inicio_IV = spn_dia_inicio_IV.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_inicio_IV = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_inicio_IV.edit();
+                prefEditor.putInt("dia_inicio_IV",dia_inicio_IV);
+                prefEditor.commit();
             }
 
             @Override
@@ -571,16 +779,27 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_dia_termino_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_dia_termino_IV = sharedPref_dia_termino_IV.getInt("dia_termino_IV",-1);
+        if(ID_salvo_dia_termino_IV != -1)
+            // set the value of the spinner
+            spn_dia_termino_IV.setSelection(ID_salvo_dia_termino_IV);
+
         //Leitura spn_dia_termino_IV
         spn_dia_termino_IV.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID2_IV = posicao;
-
-               // mostrarid2_IV();
-
+                //Save do ID da spinner no sharedPreferences
+                dia_termino_IV = spn_dia_termino_IV.getSelectedItemPosition();
+                SharedPreferences sharedPref_dia_termino_IV = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_dia_termino_IV.edit();
+                prefEditor.putInt("dia_termino_IV",dia_termino_IV);
+                prefEditor.commit();
             }
 
             public int getId(){
@@ -594,15 +813,37 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_inicio_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_inicio_IV = sharedPref_mes_inicio_IV.getInt("mes_inicio_IV",-1);
+        if(ID_salvo_mes_inicio_IV != -1)
+            // set the value of the spinner
+            spn_mes_inicio_IV.setSelection(ID_salvo_mes_inicio_IV);
+
         //Leitura spn_mes_inicio_IV
         spn_mes_inicio_IV.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID3_IV = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_inicio_IV = spn_mes_inicio_IV.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_inicio_IV = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_inicio_IV.edit();
+                prefEditor.putInt("mes_inicio_IV",mes_inicio_IV);
+                prefEditor.commit();
 
-                //mostrarid3_IV();
+                if (mes_inicio_IV < mes_termino_III ){
+
+                    String mensagem = "O mês de início do 4º bimestre está errado. Configure-o novamente.";
+                    AlertDialog.Builder dlg2 = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    dlg2.setTitle("Erro");
+                    dlg2.setMessage(mensagem);
+                    dlg2.setNeutralButton("OK", null);
+                    dlg2.show();
+                }
 
             }
 
@@ -617,20 +858,38 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         });
 
+        //==========================================================================================
+
+        //load do ID da spinner do arquivo sharedPreferences
+        SharedPreferences sharedPref_mes_termino_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        ID_salvo_mes_termino_IV = sharedPref_mes_termino_IV.getInt("mes_termino_IV",-1);
+        if(ID_salvo_mes_termino_IV != -1)
+            // set the value of the spinner
+            spn_mes_termino_IV.setSelection(ID_salvo_mes_termino_IV);
+
         //Leitura spn_mes_termino_I
         spn_mes_termino_IV.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int posicao, long id1) {
 
-                ID4_IV = posicao;
+                //Save do ID da spinner no sharedPreferences
+                mes_termino_IV = spn_mes_termino_IV.getSelectedItemPosition();
+                SharedPreferences sharedPref_mes_termino_IV = getSharedPreferences("pref_bimestre",0);
+                SharedPreferences.Editor prefEditor = sharedPref_mes_termino_IV.edit();
+                prefEditor.putInt("mes_termino_IV",mes_termino_IV);
+                prefEditor.commit();
 
-                //mostrarid4_IV();
+                if (mes_termino_IV < mes_inicio_IV ){
 
-            }
+                    String mensagem = "O mês de término do 4º bimestre está errado. Configure-o novamente.";
+                    AlertDialog.Builder dlg4 = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    dlg4.setTitle("Erro");
+                    dlg4.setMessage(mensagem);
+                    dlg4.setNeutralButton("OK", null);
+                    dlg4.show();
+                }
 
-            public int getId(){
-                return ID4_IV;
             }
 
             @Override
@@ -642,117 +901,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //==========================================================================================
 
-
-    }//Fim OnCreate
-
-
-
-    public void mostrarid1_I (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID1_I,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid2_I (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID2_I,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid3_I (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID3_I,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid4_I (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID4_I,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid1_II (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID1_II,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid2_II (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID2_II,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid3_II (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID3_II,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid4_II (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID4_II,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid1_III (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID1_III,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid2_III (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID2_III,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid3_III (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID3_III,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid4_III (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID4_III,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid1_IV (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID1_IV,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid2_IV (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID2_IV,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid3_IV (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Dia:"+ID3_IV,Toast.LENGTH_SHORT).show();
-    }
-
-    public void mostrarid4_IV (){
-
-        Toast.makeText(Config_bimestre_activity.this,"Mês:"+ID4_IV,Toast.LENGTH_SHORT).show();
-    }
-
-
-
-
-    /*
-    spn_dia_inicio_I.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-       @Override
-        public void onItemSelected(AdapterView<?> parent, View v, int posicao, long nome) {
-
-            //disciplina = parent.getSelectedItem().toString();
-
-            ID = posicao;
-
-            //mostrarid();
-
-            //imprime um Toast na tela com o nome e posição do item selecionado
-            //Toast.makeText(Main_activity.this, "Disciplina: " + nome, Toast.LENGTH_LONG).show();
-            Toast.makeText(Config_bimestre_activity.this, "Dia:" + posicao, Toast.LENGTH_SHORT).show();
-
-        }
-
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
-        return;
-        }
-    });*/
+    }//End OnCreate
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { //Botão adicional na ToolBar

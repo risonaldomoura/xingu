@@ -7,13 +7,12 @@
 
 
     <string name="title_ed_fisica_sexto_I">
-        Vida: Corpo e Saúde e Movimento I
+        Eixo: Vida: Corpo e Saúde e Movimento I
     </string>
 
     <string name="cont_ed_fisica_sexto_I">
        - Voleibol;\n
-       - Ginástica;\n
-       - Acrobática;\n
+       - Ginástica acrobática;\n
        - Avaliação física;\n
        - Tema transversal: Cuidados com o corpo;\n
     </string>
@@ -47,7 +46,7 @@ socorros.\n
 
 
     <string name="title_ed_fisica_sexto_II">
-        Vida: Corpo e Saúde e Movimento II
+        Eixo: Vida: Corpo e Saúde e Movimento II
     </string>
 
     <string name="cont_ed_fisica_sexto_II">
@@ -79,7 +78,7 @@ sociedade brasileira;\n
 
 
     <string name="title_ed_fisica_sexto_III">
-        Vida: Corpo eSaúde e Movimento III
+        Eixo: Vida: Corpo eSaúde e Movimento III
     </string>
 
     <string name="cont_ed_fisica_sexto_III">
@@ -112,7 +111,7 @@ sociedade.\n
 
 
     <string name="title_ed_fisica_sexto_IV">
-        Vida: Corpo e Saúde e Movimento IV
+        Eixo: Vida: Corpo e Saúde e Movimento IV
     </string>
 
     <string name="cont_ed_fisica_sexto_IV">
@@ -142,7 +141,7 @@ desempenho e a interação com os outros.\n
 
 
     <string name="title_ed_fisica_setimo_I">
-        Corpo: Habilidades, Movimentos e descobertas I
+        Eixo: Corpo: Habilidades, Movimentos e descobertas I
     </string>
 
     <string name="cont_ed_fisica_setimo_I">
@@ -182,7 +181,7 @@ socorros.\n
 
 
     <string name="title_ed_fisica_setimo_II">
-        Não tem título
+        Eixo: Não tem título
     </string>
 
     <string name="cont_ed_fisica_setimo_II">
@@ -216,7 +215,7 @@ norte;\n
 
 
     <string name="title_ed_fisica_setimo_III">
-        Corpo: Habilidades, Movimentos e descobertas II
+        Eixo: Corpo: Habilidades, Movimentos e descobertas II
     </string>
 
     <string name="cont_ed_fisica_setimo_III">
@@ -246,7 +245,7 @@ sociedade.\n
 
 
     <string name="title_ed_fisica_setimo_IV">
-        Corpo: Habilidades, Movimentos e descobertas IV
+        Eixo: Corpo: Habilidades, Movimentos e descobertas IV
     </string>
 
     <string name="cont_ed_fisica_setimo_IV">
@@ -272,7 +271,7 @@ na realização de práticas corporais de aventura;\n
 
 
     <string name="title_ed_fisica_oitavo_I">
-        Qualidade de vida I
+        Eixo: Qualidade de vida I
     </string>
 
     <string name="cont_ed_fisica_oitavo_I">
@@ -308,7 +307,7 @@ vida.\n
 
 
     <string name="title_ed_fisica_oitavo_II">
-        Qualidade de vida II
+        Eixo: Qualidade de vida II
     </string>
 
     <string name="cont_ed_fisica_oitavo_II">
@@ -338,7 +337,7 @@ integração entre os alunos;\n
 
 
     <string name="title_ed_fisica_oitavo_III">
-        Qualidade de vida III.
+        Eixo: Qualidade de vida III.
     </string>
 
     <string name="cont_ed_fisica_oitavo_III">
@@ -369,7 +368,7 @@ sociedade;\n
 
 
     <string name="title_ed_fisica_oitavo_IV">
-        Qualidade de vida IV
+        Eixo: Qualidade de vida IV
     </string>
 
     <string name="cont_ed_fisica_oitavo_IV">
@@ -397,7 +396,7 @@ realização dos movimentos;\n
 
 
     <string name="title_ed_fisica_nono_I">
-        Prática, ludicidade  aprendizado I
+        Eixo: Prática, ludicidade  aprendizado I
     </string>
 
     <string name="cont_ed_fisica_nono_I">
@@ -435,7 +434,7 @@ vida;\n
 
 
     <string name="title_ed_fisica_nono_II">
-        Prática, ludicidade e aprendizado II
+        Eixo: Prática, ludicidade e aprendizado II
     </string>
 
     <string name="cont_ed_fisica_nono_II">
@@ -467,7 +466,7 @@ e do kickboxing;\n
 
 
     <string name="title_ed_fisica_nono_III">
-        Prática, ludicidade e aprendizado III.
+        Eixo: Prática, ludicidade e aprendizado III.
     </string>
 
     <string name="cont_ed_fisica_nono_III">
@@ -498,7 +497,7 @@ sociedade.\n
 
 
     <string name="title_ed_fisica_nono_IV">
-        Prática, ludicidade e aprendizado IV
+        Eixo: Prática, ludicidade e aprendizado IV
     </string>
 
     <string name="cont_ed_fisica_nono_IV">

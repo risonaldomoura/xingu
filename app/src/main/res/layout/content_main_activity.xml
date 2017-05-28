@@ -12,7 +12,7 @@
 
     <include
         android:id="@+id/fl_portugues"
-        layout="@layout/obj_portugues"
+        layout="@layout/apresentacao_portugues"
         layout_width="match_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,7 +20,7 @@
 
     <include
         android:id="@+id/fl_matematica"
-        layout="@layout/obj_matematica"
+        layout="@layout/apresentacao_matematica"
         layout_width="match_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,7 +28,7 @@
 
     <include
         android:id="@+id/fl_historia"
-        layout="@layout/obj_historia"
+        layout="@layout/apresentacao_historia"
         layout_width="match_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,7 +36,7 @@
 
     <include
         android:id="@+id/fl_geografia"
-        layout="@layout/obj_geografia"
+        layout="@layout/apresentacao_geografia"
         layout_width="match_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -44,7 +44,7 @@
 
     <include
         android:id="@+id/fl_ens_religioso"
-        layout="@layout/obj_ens_religioso"
+        layout="@layout/apresentacao_ens_religioso"
         layout_width="match_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -52,7 +52,7 @@
 
     <include
         android:id="@+id/fl_ed_fisica"
-        layout="@layout/obj_ed_fisica"
+        layout="@layout/apresentacao_ed_fisica"
         layout_width="match_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -60,7 +60,7 @@
 
     <include
         android:id="@+id/fl_ciencias"
-        layout="@layout/obj_ciencias"
+        layout="@layout/apresentacao_ciencias"
         layout_width="match_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -68,47 +68,8 @@
 
     <include
         android:id="@+id/fl_arte"
-        layout="@layout/obj_arte"
+        layout="@layout/apresentacao_arte"
         layout_width="match_parent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone" />
-
-
-    <include
-        android:id="@+id/fl_cont_ciencias_sexto"
-        layout="@layout/cont_ciencias_sexto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
-
-    <include
-        android:id="@+id/fl_cont_ciencias_setimo"
-        layout="@layout/cont_ciencias_setimo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <include
-        android:id="@+id/fl_cont_ciencias_oitavo"
-        layout="@layout/cont_ciencias_oitavo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <include
-        android:id="@+id/fl_cont_ciencias_nono"
-        layout="@layout/cont_ciencias_nono"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />

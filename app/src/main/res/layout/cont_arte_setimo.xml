@@ -53,6 +53,17 @@
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
 
+                        <FrameLayout
+                            android:id="@+id/fl_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/sombra_bimestre"
+                            android:elevation="5dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -130,7 +141,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -139,7 +150,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -235,7 +246,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -244,7 +255,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -320,6 +331,7 @@
                                         android:layout_marginRight="25dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
                                         android:text="OBJETIVO"
                                         android:textColor="@android:color/white"
                                         android:textSize="14sp" />
@@ -340,6 +352,16 @@
                         android:background="@android:color/transparent"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/sombra_bimestre"
+                            android:elevation="5dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -407,6 +429,7 @@
                                             android:orientation="vertical">
 
                                             <Space
+                                                android:id="@+id/space"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_weight="1" />
@@ -418,7 +441,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -427,7 +450,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -523,7 +546,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -532,7 +555,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -629,6 +652,16 @@
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
 
+                        <FrameLayout
+                            android:id="@+id/fl_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/sombra_bimestre"
+                            android:elevation="4dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -706,7 +739,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -715,7 +748,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -811,7 +844,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -820,7 +853,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -917,6 +950,16 @@
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
 
+                        <FrameLayout
+                            android:id="@+id/fl_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/sombra_bimestre"
+                            android:elevation="4dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -994,7 +1037,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -1003,7 +1046,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -1099,7 +1142,7 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
@@ -1108,7 +1151,7 @@
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
