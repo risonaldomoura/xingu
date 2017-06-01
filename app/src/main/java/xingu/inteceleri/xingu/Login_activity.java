@@ -91,9 +91,9 @@ public class Login_activity extends AppCompatActivity implements View.OnClickLis
                 startActivity(Registro_act);
             }else if(v == btn_entrar){
 
-                Intent it = new Intent(this, Main_activity.class);
-                startActivity(it);
-                        //EntrarUsuario();
+                //Intent it = new Intent(this, Main_activity.class);
+                //startActivity(it);
+                        EntrarUsuario();
 
 
             }

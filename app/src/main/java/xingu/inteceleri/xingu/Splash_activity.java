@@ -35,11 +35,11 @@ public class Splash_activity extends AppCompatActivity {
        Thread timerThread = new Thread() {
            public void run(){
                try{
-                   sleep (500);
+                   sleep (5000);
                } catch (InterruptedException e){
                    e.printStackTrace();
                } finally{
-                   Intent intent = new Intent(Splash_activity.this, Login_activity.class);
+                   Intent intent = new Intent(Splash_activity.this, Apresentacao_activity.class);
                    startActivity(intent);
                }
            }
