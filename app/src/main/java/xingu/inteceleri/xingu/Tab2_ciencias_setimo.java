@@ -15,7 +15,7 @@ public class Tab2_ciencias_setimo extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container2,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.cont_ens_religioso_setimo, container2, false);
+        View view = inflater.inflate(R.layout.cont_arte_setimo, container2, false);
         return view;
     }
 }

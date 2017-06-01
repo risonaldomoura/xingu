@@ -136,8 +136,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="TEL: +55 91 XXXX-XXXX"
-                android:textColor="@android:color/holo_green_dark" />
+                android:text="TEL: +55 91 988390610"
+                android:textColor="?attr/colorPrimaryDark" />
 
             <Space
                 android:layout_width="match_parent"
@@ -148,8 +148,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Email: inteceleri@inteceleri.com"
-                android:textColor="@android:color/holo_green_dark" />
+                android:text="Email: contato@inteceleri.com.br"
+                android:textColor="?attr/colorPrimaryDark" />
 
             <Space
                 android:layout_width="match_parent"

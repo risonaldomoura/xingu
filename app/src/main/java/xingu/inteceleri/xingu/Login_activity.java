@@ -90,7 +90,10 @@ public class Login_activity extends AppCompatActivity implements View.OnClickLis
                 Intent Registro_act = new Intent(this, Registro_activity.class);
                 startActivity(Registro_act);
             }else if(v == btn_entrar){
-                        EntrarUsuario();
+
+                Intent it = new Intent(this, Main_activity.class);
+                startActivity(it);
+                        //EntrarUsuario();
 
 
             }

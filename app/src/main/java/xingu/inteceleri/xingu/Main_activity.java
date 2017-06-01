@@ -42,7 +42,6 @@ public class Main_activity extends AppCompatActivity
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
 
-<<<<<<< HEAD
     public String mes_1 = "JAN";
     public String mes_2 = "FEV";
     public String mes_3 = "MAR";
@@ -55,11 +54,10 @@ public class Main_activity extends AppCompatActivity
     public String mes_10 = "OUT";
     public String mes_11 = "NOV";
     public String mes_12 = "DEZ";
-=======
+
     //FireBase
     private FirebaseAuth fbAuth;
     private TextView emailUsuario;
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
     private Spinner spn_disciplina;
     public static int IDAtual;
@@ -278,11 +276,13 @@ public class Main_activity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         //------------------------------------------------------------------------------------------
         //Pegando um layout de xml acessado por outro xml
-        /*
-        FirebaseUser fbUsuario = fbAuth.getCurrentUser();
+
+        //FirebaseUser fbUsuario = fbAuth.getCurrentUser();
         //View nav_header = (View) navigationView.getHeaderView(R.layout.nav_header_main_activity);
 
-<<<<<<< HEAD
+       // TextView email = (TextView) findViewById(R.id.textViewEmailUsuario);
+        //email.setText(fbUsuario.getEmail());
+
         /*
         //Método para limpar o arquivo SharedPreferences
         SharedPreferences settings = getSharedPreferences("disciplina", 0);
@@ -290,13 +290,12 @@ public class Main_activity extends AppCompatActivity
         e.clear();
         e.commit();
         */
-=======
-        navigationView.findViewById(R.id.textViewEmailUsuario);
-        emailUsuario.setText(fbUsuario.getEmail());
-        */
+
+        //navigationView.findViewById(R.id.textViewEmailUsuario);
+        //emailUsuario.setText(fbUsuario.getEmail());
+
         //------------------------------------------------------------------------------------------
         //Método do spinner para capturar o item selecionado
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
         //=============== CARREGAMENTO DAS DATAS DOS BIMESTRES =====================================
 

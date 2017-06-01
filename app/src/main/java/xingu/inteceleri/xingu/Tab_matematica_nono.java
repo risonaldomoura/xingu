@@ -57,7 +57,7 @@ public class Tab_matematica_nono extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.cont_arte_nono, container, false);
+        View view = inflater.inflate(R.layout.cont_matematica_sexto, container, false);
 
         //=============== CARREGAMENTO DAS DATAS DOS BIMESTRES =====================================
 

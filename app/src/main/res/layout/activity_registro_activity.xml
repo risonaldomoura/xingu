@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login3"
+    android:background="@drawable/bg_login2"
 
     tools:context="xingu.inteceleri.xingu.Registro_activity">
 

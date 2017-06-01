@@ -53,12 +53,24 @@
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
 
+                        <FrameLayout
+                            android:id="@+id/fl_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
@@ -66,47 +78,16 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
-<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_ens_religioso_sexto_I"
-                                    android:textColor="@android:color/white"
+                                    android:text="@string/title_arte_sexto_I"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
-=======
-                                    android:layout_height="wrap_content"
-                                    android:text="Jan"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp" />
-
-                                <TextView
-                                    android:id="@+id/textView10"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Fev"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="80dp" />
-
-                                <Button
-                                    android:id="@+id/button"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:background="@drawable/objetivos_icon"
-                                    android:elevation="8dp" />
-
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -119,7 +100,6 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -130,7 +110,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -162,21 +142,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -203,12 +183,12 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/checkbox1"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -216,7 +196,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -224,7 +204,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -232,7 +212,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -267,21 +247,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_I"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -313,7 +293,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -321,7 +301,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -329,7 +309,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -354,16 +334,10 @@
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:elevation="0dp"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-=======
-                                    android:lineSpacingExtra="3sp"
-                                    android:text="@string/cont_ens_religioso_sexto_I"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="18sp" />
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 
@@ -380,6 +354,16 @@
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
 
+                        <FrameLayout
+                            android:id="@+id/fl_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/sombra_bimestre"
+                            android:elevation="5dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -393,47 +377,16 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
-<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_ens_religioso_sexto_II"
-                                    android:textColor="@android:color/white"
+                                    android:text="@string/title_arte_sexto_I"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
-=======
-                                    android:layout_height="wrap_content"
-                                    android:text="Mar"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp" />
-
-                                <TextView
-                                    android:id="@+id/textView10"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Abr"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp" />
-
-                                <Button
-                                    android:id="@+id/button"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:background="@drawable/objetivos_icon"
-                                    android:elevation="8dp" />
-
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -446,7 +399,6 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -457,7 +409,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -489,21 +441,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -535,7 +487,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -543,7 +495,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -551,7 +503,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -559,7 +511,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -594,21 +546,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_II"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -640,7 +592,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -648,7 +600,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -656,7 +608,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -680,16 +632,10 @@
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-=======
-                                    android:lineSpacingExtra="3sp"
-                                    android:text="@string/cont_ens_religioso_sexto_II"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="18sp" />
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 
@@ -706,6 +652,16 @@
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
 
+                        <FrameLayout
+                            android:id="@+id/fl_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/sombra_bimestre"
+                            android:elevation="4dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -719,47 +675,16 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
-<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_ens_religioso_sexto_III"
-                                    android:textColor="@android:color/white"
+                                    android:text="@string/title_arte_sexto_I"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
-=======
-                                    android:layout_height="wrap_content"
-                                    android:text="Mai"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp" />
-
-                                <TextView
-                                    android:id="@+id/textView10"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Jun"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="60dp" />
-
-                                <Button
-                                    android:id="@+id/button"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:background="@drawable/objetivos_icon"
-                                    android:elevation="8dp" />
-
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -772,7 +697,6 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -783,7 +707,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -815,21 +739,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -861,7 +785,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -869,7 +793,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -877,7 +801,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -885,7 +809,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -920,21 +844,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_III"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -966,7 +890,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -974,7 +898,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -982,7 +906,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -1006,16 +930,10 @@
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-=======
-                                    android:lineSpacingExtra="3sp"
-                                    android:text="@string/cont_ens_religioso_sexto_III"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="18sp" />
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 
@@ -1032,6 +950,16 @@
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
 
+                        <FrameLayout
+                            android:id="@+id/fl_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/sombra_bimestre"
+                            android:elevation="4dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -1045,47 +973,16 @@
                                 <TextView
                                     android:id="@+id/textView14"
                                     android:layout_width="match_parent"
-<<<<<<< HEAD
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_ens_religioso_sexto_IV"
-                                    android:textColor="@android:color/white"
+                                    android:text="@string/title_arte_sexto_I"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
-=======
-                                    android:layout_height="wrap_content"
-                                    android:text="Ago"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="20dp" />
-
-                                <TextView
-                                    android:id="@+id/textView10"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="Set"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="30sp" />
-
-                                <Space
-                                    android:layout_width="match_parent"
-                                    android:layout_height="30dp" />
-
-                                <Button
-                                    android:id="@+id/button"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:background="@drawable/objetivos_icon"
-                                    android:elevation="8dp" />
-
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                             </LinearLayout>
 
                             <LinearLayout
@@ -1098,7 +995,6 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-<<<<<<< HEAD
                                     android:orientation="vertical">
 
                                     <TextView
@@ -1109,7 +1005,7 @@
                                         android:layout_marginBottom="6dp"
                                         android:layout_marginTop="8dp"
                                         android:text="Conteúdo"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="16sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -1141,21 +1037,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_inicio_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="25"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_inicio_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="JAN"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -1187,7 +1083,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Os elementos das artes visuais"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -1195,7 +1091,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Criar e sentir"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox13"
@@ -1203,7 +1099,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Pintura"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox14"
@@ -1211,7 +1107,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -1246,21 +1142,21 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textView27"
+                                                    android:id="@+id/dia_termino_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="15"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="36sp" />
 
                                                 <TextView
-                                                    android:id="@+id/textView28"
+                                                    android:id="@+id/mes_termino_IV"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_gravity="center_horizontal"
                                                     android:text="MAR"
-                                                    android:textColor="@android:color/white"
+                                                    android:textColor="@android:color/black"
                                                     android:textSize="16sp" />
 
                                             </LinearLayout>
@@ -1292,7 +1188,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Realismo"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox4"
@@ -1300,7 +1196,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/checkBox15"
@@ -1308,7 +1204,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
                                                 android:text="Simetria"
-                                                app:buttonTint="@android:color/white" />
+                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -1332,16 +1228,10 @@
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:text="OBJETIVO"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@android:color/black"
                                         android:textSize="14sp" />
 
                                 </LinearLayout>
-=======
-                                    android:lineSpacingExtra="3sp"
-                                    android:text="@string/cont_ens_religioso_sexto_IV"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="18sp" />
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
 
                             </LinearLayout>
 

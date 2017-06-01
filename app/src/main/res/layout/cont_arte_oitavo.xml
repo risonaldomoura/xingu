@@ -83,13 +83,8 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-<<<<<<< HEAD
-                                    android:text="@string/title_arte_setimo_I"
-                                    android:textColor="@android:color/white"
-=======
                                     android:text="@string/title_arte_oitavo_I"
                                     android:textColor="@android:color/black"
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -387,13 +382,8 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-<<<<<<< HEAD
-                                    android:text="@string/title_arte_setimo_II"
-                                    android:textColor="@android:color/white"
-=======
                                     android:text="@string/title_arte_oitavo_II"
                                     android:textColor="@android:color/black"
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -691,13 +681,8 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@android:color/holo_blue_light"
                                     android:gravity="center"
-<<<<<<< HEAD
-                                    android:text="@string/title_arte_setimo_III"
-                                    android:textColor="@android:color/white"
-=======
                                     android:text="@string/title_arte_oitavo_III"
                                     android:textColor="@android:color/black"
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -994,13 +979,8 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-<<<<<<< HEAD
-                                    android:text="@string/title_arte_setimo_IV"
-                                    android:textColor="@android:color/white"
-=======
                                     android:text="@string/title_arte_oitavo_IV"
                                     android:textColor="@android:color/black"
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>

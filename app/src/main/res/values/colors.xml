@@ -7,11 +7,11 @@
     <color name="elementos_conteudo">#cccccc</color>
     <color name="fundo_bloco_bimestre">#e5e5e5</color>
     <color name="btn_login">#d63518</color>
-<<<<<<< HEAD
+
     <color name="sombra_bimestre">#80000000</color>
-=======
+
     <color name="btn_registrar">#2873b8</color>
->>>>>>> 2a7cc001a69fa8c4d8147e6f6801c827a80a0047
+
 
 
 </resources>

@@ -57,7 +57,7 @@ public class Tab_historia_sexto extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.cont_arte_sexto, container, false);
+        View view = inflater.inflate(R.layout.cont_historia_sexto, container, false);
 
         //=============== CARREGAMENTO DAS DATAS DOS BIMESTRES =====================================
 
