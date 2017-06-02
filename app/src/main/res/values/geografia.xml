@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="objetivo_geografia">
-        Texto de apresentação da Disciplina de Geografia
+        A Geografia é a ciência que estuda o conjunto de fenómenos naturais e humanos, 
+os quais são aspectos da superfície da Terra, considerada na sua distribuição e relações recíprocas.
+O conhecimento sistematicamente abordado da Terra é o objetivo específico da Geografia. A Geografia é uma disciplina 
+que nasceu na própria época em que surgiu o homem, mas o homem só categorizou a Geografia como ciência depois que a 
+civilização grega floresceu.
     </string>
 
 

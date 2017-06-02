@@ -70,13 +70,11 @@
                             android:orientation="vertical">
 
                             <LinearLayout
-                                android:id="@+id/layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -95,7 +93,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -103,7 +102,6 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -117,59 +115,118 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_I"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_I"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
                                         <LinearLayout
-                                            android:id="@+id/linha"
                                             android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
@@ -183,7 +240,7 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkbox1"
+                                                android:id="@+id/cb1"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -191,7 +248,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb2"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -199,7 +256,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb3"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -207,109 +264,58 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb4"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A arte dos povos indígenas"
                                                 app:buttonTint="@android:color/black" />
 
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/dia_termino_I"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_I"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/cb5"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
+                                                android:layout_marginBottom="1dp"
                                                 android:text="Realismo"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb6"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Missão colonial: A Caravela"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox15"
+                                                android:id="@+id/cb7"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
+                                                android:layout_marginBottom="1dp"
                                                 android:text="Simetria"
                                                 app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb8"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O que é cultura?"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb9"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="As sementes da cultura afrodescendente"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Riscar e rabiscar"
+                                                app:buttonTint="@android:color/black" />
+
 
                                         </LinearLayout>
 
@@ -326,10 +332,11 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_I"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:elevation="0dp"
@@ -358,8 +365,9 @@
                             android:id="@+id/fl_2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/sombra_bimestre"
-                            android:elevation="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
                             android:visibility="gone">
 
                         </FrameLayout>
@@ -375,7 +383,6 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -383,7 +390,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_arte_sexto_I"
+                                    android:text="@string/title_arte_sexto_II"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -394,7 +401,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -402,7 +410,6 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -416,59 +423,118 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_II"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_II"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
                                         <LinearLayout
-                                            android:id="@+id/linha"
                                             android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
@@ -482,133 +548,53 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/cb11"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="História da dança"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb12"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="Ouvir e dançar"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb13"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="Sons ritmo e movimento"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb14"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/black" />
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/dia_termino_II"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_II"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox7"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Realismo"
+                                                android:text="Vem cantar! Vem dançar!"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb15"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Dançando no ritmo maracatu"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox15"
+                                                android:id="@+id/cb16"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Simetria"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Dançando nas paredes"
                                                 app:buttonTint="@android:color/black" />
+
 
                                         </LinearLayout>
 
@@ -625,12 +611,14 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_II"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
                                         android:text="OBJETIVO"
                                         android:textColor="@android:color/black"
                                         android:textSize="14sp" />
@@ -656,8 +644,9 @@
                             android:id="@+id/fl_3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/sombra_bimestre"
-                            android:elevation="4dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
                             android:visibility="gone">
 
                         </FrameLayout>
@@ -668,12 +657,12 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -681,7 +670,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_arte_sexto_I"
+                                    android:text="@string/title_arte_sexto_III"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -692,7 +681,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -700,7 +690,7 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
+                                        android:id="@+id/conteudo"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -714,59 +704,119 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_III"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_III"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
+                                                android:id="@+id/Linha"
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
                                         <LinearLayout
-                                            android:id="@+id/linha"
                                             android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
@@ -780,133 +830,67 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/cb17"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="História do teatro"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb18"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="Lugar para encenar"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb19"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="A arte da mímica"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb20"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/black" />
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/dia_termino_III"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_III"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox7"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Realismo"
+                                                android:text="Imagens e cores fantásticas"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb21"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O circo: Um lugar especial"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox15"
+                                                android:id="@+id/cb22"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Simetria"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Teatro jesuíticos"
                                                 app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb23"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Auto lá"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb24"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Improvisar e jogar"
+                                                app:buttonTint="@android:color/black" />
+
 
                                         </LinearLayout>
 
@@ -923,12 +907,14 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_III"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
                                         android:text="OBJETIVO"
                                         android:textColor="@android:color/black"
                                         android:textSize="14sp" />
@@ -944,8 +930,8 @@
                         android:id="@+id/IV_bimestre"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_weight="1"
                         android:background="@android:color/transparent"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
@@ -954,8 +940,9 @@
                             android:id="@+id/fl_4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/sombra_bimestre"
-                            android:elevation="4dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
                             android:visibility="gone">
 
                         </FrameLayout>
@@ -971,7 +958,7 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
+                                    android:id="@+id/titulo"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -979,7 +966,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_arte_sexto_I"
+                                    android:text="@string/title_arte_sexto_IV"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -990,7 +977,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -998,7 +986,6 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -1012,59 +999,118 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_IV"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_IV"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
                                         <LinearLayout
-                                            android:id="@+id/linha"
                                             android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
@@ -1078,133 +1124,61 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/cb25"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="Historia da musica"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb26"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="A musica e seus códigos"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb27"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="Ouvir e cantar"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb28"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/black" />
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/dia_termino_IV"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_IV"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox7"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Realismo"
+                                                android:text="Este som é nossa cara"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb29"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Sons e lugares"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox15"
+                                                android:id="@+id/cb30"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Simetria"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Compondo, regendo e cantando"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb31"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Música de estilo múltiplo"
+                                                app:buttonTint="@android:color/black" />
+
 
                                         </LinearLayout>
 
@@ -1221,12 +1195,14 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_IV"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
                                         android:text="OBJETIVO"
                                         android:textColor="@android:color/black"
                                         android:textSize="14sp" />

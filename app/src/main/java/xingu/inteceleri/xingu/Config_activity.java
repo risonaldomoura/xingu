@@ -26,6 +26,13 @@ public class Config_activity extends AppCompatActivity implements View.OnClickLi
         btn_mudar_conta.setOnClickListener(this);
     }
 
+    public void onBackPressed() {
+
+        Intent it = new Intent(this, Main_activity.class);
+        startActivity(it);
+
+        return;
+    }
     @Override
     public void onClick(View v){
 

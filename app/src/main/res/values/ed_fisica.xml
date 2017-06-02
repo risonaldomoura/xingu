@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="objetivo_ed_fisica">
-        Texto de apresentação da disciplina de Educação Fìsica
+        Educação física é uma área do conhecimento humano ligada às 
+práticas corporais historicamente produzidas pela humanidade. 
+A educação física é o processo pedagógico que visa à formação do 
+homem capaz de se conduzir plenamente em suas atividades. 
+Trabalha num sentido amplo, visando à prevenção de determinadas doenças.
     </string>
 
 

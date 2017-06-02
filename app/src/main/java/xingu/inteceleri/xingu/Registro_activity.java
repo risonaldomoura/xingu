@@ -119,7 +119,7 @@ public class Registro_activity extends AppCompatActivity implements View.OnClick
                             });
 
                 }else {
-                    Toast.makeText(this, "Senhas não conferem!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Senhas não coincidem!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -136,5 +136,13 @@ public class Registro_activity extends AppCompatActivity implements View.OnClick
             if(v == botaoRegistrar){
                     registrarUsuario();
             }
+    }
+
+    public void onBackPressed() {
+
+        Intent it = new Intent(this, Login_activity.class);
+        startActivity(it);
+
+        return;
     }
 }

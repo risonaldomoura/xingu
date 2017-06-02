@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="objetivo_portugues">
-        Texto de apresentação da Disciplina de Português
+        A língua portuguesa é uma língua românica flexiva originada no galego-português falado no 
+Reino da Galiza e no norte de Portugal. Com a criação do Reino de Portugal em 1139 e a expansão para 
+o sul como parte da Reconquista deu-se a difusão da língua pelas terras conquistadas e mais tarde, com 
+as descobertas portuguesas, para o Brasil, África e outras partes do mundo. O português foi usado, 
+naquela época, não somente nas cidades conquistadas, mas também por muitos governantes 
+locais nos seus contatos com outros estrangeiros poderosos. Especialmente nessa altura a língua portuguesa 
+também influenciou várias línguas.
     </string>
 
 
     <string name="title_portugues_sexto_I">
-        Eixo: Português
+        Eixo: Língua Portuguesa
     </string>
 
     <string name="cont_portugues_sexto_I">
@@ -42,7 +48,7 @@ orientadas.\n
 
 
     <string name="title_portugues_sexto_II">
-        Eixo: Português
+        Eixo: Língua Portuguesa
     </string>
 
     <string name="cont_portugues_sexto_II">
@@ -67,7 +73,7 @@ clímax e desfecho.\n
 
 
     <string name="title_portugues_sexto_III">
-        Eixo: Português
+        Eixo: Língua Portuguesa
     </string>
 
     <string name="cont_portugues_sexto_III">
@@ -93,7 +99,7 @@ personagens.\n
 
 
     <string name="title_portugues_sexto_IV">
-        Eixo: Português
+        Eixo: Língua Portuguesa
     </string>
 
     <string name="cont_portugues_sexto_IV">

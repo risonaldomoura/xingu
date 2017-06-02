@@ -7,25 +7,20 @@
     tools:context="xingu.inteceleri.xingu.Config_activity">
 
     <LinearLayout
-        android:layout_width="344dp"
-        android:layout_height="495dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="1"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:weightSum="1">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
+            android:layout_weight="1">
 
             <TextView
-                android:id="@+id/textView13"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtbimestre"
                 android:layout_width="match_parent"
                 android:layout_height="26dp"
                 android:text="      Bimestre"
@@ -46,7 +41,7 @@
                         android:layout_height="7dp" />
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/txtclique"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="           Clique para configurar"
@@ -58,7 +53,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:background="@android:color/transparent"
-                    android:elevation="0dp"
                     android:textColor="?android:attr/textColorPrimaryNoDisable"
                     android:textSize="14sp"
                     android:visibility="visible" />
@@ -66,7 +60,7 @@
             </FrameLayout>
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/txtconta"
                 android:layout_width="match_parent"
                 android:layout_height="26dp"
                 android:text="      Conta"
@@ -87,7 +81,7 @@
                         android:layout_height="7dp" />
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/txtcliqueconta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="           Mudar de conta"
@@ -99,7 +93,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:background="@android:color/transparent"
-                    android:elevation="0dp"
                     android:textColor="?android:attr/colorForeground"
                     android:textSize="14sp"
                     android:visibility="visible" />
@@ -118,8 +111,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
+
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/txtcontato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -131,39 +125,80 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
-            <TextView
-                android:id="@+id/textView20"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="TEL: +55 91 988390610"
-                android:textColor="?attr/colorPrimaryDark" />
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TEL: "
+                    android:textColor="?attr/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/txttel"
+                    android:layout_width="161dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" +55 91 988390610"
+                    android:autoLink="phone"
+                    android:textColor="?attr/colorPrimaryDark" />
+
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="5dp" />
+                android:layout_height="10dp" />
 
-            <TextView
-                android:id="@+id/textView21"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Email: contato@inteceleri.com.br"
-                android:textColor="?attr/colorPrimaryDark" />
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Email: "
+                    android:textColor="?attr/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/txtendemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="contato@inteceleri.com.br"
+                    android:autoLink="email"
+                    android:textColor="?attr/colorPrimaryDark" />
+
+            </LinearLayout>
+
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/imglogointeceleri"
                 android:layout_width="100dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/logo_inteceleri" />
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/imglogoapp"
                 android:layout_width="219dp"
                 android:layout_height="180dp"
                 android:layout_gravity="center"
@@ -174,11 +209,11 @@
                 android:layout_height="10dp" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/txtbeta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Versão 0.01"
+                android:text="Versão Beta"
                 android:textColor="@android:color/black" />
 
         </LinearLayout>

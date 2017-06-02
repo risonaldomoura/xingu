@@ -39,7 +39,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="122dp"
-                            android:background="@drawable/ic_disc_matematica"
+                            android:background="@drawable/ic_disc_ciencias"
                             android:orientation="horizontal"></LinearLayout>
                     </android.support.v7.widget.CardView>
 
@@ -70,11 +70,12 @@
                             android:orientation="vertical">
 
                             <LinearLayout
-                                 android:layout_width="match_parent"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <TextView
+
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -82,7 +83,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_matematica_sexto_I"
+                                    android:text="@string/title_ciencias_nono_I"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -102,7 +103,8 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                         android:layout_width="wrap_content"
+
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:layout_marginBottom="6dp"
@@ -175,7 +177,7 @@
                                             </LinearLayout>
 
                                             <LinearLayout
-                                                 android:layout_width="match_parent"
+                                                android:layout_width="match_parent"
                                                 android:layout_height="3dp"
                                                 android:background="@color/elementos_conteudo"
                                                 android:orientation="horizontal"></LinearLayout>
@@ -227,7 +229,8 @@
                                         </LinearLayout>
 
                                         <LinearLayout
-                                             android:layout_width="3dp"
+
+                                            android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
                                             android:orientation="vertical"></LinearLayout>
@@ -244,7 +247,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Números Naturais"
+                                                android:text="A física I"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -252,7 +255,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Sistema de numeração decimal"
+                                                android:text="O mundo em movimento"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -260,7 +263,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="O conjunto dos números naturais"
+                                                android:text="Conceitos básicos de cinemática"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -268,7 +271,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Operações com números naturais"
+                                                android:text="Leis de Newton"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -276,7 +279,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Expressões numéricas"
+                                                android:text="Aplicações das leis de Newton em nosso dia a dia"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -284,14 +287,21 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Potenciação de números naturais"
+                                                android:text="A Terra no Universo"
                                                 app:buttonTint="@android:color/black" />
                                             <CheckBox
                                                 android:id="@+id/cb7"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Raiz Quadrada de números naturais"
+                                                android:text="Movimentos planetários"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb8"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Estações do ano"
                                                 app:buttonTint="@android:color/black" />
 
 
@@ -356,19 +366,21 @@
                             android:orientation="vertical">
 
                             <LinearLayout
-                                 android:layout_width="match_parent"
+
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <TextView
-                                     android:layout_width="match_parent"
+
+                                    android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_matematica_sexto_II"
+                                    android:text="@string/title_ciencias_nono_II"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -388,7 +400,8 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                         android:layout_width="wrap_content"
+
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:layout_marginBottom="6dp"
@@ -461,7 +474,8 @@
                                             </LinearLayout>
 
                                             <LinearLayout
-                                                 android:layout_width="match_parent"
+
+                                                android:layout_width="match_parent"
                                                 android:layout_height="3dp"
                                                 android:background="@color/elementos_conteudo"
                                                 android:orientation="horizontal"></LinearLayout>
@@ -513,7 +527,8 @@
                                         </LinearLayout>
 
                                         <LinearLayout
-                                             android:layout_width="3dp"
+
+                                            android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
                                             android:orientation="vertical"></LinearLayout>
@@ -526,19 +541,11 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb8"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Números Racionais"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
                                                 android:id="@+id/cb9"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Divisibilidade"
+                                                android:text="A física II"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -546,15 +553,15 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="MMC e MDC"
+                                                android:text="Calor"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
                                                 android:id="@+id/cb11"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="1dp"
-                                                android:text="Frações (conceito, leitura, termos e classificação)"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Transferência"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -562,9 +569,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Estudo dos números
-        fracionários (equivalência, números mistos e decimais,
-        simplificação, redução ao mesmo denominador)"
+                                                android:text="Conseqüências"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -572,7 +577,44 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Operações com frações"
+                                                android:text="Ondulatória"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb14"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Som"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb15"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Luz"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb16"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Tecnologias e comunicação"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb17"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Magnetismo natural"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb18"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Eletricidade (Energia elétrica) e suas transformações"
                                                 app:buttonTint="@android:color/black" />
 
 
@@ -637,19 +679,21 @@
                             android:orientation="vertical">
 
                             <LinearLayout
-                                 android:layout_width="match_parent"
+
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <TextView
-                                     android:layout_width="match_parent"
+
+                                    android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_matematica_sexto_III"
+                                    android:text="@string/title_ciencias_nono_III"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -669,7 +713,8 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                         android:layout_width="wrap_content"
+
+                                        android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:layout_marginBottom="6dp"
@@ -742,7 +787,8 @@
                                             </LinearLayout>
 
                                             <LinearLayout
-                                                 android:layout_width="match_parent"
+
+                                                android:layout_width="match_parent"
                                                 android:layout_height="3dp"
                                                 android:background="@color/elementos_conteudo"
                                                 android:orientation="horizontal"></LinearLayout>
@@ -794,7 +840,8 @@
                                         </LinearLayout>
 
                                         <LinearLayout
-                                             android:layout_width="3dp"
+
+                                            android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
                                             android:orientation="vertical"></LinearLayout>
@@ -807,51 +854,58 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb14"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Geometria"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
-                                                android:id="@+id/cb15"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Operações com números decimais"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
-                                                android:id="@+id/cb16"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Ponto, reta e plano(identificação)"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
-                                                android:id="@+id/cb17"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="1dp"
-                                                android:text="Polígonos"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
-                                                android:id="@+id/cb18"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="1dp"
-                                                android:text="Principais figuras planas"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
                                                 android:id="@+id/cb19"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="O que a física e a química estudam"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb20"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Diversidade e propriedades Gerais dos materiais"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb21"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Matéria"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb22"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Elementos das principais figuras planas"
+                                                android:text="Energia"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb23"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Massa"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb24"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Volume"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb25"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Extensão"
                                                 app:buttonTint="@android:color/black" />
 
 
@@ -930,7 +984,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_matematica_sexto_IV"
+                                    android:text="@string/title_ciencias_nono_IV"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -1091,44 +1145,104 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/v20"
+                                                android:id="@+id/cb26"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Sistema Métrico Decimal"
+                                                android:text="Impenetrabilidade"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb21"
+                                                android:id="@+id/cb27"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Unidades de medidas de comprimento, superfície, volume, capacidade, massa"
+                                                android:text="Elasticidade"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb22"
+                                                android:id="@+id/cb28"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Área das principais figuras planas"
+                                                android:text="Compressibilidade"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb23"
+                                                android:id="@+id/cb29"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Medidas agrárias"
+                                                android:text="Divisibilidade"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb24"
+                                                android:id="@+id/cb30"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="Área de terra com medidas agrárias"
+                                                android:text="Unidades de Medidas"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb31"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Propriedades específicas dos materiais"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb32"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Estados físicos"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb33"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Condutibilidade"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb34"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Fenômeno químico e físico"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb35"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Densidade"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb36"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Dureza"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb37"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Átomos"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb38"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Elementos químicos"
+                                                app:buttonTint="@android:color/black" />
+
+
+
 
                                         </LinearLayout>
 

@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="objetivo_ciencias">
-        Texto de apresentação da Disciplina de Ciências
+        As ciências naturais constituem numa classificação que abarca as áreas da 
+ciência que visam a estudar a natureza em seus aspectos mais gerais e fundamentais, isso é, 
+o universo como um todo, que é entendido como regulado por regras ou leis de origem natural e 
+com validade universal, fazendo-o de forma a focar-se nos aspectos físicos e não no homem ou 
+em aspectos comportamentais.
     </string>
 
 
@@ -214,9 +218,9 @@ ecossistemas brasileiros;\n
         - Tecidos (estrutura e funções);
         - Processos celulares relacionados à herança e energia. (Divisão Celular);\n
         - Os Sentidos:\n
-        - tato (pele);\n
-        - paladar;\n
-        - audição;\n
+        - Tato (pele);\n
+        - Paladar;\n
+        - Audição;\n
         - Olfato;\n
         - Visão;\n
         - Fonação (voz);\n

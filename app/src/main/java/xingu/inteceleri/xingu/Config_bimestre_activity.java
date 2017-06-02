@@ -903,6 +903,14 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
     }//End OnCreate
 
+    public void onBackPressed() {
+
+        Intent it = new Intent(this, Config_activity.class);
+        startActivity(it);
+
+        return;
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) { //Botão adicional na ToolBar
         switch (item.getItemId()) {
@@ -913,6 +921,12 @@ public class Config_bimestre_activity extends AppCompatActivity{
             default:break;
         }
         return true;
+    }
+
+    @Override
+    protected void onPause(){
+        super .onPause();
+        finish();
     }
 
 }

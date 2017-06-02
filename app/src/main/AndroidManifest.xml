@@ -14,40 +14,53 @@
         <activity
             android:name=".Splash_activity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Apresentacao_activity"
             android:label="@string/title_activity_apresentacao_activity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
         <activity
             android:name=".Login_activity"
             android:label="@string/title_activity_login_activity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
         <activity
             android:name=".Main_activity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
         <activity
             android:name=".Config_bimestre_activity"
             android:label="@string/title_activity_config_bimestre"
             android:parentActivityName=".Config_activity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="xingu.inteceleri.xingu.Config_activity" />
         </activity>
-        <activity android:name=".Config_activity" />
+        <activity
+            android:name=".Config_activity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
         <activity
             android:name=".Registro_activity"
             android:label=" "
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AppBarMainActivity"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name=".AppBarMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+
+        </activity>
     </application>
 
 </manifest>

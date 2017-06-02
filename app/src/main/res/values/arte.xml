@@ -1,4 +1,4 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+﻿<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <string name="objetivo_arte">
         A presente matriz curricular surgiu da rica experiência de profissionais
@@ -186,7 +186,7 @@ ensinar? por que ensinar?
         - Cores quentes e cores frias;\n
         - Policromia e contraste;\n
         - Monocromia;\n
-        -Colagens truques e efeitos;\n
+        - Colagens truques e efeitos;\n
         - Positivo e Negativo;\n
     </string>
 
@@ -456,9 +456,9 @@ ensinar? por que ensinar?
         - História da música;\n
         - A musica na década de 1970;\n
         - Estilos musicais;\n
-        - Musica e cordel;\n
+        - Música e cordel;\n
         - Tipos de instrumentos musicais;\n
-        - Oficina ( banda musical feita por alguns da sala e amigos da escola).\n
+        - Oficina (banda musical feita por alguns da sala e amigos da escola).\n
     </string>
 
     <string name="obj_arte_oitavo_IV">

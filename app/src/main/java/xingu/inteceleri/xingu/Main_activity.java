@@ -1,9 +1,11 @@
 package xingu.inteceleri.xingu;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.support.v7.app.AlertDialog;
 import android.text.Layout;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -64,6 +66,9 @@ public class Main_activity extends AppCompatActivity
     public static int ID;
     public static int IDAnterior;
 
+    public int execucao = 1;
+    public int configurar;
+
     public int Dia_sistema;
     public int Mes_sistema;
 
@@ -97,6 +102,13 @@ public class Main_activity extends AppCompatActivity
         fbAuth = FirebaseAuth.getInstance();
 
 
+
+        //load do ID do estado de configurar bimestre
+        SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
+        configurar = sharedPref_configurar.getInt("configurar",-1);
+
+        configurar();
+
         //final CheckBox checkbox1 = (CheckBox) findViewById(R.id.checkbox1);
 
        //if (checkbox1.isChecked()){
@@ -121,6 +133,12 @@ public class Main_activity extends AppCompatActivity
 
             dlg.setNeutralButton("NÃO", null);
         }*/
+
+        //Salva booleana para saber se o app já executou anteriormente
+        SharedPreferences sharedPref_execucao = getSharedPreferences("pref_bimestre",0);
+        SharedPreferences.Editor prefEditor = sharedPref_execucao.edit();
+        prefEditor.putInt("execucao",execucao);
+        prefEditor.commit();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -438,6 +456,40 @@ public class Main_activity extends AppCompatActivity
 
     }//end OnCreate
 
+    public void configurar(){
+
+        if(configurar != 1){
+
+            SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre",0);
+            SharedPreferences.Editor prefEditor2 = sharedPref_configurar.edit();
+            prefEditor2.putInt("configurar",1);
+            prefEditor2.commit();
+
+            Toast.makeText(Main_activity.this, "estado: "+ configurar,Toast.LENGTH_SHORT).show();
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Configure as datas dos bimestres!");
+            builder.setMessage("Configurar agora?")
+                    .setCancelable(false)
+                    .setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    })
+                    .setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            Intent intent = new Intent(Main_activity.this, Config_bimestre_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+            builder.show();
+
+        }
+
+
+    }
+
+
 
     //=============================FUNÇÃO DE LEITURA DA DATA DO SISTEMA============================
     public void DataSistema(){
@@ -608,12 +660,12 @@ public class Main_activity extends AppCompatActivity
     */
 
 
-
+/*
     @Override
     protected void onPause(){
         super.onPause();
         finish();
-    }
+    } */
 
     private void startActivity(AdapterView.OnItemSelectedListener onItemSelectedListener) {
 

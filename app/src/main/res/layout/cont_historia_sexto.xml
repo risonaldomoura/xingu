@@ -70,13 +70,11 @@
                             android:orientation="vertical">
 
                             <LinearLayout
-                                android:id="@+id/layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -84,7 +82,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_arte_sexto_I"
+                                    android:text="@string/title_historia_sexto_I"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -95,7 +93,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -103,7 +102,6 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -117,59 +115,118 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_I"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_I"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
                                         <LinearLayout
-                                            android:id="@+id/linha"
                                             android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
@@ -183,133 +240,43 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkbox1"
+                                                android:id="@+id/cb1"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="O que são fontes históricas?"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb2"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="Verdades absolutas ou versões históricas?"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb3"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="Novos personagens em cena"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb4"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
+                                                android:text="A história e as outras áreas do conhecimento"
                                                 app:buttonTint="@android:color/black" />
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
 
                                             <Space
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
+                                                android:layout_height="10dp"
                                                 android:layout_weight="1" />
 
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_termino_I"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_I"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox7"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Realismo"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox4"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
-                                                app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox15"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Simetria"
-                                                app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
 
@@ -326,10 +293,11 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_I"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
                                         android:elevation="0dp"
@@ -358,8 +326,9 @@
                             android:id="@+id/fl_2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/sombra_bimestre"
-                            android:elevation="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
                             android:visibility="gone">
 
                         </FrameLayout>
@@ -375,7 +344,6 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -383,7 +351,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_arte_sexto_I"
+                                    android:text="@string/title_historia_sexto_II"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -394,7 +362,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -402,7 +371,6 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -416,59 +384,118 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_II"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_II"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
                                         <LinearLayout
-                                            android:id="@+id/linha"
                                             android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
@@ -482,133 +509,130 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/cb5"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="Grécia, um território favorecido pelo mar"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb6"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="A era dos palácios, sociedade micênica"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb7"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="Dos genos à cidade-estado"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb8"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/black" />
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/dia_termino_II"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_II"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox7"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Realismo"
+                                                android:text="A cidade-estado grega"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb9"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A expansão colonial grega"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox15"
+                                                android:id="@+id/cb10"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Simetria"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O processo de colonização"
                                                 app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb11"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A Vida Cotidiana na Grécia Antiga"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb12"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A cidade de Atenas"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb13"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Esparta, uma polis guerreira"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb14"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="As habitações gregas"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb15"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A Filosofia e a Ciência Grega"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb16"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O mundo das perguntas: a filosofia"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb17"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Hipócrates: o pai da medicina"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb18"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Heródoto: o pai da história"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb19"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Mito e Religião na Grécia"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb20"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A mitologia grega, Deuses e heróis"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb21"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Homens e deuses, Uma religião cívica"
+                                                app:buttonTint="@android:color/black" />
+
 
                                         </LinearLayout>
 
@@ -625,12 +649,14 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_II"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
                                         android:text="OBJETIVO"
                                         android:textColor="@android:color/black"
                                         android:textSize="14sp" />
@@ -656,8 +682,9 @@
                             android:id="@+id/fl_3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/sombra_bimestre"
-                            android:elevation="4dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
                             android:visibility="gone">
 
                         </FrameLayout>
@@ -673,7 +700,6 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -681,7 +707,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_arte_sexto_I"
+                                    android:text="@string/title_historia_sexto_III"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -692,7 +718,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -700,7 +727,6 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -714,59 +740,118 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_III"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_III"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
                                         <LinearLayout
-                                            android:id="@+id/linha"
                                             android:layout_width="3dp"
                                             android:layout_height="match_parent"
                                             android:background="@color/elementos_conteudo"
@@ -780,133 +865,167 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/cb22"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="A Formação de Roma"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb23"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="Pequenos núcleos às margens do Tibre"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb24"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="A influência etrusca"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb25"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/black" />
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/dia_termino_III"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_III"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox7"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Realismo"
+                                                android:text="A organização social"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb26"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A organização política"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox15"
+                                                android:id="@+id/cb27"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Simetria"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O fim da dominação etrusca"
                                                 app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb28"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="As Guerras de Conquista"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb29"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A expansão pelo Mediterrâneo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb30"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Uma nova cidade- Muitos escravos"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb31"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="As revoltas de escravos"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb32"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O Império Romano"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb33"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Lutas sociais em Roma"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb34"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O prestígio dos militares"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb35"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Júlio César e a centralização do poder"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb36"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Otávio inicia o Império"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb37"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A Sociedade e a Cultura"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb38"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A religião"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb39"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A família"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb40"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Os escravos"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb41"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Diversão e cultura"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb42"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O teatro romano"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb43"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A produção intelectual"
+                                                app:buttonTint="@android:color/black" />
+
+
+
 
                                         </LinearLayout>
 
@@ -923,12 +1042,14 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_III"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
                                         android:text="OBJETIVO"
                                         android:textColor="@android:color/black"
                                         android:textSize="14sp" />
@@ -944,8 +1065,8 @@
                         android:id="@+id/IV_bimestre"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_weight="1"
                         android:background="@android:color/transparent"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="3dp">
@@ -954,8 +1075,9 @@
                             android:id="@+id/fl_4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/sombra_bimestre"
-                            android:elevation="4dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
                             android:visibility="gone">
 
                         </FrameLayout>
@@ -966,12 +1088,13 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView14"
+                                    android:id="@+id/titulo"
                                     android:layout_width="match_parent"
                                     android:layout_height="44dp"
                                     android:layout_gravity="center"
@@ -979,7 +1102,7 @@
                                     android:background="@drawable/canto_sup_arredondado"
                                     android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
-                                    android:text="@string/title_arte_sexto_I"
+                                    android:text="@string/title_historia_sexto_IV"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
@@ -990,7 +1113,8 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
                                 android:backgroundTint="@color/fundo_bloco_bimestre"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                android:weightSum="1">
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -998,7 +1122,7 @@
                                     android:orientation="vertical">
 
                                     <TextView
-                                        android:id="@+id/textView26"
+                                        android:id="@+id/conteudo"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_gravity="center"
@@ -1012,54 +1136,115 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
                                     android:orientation="vertical">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
 
                                         <LinearLayout
                                             android:layout_width="55dp"
                                             android:layout_height="match_parent"
                                             android:orientation="vertical">
 
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
                                             <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
                                                 android:orientation="vertical">
 
-                                                <TextView
-                                                    android:id="@+id/dia_inicio_IV"
-                                                    android:layout_width="wrap_content"
+                                                <Space
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="25"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
+                                                    android:layout_weight="1" />
 
-                                                <TextView
-                                                    android:id="@+id/mes_inicio_IV"
+                                                <LinearLayout
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="JAN"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
 
                                             </LinearLayout>
 
-                                            <Space
+                                            <LinearLayout
+                                                android:id="@+id/Linha"
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
 
                                         </LinearLayout>
 
@@ -1078,132 +1263,247 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/checkBox7"
+                                                android:id="@+id/cb44"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="Saem os Romanos, entram os Germânicos"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb45"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="Um império esfacelado"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox13"
+                                                android:id="@+id/cb46"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="A ruralização do império"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox14"
+                                                android:id="@+id/cb47"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/black" />
-
-                                        </LinearLayout>
-
-                                    </LinearLayout>
-
-                                    <LinearLayout
-                                        android:id="@+id/Linha"
-                                        android:layout_width="58dp"
-                                        android:layout_height="3dp"
-                                        android:background="@color/elementos_conteudo"
-                                        android:orientation="horizontal"></LinearLayout>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:layout_width="55dp"
-                                            android:layout_height="match_parent"
-                                            android:orientation="vertical">
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                            <LinearLayout
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                                                android:orientation="vertical">
-
-                                                <TextView
-                                                    android:id="@+id/dia_termino_IV"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="15"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="36sp" />
-
-                                                <TextView
-                                                    android:id="@+id/mes_termino_IV"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_gravity="center_horizontal"
-                                                    android:text="MAR"
-                                                    android:textColor="@android:color/black"
-                                                    android:textSize="16sp" />
-
-                                            </LinearLayout>
-
-                                            <Space
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1" />
-
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/linha"
-                                            android:layout_width="3dp"
-                                            android:layout_height="match_parent"
-                                            android:background="@color/elementos_conteudo"
-                                            android:orientation="vertical"></LinearLayout>
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="5dp"
-                                            android:layout_marginRight="10dp"
-                                            android:orientation="vertical">
-
-                                            <CheckBox
-                                                android:id="@+id/checkBox7"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Realismo"
+                                                android:text="A formação do colonato"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox4"
+                                                android:id="@+id/cb48"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Missão colonial: A caravela"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O poder político e jurídico dos bárbaros"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/checkBox15"
+                                                android:id="@+id/cb49"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginBottom="4dp"
-                                                android:text="Simetria"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O Império Franco e a Idade Média"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb50"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Os francos se destacaram"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb51"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A dinastia merovíngia"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb52"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Quem escolhe o rei?"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb53"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Carlos Magno ocupa o trono dos francos"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb54"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A administração do reino"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb55"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O enfraquecimento carolíngio"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb56"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O Império Carolíngio e a Igreja Católica"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb57"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Aliança entre reis e papas"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb58"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Características do feudalismo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb59"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O feudo e sua organização"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb60"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A formação do feudalismo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb61"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Origens do feudalismo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb62"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Características do feudalismo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb63"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="O feudo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb64"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A Sociedade Feudal"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb65"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A organização do feudo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb66"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Uma sociedade dividida"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb67"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A escultura e a pintura"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb68"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A ciência, a literatura e as escolas monásticas"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb69"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A Economia Feudal e sua Transformação"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb70"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Uma economia agrária"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb71"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="As transformações no feudalismo"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb72"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A Cultura e a Ciência na Europa Feudal"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb73"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A arte românica"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb74"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A escultura e a pintura"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb75"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="A literatura cavalheiresca"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb76"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Roger Bacon e a ciência"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb77"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="As escolas monásticas e eclesiásticas"
                                                 app:buttonTint="@android:color/black" />
 
                                         </LinearLayout>
@@ -1221,12 +1521,14 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/button3"
+                                        android:id="@+id/obj_arte_sexto_IV"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
                                         android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
                                         android:text="OBJETIVO"
                                         android:textColor="@android:color/black"
                                         android:textSize="14sp" />

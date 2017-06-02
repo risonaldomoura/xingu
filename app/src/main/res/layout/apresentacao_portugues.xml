@@ -37,7 +37,7 @@
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Português"
+                    android:text="Língua Portuguesa"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
                     android:textSize="20sp"
