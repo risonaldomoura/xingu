@@ -48,6 +48,12 @@ public class Config_activity extends AppCompatActivity implements View.OnClickLi
 
                 case R.id.btn_mudar_conta:
 
+                    //Salva booleana para saber se o app já executou anteriormente
+                    SharedPreferences sharedPref_execucao = getSharedPreferences("pref_bimestre",0);
+                    SharedPreferences.Editor prefEditor = sharedPref_execucao.edit();
+                    prefEditor.putInt("execucao",2);
+                    prefEditor.commit();
+
                     Intent it3 = new Intent(this, Login_activity.class);
                     startActivity(it3);
 

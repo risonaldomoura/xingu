@@ -29,6 +29,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import java.util.Calendar;
+import java.util.logging.Handler;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -101,38 +102,11 @@ public class Main_activity extends AppCompatActivity
 
         fbAuth = FirebaseAuth.getInstance();
 
-
-
         //load do ID do estado de configurar bimestre
         SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
         configurar = sharedPref_configurar.getInt("configurar",-1);
 
         configurar();
-
-        //final CheckBox checkbox1 = (CheckBox) findViewById(R.id.checkbox1);
-
-       //if (checkbox1.isChecked()){
-         //  checkbox1.setChecked(false);
-         //}
-
-        /*
-        final CheckBox checkbox1 = (CheckBox) findViewById(R.id.checkbox1);
-        if (checkbox1.isChecked()){
-            String mensagem = "Você realmente deseja desmarcar esse conteúdo";
-            AlertDialog.Builder dlg = new AlertDialog.Builder(Main_activity.this);
-            dlg.setTitle("Confirmação");
-            dlg.setMessage(mensagem);
-            dlg.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                    checkbox1.setChecked(false);
-
-                }
-            });
-
-            dlg.setNeutralButton("NÃO", null);
-        }*/
 
         //Salva booleana para saber se o app já executou anteriormente
         SharedPreferences sharedPref_execucao = getSharedPreferences("pref_bimestre",0);
@@ -321,12 +295,12 @@ public class Main_activity extends AppCompatActivity
 
         //DIA INÍCIO
         SharedPreferences sharedPref_dia_inicio_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_I = sharedPref_dia_inicio_I.getInt("dia_inicio_I",1);
+        ID_salvo_dia_inicio_I = sharedPref_dia_inicio_I.getInt("dia_inicio_I", 15);
 
 
         //DIA TÉRMINO
         SharedPreferences sharedPref_dia_termino_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_I = sharedPref_dia_termino_I.getInt("dia_termino_I",1);
+        ID_salvo_dia_termino_I = sharedPref_dia_termino_I.getInt("dia_termino_I",15);
 
         //MÊS INÍCIO
         SharedPreferences sharedPref_mes_inicio_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
@@ -334,7 +308,7 @@ public class Main_activity extends AppCompatActivity
 
         //MÊS TÉRMINO
         SharedPreferences sharedPref_mes_termino_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_I = sharedPref_mes_termino_I.getInt("mes_termino_I",1);
+        ID_salvo_mes_termino_I = sharedPref_mes_termino_I.getInt("mes_termino_I",3);
 
         //==========================================================================================
 
@@ -342,19 +316,19 @@ public class Main_activity extends AppCompatActivity
 
         //DIA INICIO
         SharedPreferences sharedPref_dia_inicio_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_II = sharedPref_dia_inicio_II.getInt("dia_inicio_II",1);
+        ID_salvo_dia_inicio_II = sharedPref_dia_inicio_II.getInt("dia_inicio_II",16);
 
         //DIA TÉRMINO
         SharedPreferences sharedPref_dia_termino_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_II = sharedPref_dia_termino_II.getInt("dia_termino_II",1);
+        ID_salvo_dia_termino_II = sharedPref_dia_termino_II.getInt("dia_termino_II",16);
 
         //MES INÍCIO
         SharedPreferences sharedPref_mes_inicio_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_inicio_II = sharedPref_mes_inicio_II.getInt("mes_inicio_II",1);
+        ID_salvo_mes_inicio_II = sharedPref_mes_inicio_II.getInt("mes_inicio_II",3);
 
         //MÊS TÉRMINO
         SharedPreferences sharedPref_mes_termino_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_II = sharedPref_mes_termino_II.getInt("mes_termino_II",1);
+        ID_salvo_mes_termino_II = sharedPref_mes_termino_II.getInt("mes_termino_II",5);
 
         //==========================================================================================
 
@@ -362,19 +336,19 @@ public class Main_activity extends AppCompatActivity
 
         //DIA INÍCIO
         SharedPreferences sharedPref_dia_inicio_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_III = sharedPref_dia_inicio_III.getInt("dia_inicio_III",1);
+        ID_salvo_dia_inicio_III = sharedPref_dia_inicio_III.getInt("dia_inicio_III",5);
 
         //DIA TÉRMINO
         SharedPreferences sharedPref_dia_termino_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_III = sharedPref_dia_termino_III.getInt("dia_termino_III",1);
+        ID_salvo_dia_termino_III = sharedPref_dia_termino_III.getInt("dia_termino_III",5);
 
         //MES INÍCIO
         SharedPreferences sharedPref_mes_inicio_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_inicio_III = sharedPref_mes_inicio_III.getInt("mes_inicio_III",1);
+        ID_salvo_mes_inicio_III = sharedPref_mes_inicio_III.getInt("mes_inicio_III",7);
 
         //MÊS TÉRMINO
         SharedPreferences sharedPref_mes_termino_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_III = sharedPref_mes_termino_III.getInt("mes_termino_III",1);
+        ID_salvo_mes_termino_III = sharedPref_mes_termino_III.getInt("mes_termino_III",9);
 
         //==========================================================================================
 
@@ -382,19 +356,19 @@ public class Main_activity extends AppCompatActivity
 
         //DIA INÍCIO
         SharedPreferences sharedPref_dia_inicio_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_IV = sharedPref_dia_inicio_IV.getInt("dia_inicio_IV",1);
+        ID_salvo_dia_inicio_IV = sharedPref_dia_inicio_IV.getInt("dia_inicio_IV",6);
 
         //DIA TÉRMINO
         SharedPreferences sharedPref_dia_termino_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_IV = sharedPref_dia_termino_IV.getInt("dia_termino_IV",1);
+        ID_salvo_dia_termino_IV = sharedPref_dia_termino_IV.getInt("dia_termino_IV",6);
 
         //MES INÍCIO
         SharedPreferences sharedPref_mes_inicio_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_inicio_IV = sharedPref_mes_inicio_IV.getInt("mes_inicio_IV",1);
+        ID_salvo_mes_inicio_IV = sharedPref_mes_inicio_IV.getInt("mes_inicio_IV",9);
 
         //MÊS TÉRMINO
         SharedPreferences sharedPref_mes_termino_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_IV = sharedPref_mes_termino_IV.getInt("mes_termino_IV",1);
+        ID_salvo_mes_termino_IV = sharedPref_mes_termino_IV.getInt("mes_termino_IV",11);
 
         //==========================================================================================
 
@@ -449,10 +423,6 @@ public class Main_activity extends AppCompatActivity
         //==========================================================================================
 
         DataSistema();
-        //LinhaDoTempo_I();
-        //LinhaDoTempo_II();
-        //LinhaDoTempo_III();
-        //LinhaDoTempo_IV();
 
     }//end OnCreate
 
@@ -460,35 +430,33 @@ public class Main_activity extends AppCompatActivity
 
         if(configurar != 1){
 
-            SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre",0);
-            SharedPreferences.Editor prefEditor2 = sharedPref_configurar.edit();
-            prefEditor2.putInt("configurar",1);
-            prefEditor2.commit();
+                //Escreve configurar == 1;
+                SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre", 0);
+                SharedPreferences.Editor prefEditor2 = sharedPref_configurar.edit();
+                prefEditor2.putInt("configurar", 1);
+                prefEditor2.commit();
 
-            Toast.makeText(Main_activity.this, "estado: "+ configurar,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Main_activity.this, "estado: "+ configurar,Toast.LENGTH_SHORT).show();
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Configure as datas dos bimestres!");
-            builder.setMessage("Configurar agora?")
-                    .setCancelable(false)
-                    .setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
-                        }
-                    })
-                    .setPositiveButton("SIM", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            Intent intent = new Intent(Main_activity.this, Config_bimestre_activity.class);
-                            startActivity(intent);
-                        }
-                    });
-            builder.show();
-
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Atenção!");
+                builder.setMessage("Deseja modificar as datas padrão dos bimestres?")
+                        .setCancelable(false)
+                        .setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        })
+                        .setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Intent intent = new Intent(Main_activity.this, Config_bimestre_activity.class);
+                                startActivity(intent);
+                            }
+                        });
+                builder.show();
         }
 
-
     }
-
 
 
     //=============================FUNÇÃO DE LEITURA DA DATA DO SISTEMA============================
@@ -503,6 +471,8 @@ public class Main_activity extends AppCompatActivity
        // Toast.makeText(Main_activity.this, "Dia: "+ Dia_sistema + " Mês: "+ Mes_sistema,Toast.LENGTH_SHORT).show();
     }
     //==============================================================================================
+
+
 
     //=============================COLOCAR SOMBRA NO BLOCO DE BIMESTRE==============================
 
@@ -672,11 +642,6 @@ public class Main_activity extends AppCompatActivity
         Intent it = new Intent(this, Main_activity.class);
         startActivity(it);
 
-    }
-
-    public void mostrarid (){
-
-        Toast.makeText(Main_activity.this,"Id:"+ID,Toast.LENGTH_SHORT).show();
     }
 
 

@@ -1,6 +1,7 @@
 package xingu.inteceleri.xingu;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -208,8 +209,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_inicio_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_I = sharedPref_dia_inicio_I.getInt("dia_inicio_I",-1);
-        if(ID_salvo_dia_inicio_I != -1)
+        ID_salvo_dia_inicio_I = sharedPref_dia_inicio_I.getInt("dia_inicio_I",15);
+        //if(ID_salvo_dia_inicio_I != -1)
             // set the value of the spinner
             spn_dia_inicio_I.setSelection(ID_salvo_dia_inicio_I);
 
@@ -238,8 +239,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_termino_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_I = sharedPref_dia_termino_I.getInt("dia_termino_I",-1);
-        if(ID_salvo_dia_termino_I != -1)
+        ID_salvo_dia_termino_I = sharedPref_dia_termino_I.getInt("dia_termino_I",15);
+        //if(ID_salvo_dia_termino_I != -1)
             // set the value of the spinner
             spn_dia_termino_I.setSelection(ID_salvo_dia_termino_I);
 
@@ -268,8 +269,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_inicio_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_inicio_I = sharedPref_mes_inicio_I.getInt("mes_inicio_I",-1);
-        if(ID_salvo_mes_inicio_I != -1)
+        ID_salvo_mes_inicio_I = sharedPref_mes_inicio_I.getInt("mes_inicio_I",1);
+        //if(ID_salvo_mes_inicio_I != -1)
             // set the value of the spinner
             spn_mes_inicio_I.setSelection(ID_salvo_mes_inicio_I);
 
@@ -301,8 +302,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_termino_I = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_I = sharedPref_mes_termino_I.getInt("mes_termino_I",-1);
-        if(ID_salvo_mes_termino_I != -1)
+        ID_salvo_mes_termino_I = sharedPref_mes_termino_I.getInt("mes_termino_I",3);
+        //if(ID_salvo_mes_termino_I != -1)
             // set the value of the spinner
             spn_mes_termino_I.setSelection(ID_salvo_mes_termino_I);
 
@@ -324,11 +325,14 @@ public class Config_bimestre_activity extends AppCompatActivity{
                 if (mes_termino_I < mes_inicio_I) {
 
                     String mensagem = "O mês de término do 1º bimestre está errado. Configure-o novamente.";
-                    AlertDialog.Builder dlg1 = new AlertDialog.Builder(Config_bimestre_activity.this);
-                    dlg1.setTitle("Erro");
-                    dlg1.setMessage(mensagem);
-                    dlg1.setNeutralButton("OK", null);
-                    dlg1.show();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(Config_bimestre_activity.this);
+                    builder.setTitle("Erro");
+                    builder.setMessage(mensagem);
+                    builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface arg0, int arg1) {
+                        }
+                    });
+                    builder.show();
                 }
 
             }
@@ -379,8 +383,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_inicio_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_II = sharedPref_dia_inicio_II.getInt("dia_inicio_II",-1);
-        if(ID_salvo_dia_inicio_II != -1)
+        ID_salvo_dia_inicio_II = sharedPref_dia_inicio_II.getInt("dia_inicio_II",16);
+        //if(ID_salvo_dia_inicio_II != -1)
             // set the value of the spinner
             spn_dia_inicio_II.setSelection(ID_salvo_dia_inicio_II);
 
@@ -410,8 +414,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_termino_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_II = sharedPref_dia_termino_II.getInt("dia_termino_II",-1);
-        if(ID_salvo_dia_termino_II != -1)
+        ID_salvo_dia_termino_II = sharedPref_dia_termino_II.getInt("dia_termino_II",16);
+        //if(ID_salvo_dia_termino_II != -1)
             // set the value of the spinner
             spn_dia_termino_II.setSelection(ID_salvo_dia_termino_II);
 
@@ -441,8 +445,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_inicio_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_inicio_II = sharedPref_mes_inicio_II.getInt("mes_inicio_II",-1);
-        if(ID_salvo_mes_inicio_II != -1)
+        ID_salvo_mes_inicio_II = sharedPref_mes_inicio_II.getInt("mes_inicio_II",3);
+        //if(ID_salvo_mes_inicio_II != -1)
             // set the value of the spinner
             spn_mes_inicio_II.setSelection(ID_salvo_mes_inicio_II);
 
@@ -483,8 +487,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_termino_II = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_II = sharedPref_mes_termino_II.getInt("mes_termino_II",-1);
-        if(ID_salvo_mes_termino_II != -1)
+        ID_salvo_mes_termino_II = sharedPref_mes_termino_II.getInt("mes_termino_II",5);
+        //if(ID_salvo_mes_termino_II != -1)
             // set the value of the spinner
             spn_mes_termino_II.setSelection(ID_salvo_mes_termino_II);
 
@@ -561,8 +565,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_inicio_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_III = sharedPref_dia_inicio_III.getInt("dia_inicio_III",-1);
-        if(ID_salvo_dia_inicio_III != -1)
+        ID_salvo_dia_inicio_III = sharedPref_dia_inicio_III.getInt("dia_inicio_III",5);
+        //if(ID_salvo_dia_inicio_III != -1)
             // set the value of the spinner
             spn_dia_inicio_III.setSelection(ID_salvo_dia_inicio_III);
 
@@ -597,8 +601,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_termino_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_III = sharedPref_dia_termino_III.getInt("dia_termino_III",-1);
-        if(ID_salvo_dia_termino_III != -1)
+        ID_salvo_dia_termino_III = sharedPref_dia_termino_III.getInt("dia_termino_III",5);
+        //if(ID_salvo_dia_termino_III != -1)
             // set the value of the spinner
             spn_dia_termino_III.setSelection(ID_salvo_dia_termino_III);
 
@@ -633,8 +637,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_inicio_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_inicio_III = sharedPref_mes_inicio_III.getInt("mes_inicio_III",-1);
-        if(ID_salvo_mes_inicio_III != -1)
+        ID_salvo_mes_inicio_III = sharedPref_mes_inicio_III.getInt("mes_inicio_III",7);
+        //if(ID_salvo_mes_inicio_III != -1)
             // set the value of the spinner
             spn_mes_inicio_III.setSelection(ID_salvo_mes_inicio_III);
 
@@ -678,8 +682,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_termino_III = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_III = sharedPref_mes_termino_III.getInt("mes_termino_III",-1);
-        if(ID_salvo_mes_termino_III != -1)
+        ID_salvo_mes_termino_III = sharedPref_mes_termino_III.getInt("mes_termino_III",9);
+        //if(ID_salvo_mes_termino_III != -1)
             // set the value of the spinner
             spn_mes_termino_III.setSelection(ID_salvo_mes_termino_III);
 
@@ -752,8 +756,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_inicio_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_inicio_IV = sharedPref_dia_inicio_IV.getInt("dia_inicio_IV",-1);
-        if(ID_salvo_dia_inicio_IV != -1)
+        ID_salvo_dia_inicio_IV = sharedPref_dia_inicio_IV.getInt("dia_inicio_IV",6);
+        //if(ID_salvo_dia_inicio_IV != -1)
             // set the value of the spinner
             spn_dia_inicio_IV.setSelection(ID_salvo_dia_inicio_IV);
 
@@ -783,8 +787,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_dia_termino_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_dia_termino_IV = sharedPref_dia_termino_IV.getInt("dia_termino_IV",-1);
-        if(ID_salvo_dia_termino_IV != -1)
+        ID_salvo_dia_termino_IV = sharedPref_dia_termino_IV.getInt("dia_termino_IV",6);
+        //if(ID_salvo_dia_termino_IV != -1)
             // set the value of the spinner
             spn_dia_termino_IV.setSelection(ID_salvo_dia_termino_IV);
 
@@ -817,8 +821,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_inicio_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_inicio_IV = sharedPref_mes_inicio_IV.getInt("mes_inicio_IV",-1);
-        if(ID_salvo_mes_inicio_IV != -1)
+        ID_salvo_mes_inicio_IV = sharedPref_mes_inicio_IV.getInt("mes_inicio_IV",9);
+        //if(ID_salvo_mes_inicio_IV != -1)
             // set the value of the spinner
             spn_mes_inicio_IV.setSelection(ID_salvo_mes_inicio_IV);
 
@@ -862,8 +866,8 @@ public class Config_bimestre_activity extends AppCompatActivity{
 
         //load do ID da spinner do arquivo sharedPreferences
         SharedPreferences sharedPref_mes_termino_IV = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
-        ID_salvo_mes_termino_IV = sharedPref_mes_termino_IV.getInt("mes_termino_IV",-1);
-        if(ID_salvo_mes_termino_IV != -1)
+        ID_salvo_mes_termino_IV = sharedPref_mes_termino_IV.getInt("mes_termino_IV",11);
+        //if(ID_salvo_mes_termino_IV != -1)
             // set the value of the spinner
             spn_mes_termino_IV.setSelection(ID_salvo_mes_termino_IV);
 

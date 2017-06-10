@@ -519,7 +519,7 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb8"
+                                                android:id="@+id/cb7"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -527,7 +527,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb9"
+                                                android:id="@+id/cb8"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -535,7 +535,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb10"
+                                                android:id="@+id/cb9"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -543,7 +543,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb11"
+                                                android:id="@+id/cb10"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -551,7 +551,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb12"
+                                                android:id="@+id/cb11"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -559,7 +559,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb13"
+                                                android:id="@+id/cb12"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -798,7 +798,7 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb14"
+                                                android:id="@+id/cb13"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -806,7 +806,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb15"
+                                                android:id="@+id/cb14"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -814,7 +814,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb16"
+                                                android:id="@+id/cb15"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -822,7 +822,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb17"
+                                                android:id="@+id/cb16"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1067,7 +1067,7 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb18"
+                                                android:id="@+id/cb17"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -1075,7 +1075,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb19"
+                                                android:id="@+id/cb18"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -1083,7 +1083,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb20"
+                                                android:id="@+id/cb19"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -1091,7 +1091,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb21"
+                                                android:id="@+id/cb20"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1099,7 +1099,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb22"
+                                                android:id="@+id/cb21"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1107,7 +1107,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb23"
+                                                android:id="@+id/cb22"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1115,7 +1115,7 @@
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb24"
+                                                android:id="@+id/cb23"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
