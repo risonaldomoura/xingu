@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xingu.inteceleri.xingu.Config_bimestre_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/Imagem_disciplina"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="122dp"
+                            android:background="@drawable/ic_disc_matematica"
+                            android:orientation="horizontal"></LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/I_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_matematica_nono_I"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                         android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                 android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                             android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Potências"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Potências com expoente inteiro"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Propriedades das potências"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Notação científica"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb5"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Raízes"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb6"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Conceito e propriedades da radiciação"
+                                                app:buttonTint="@android:color/black" />
+                                            <CheckBox
+                                                android:id="@+id/cb7"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Simplificando radicais"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb8"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Cálculo com radicais"
+                                                app:buttonTint="@android:color/black" />
+
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_I"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/II_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                     android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_matematica_nono_II"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                         android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                 android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                             android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb9"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Equações do 2º grau"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb10"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Resolvendo equações incompletas"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb11"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Resolvendo equações completas"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb12"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Resolvendo problemas"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb13"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Estudado as raízes da equação"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb14"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Resolvendo equações biquadradas"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb15"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Resolvendo sistemas de equações do 2º grau"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb16"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Funções"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb17"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Noções de probabilidade e estatísticas"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb18"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Sistema de coordenadas cartesianas"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb19"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Noção de função"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb20"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Função do 1º grau"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb21"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Gráfico da função"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb22"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Função do 2º grau (quadrática)"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb23"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Gráfico da função"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb24"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Zeros da função"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb25"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Concavidade da parábola"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb26"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Ponto mínimo e máximo"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_II"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/III_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                     android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_matematica_nono_III"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                         android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                 android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                             android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb27"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Semelhança"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb28"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Polígonos semelhantes"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb29"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Triângulos semelhantes"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb30"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Teorema de Pitágoras"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb31"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Trigonometria"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb32"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Estudando Tangente"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb33"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Estudando Seno e Cosseno"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb34"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Relações trigonométricas no triângulo retângulo"
+                                                app:buttonTint="@android:color/black" />
+
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_III"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/IV_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/titulo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_matematica_nono_IV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/conteudo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/Linha"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/linha"
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb35"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Áreas e Volumes"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb36"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Área dos polígonos"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb37"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Volume dos sólidos"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb38"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Retomada a matemática financeira"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb39"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Regra de três composta"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb40"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Problemas financeiros"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb41"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Classificação dos Números"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb42"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Conjuntos"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb43"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Conjuntos numéricos (N, Z, Q, I e R)"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb44"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Circunferência e Círculo"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb45"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Perímetro da circunferência"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb46"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Área do círculo"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_IV"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

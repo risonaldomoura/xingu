@@ -287,6 +287,11 @@
                                                 android:text="Positivo e Negativo"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -303,7 +308,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_I"
+                                        android:id="@+id/btn1"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -566,6 +571,11 @@
                                                 android:text="Oficina de teatro (apresentações teatrais)"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -582,7 +592,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_II"
+                                        android:id="@+id/btn2"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -830,6 +840,11 @@
             tango, frevo, folia de reis, etc)"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="20dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -846,7 +861,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_III"
+                                        android:id="@+id/btn3"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -1122,6 +1137,11 @@
                                                 android:text="Oficina - apresentações"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -1138,7 +1158,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_IV"
+                                        android:id="@+id/btn4"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"

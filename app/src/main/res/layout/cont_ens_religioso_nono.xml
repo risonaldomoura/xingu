@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xingu.inteceleri.xingu.Config_bimestre_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/Imagem_disciplina"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="122dp"
+                            android:background="@drawable/ic_disc_ens_religioso"
+                            android:orientation="horizontal"></LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/I_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_ens_religioso_nono_I"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_I"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="A importância do Corpo para a vida humana"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="A sociedade de consumo e a mercantilização do corpo"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="O consumo de drogas e suas consequências para
+o equilíbrio do ser humano"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Valorização da pessoa humana e de sua dignidade"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb5"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="1dp"
+                                                android:text="Corpo e alma: Concepções religiosas e não
+religiosas"
+                                                app:buttonTint="@android:color/black" />
+
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_I"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/II_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_ens_religioso_nono_II"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_II"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb6"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="O destino do Ser Humano (Ancestralidade, Reencarnação, Ressurreição, o Nada)"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30dp"
+                                                android:layout_weight="1" />
+
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_II"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/III_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_ens_religioso_nono_III"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+
+                                                android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_III"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb7"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Religiões de matriz africana e afrobrasileiras: Candomblé,Umbanda,Bambucuê,Tambor
+de Minas (Origem, Ideia do transcendente, Símbolos, Ritos, Mitos, Valores)"
+                                                app:buttonTint="@android:color/black" />
+
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30dp"
+                                                android:layout_weight="1" />
+
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_III"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/IV_bimestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="3dp">
+
+                        <FrameLayout
+                            android:id="@+id/fl_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:elevation="8dp"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/titulo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/canto_sup_arredondado"
+                                    android:backgroundTint="@color/elementos_conteudo"
+                                    android:gravity="center"
+                                    android:text="@string/title_ens_religioso_nono_IV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/canto_inf_arredondado"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/conteudo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="Conteúdo"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5.93"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:layout_width="55dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="15"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_inicio_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="JAN"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/Linha"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="3dp"
+                                                android:background="@color/elementos_conteudo"
+                                                android:orientation="horizontal"></LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/dia_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="25"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="36sp" />
+
+                                                    <TextView
+                                                        android:id="@+id/mes_termino_IV"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:text="MAR"
+                                                        android:textColor="@android:color/black"
+                                                        android:textSize="16sp" />
+
+                                                </LinearLayout>
+
+                                                <Space
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/linha"
+                                            android:layout_width="3dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/elementos_conteudo"
+                                            android:orientation="vertical"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="10dp"
+                                            android:orientation="vertical">
+
+                                            <CheckBox
+                                                android:id="@+id/cb8"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Viver como um cidadão: Um direito de todos"
+                                                app:buttonTint="@android:color/black" />
+
+                                            <CheckBox
+                                                android:id="@+id/cb9"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:text="Somos todos responsáveis pela paz"
+                                                app:buttonTint="@android:color/black" />
+
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30dp"
+                                                android:layout_weight="1" />
+
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/obj_arte_sexto_IV"
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_marginTop="5dp"
+                                        android:background="@drawable/cantoarredondado"
+                                        android:backgroundTint="@color/elementos_conteudo"
+                                        android:elevation="0dp"
+                                        android:text="OBJETIVO"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

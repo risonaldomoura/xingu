@@ -299,6 +299,11 @@
                                                 android:text="Classificação dos seres vivos"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -854,6 +859,11 @@
                                                 android:text="Mamíferos"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -1129,6 +1139,11 @@
                                                 android:layout_marginBottom="1dp"
                                                 android:text="Utilização das plantas pela humanidade"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
 
                                         </LinearLayout>

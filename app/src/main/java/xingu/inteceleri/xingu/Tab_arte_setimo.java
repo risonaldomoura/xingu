@@ -11,6 +11,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
@@ -60,14 +61,66 @@ public class Tab_arte_setimo extends Fragment {
     public int Mes_sistema;
 
     public int estadocb1, estadocb2, estadocb3, estadocb4, estadocb5, estadocb6, estadocb7, estadocb8
-            ,estadocb9, estadocb10;
+            ,estadocb9, estadocb10, estadocb11, estadocb12, estadocb13, estadocb14, estadocb15
+            , estadocb16, estadocb17, estadocb18, estadocb19, estadocb20, estadocb21, estadocb22
+            , estadocb23;
 
-    CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10;
+    CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10, cb11, cb12, cb13, cb14, cb15, cb16
+            , cb17, cb18, cb19, cb20, cb21, cb22, cb23;
+
+
+    private Button btn1;
+    private Button btn2;
+    private Button btn3;
+    private Button btn4;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.cont_arte_setimo, container, false);
+
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getActivity().getApplicationContext(), "Botão obj. 1", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getActivity().getApplicationContext(), "Botão obj. 2", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getActivity().getApplicationContext(), "Botão obj. 3", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(getActivity().getApplicationContext(), "Botão obj. 4", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
 
         //=============== CARREGAMENTO DAS DATAS DOS BIMESTRES =====================================
 
@@ -1179,6 +1232,1013 @@ public class Tab_arte_setimo extends Fragment {
             }
         });
         //===================================FIM CHECKBOX 10========================================
+
+        //======================TRATAMENTO DO CHECKBOX 11============================================
+
+        cb11 = (CheckBox) view.findViewById(R.id.cb11);
+
+        SharedPreferences sharedPref_estadocb11 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb11 = sharedPref_estadocb11.getInt("estadocb11", 0);
+
+        if (estadocb11 == 0)
+            cb11.setChecked(false);
+        else
+            cb11.setChecked(true);
+
+        cb11.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb11.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb11.setChecked(true);
+
+                            //estadocb11 = 1;
+                            SharedPreferences sharedPref_estadocb11 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb11.edit();
+                            prefEditor.putInt("estadocb11",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb11.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb11 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb11.edit();
+                            prefEditor.putInt("estadocb11", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 11========================================
+
+        //======================TRATAMENTO DO CHECKBOX 12============================================
+
+        cb12 = (CheckBox) view.findViewById(R.id.cb12);
+
+        SharedPreferences sharedPref_estadocb12 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb12 = sharedPref_estadocb12.getInt("estadocb12", 0);
+
+        if (estadocb12 == 0)
+            cb12.setChecked(false);
+        else
+            cb12.setChecked(true);
+
+        cb12.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb12.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb12.setChecked(true);
+
+                            //estadocb12 = 1;
+                            SharedPreferences sharedPref_estadocb12 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb12.edit();
+                            prefEditor.putInt("estadocb12",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb12.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb12 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb12.edit();
+                            prefEditor.putInt("estadocb12", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 12========================================
+
+        //======================TRATAMENTO DO CHECKBOX 13============================================
+
+        cb13 = (CheckBox) view.findViewById(R.id.cb13);
+
+        SharedPreferences sharedPref_estadocb13 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb13 = sharedPref_estadocb13.getInt("estadocb13", 0);
+
+        if (estadocb13 == 0)
+            cb13.setChecked(false);
+        else
+            cb13.setChecked(true);
+
+        cb13.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb13.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb13.setChecked(true);
+
+                            //estadocb13 = 1;
+                            SharedPreferences sharedPref_estadocb13 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb13.edit();
+                            prefEditor.putInt("estadocb13",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb13.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb13 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb13.edit();
+                            prefEditor.putInt("estadocb13", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 13========================================
+
+        //======================TRATAMENTO DO CHECKBOX 14============================================
+
+        cb14 = (CheckBox) view.findViewById(R.id.cb14);
+
+        SharedPreferences sharedPref_estadocb14 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb14 = sharedPref_estadocb14.getInt("estadocb14", 0);
+
+        if (estadocb14 == 0)
+            cb14.setChecked(false);
+        else
+            cb14.setChecked(true);
+
+        cb14.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb14.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb14.setChecked(true);
+
+                            //estadocb14 = 1;
+                            SharedPreferences sharedPref_estadocb14 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb14.edit();
+                            prefEditor.putInt("estadocb14",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb14.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb14 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb14.edit();
+                            prefEditor.putInt("estadocb14", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 14========================================
+
+        //======================TRATAMENTO DO CHECKBOX 15============================================
+
+        cb15 = (CheckBox) view.findViewById(R.id.cb15);
+
+        SharedPreferences sharedPref_estadocb15 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb15 = sharedPref_estadocb15.getInt("estadocb15", 0);
+
+        if (estadocb15 == 0)
+            cb15.setChecked(false);
+        else
+            cb15.setChecked(true);
+
+        cb15.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb15.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb15.setChecked(true);
+
+                            //estadocb15 = 1;
+                            SharedPreferences sharedPref_estadocb15 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb15.edit();
+                            prefEditor.putInt("estadocb15",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb15.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb15 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb15.edit();
+                            prefEditor.putInt("estadocb15", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 15========================================
+
+        //======================TRATAMENTO DO CHECKBOX 16============================================
+
+        cb16 = (CheckBox) view.findViewById(R.id.cb16);
+
+        SharedPreferences sharedPref_estadocb16 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb16 = sharedPref_estadocb16.getInt("estadocb16", 0);
+
+        if (estadocb16 == 0)
+            cb16.setChecked(false);
+        else
+            cb16.setChecked(true);
+
+        cb16.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb16.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb16.setChecked(true);
+
+                            //estadocb16 = 1;
+                            SharedPreferences sharedPref_estadocb16 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb16.edit();
+                            prefEditor.putInt("estadocb16",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb16.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb16 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb16.edit();
+                            prefEditor.putInt("estadocb16", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 16========================================
+
+        //======================TRATAMENTO DO CHECKBOX 17============================================
+
+        cb17 = (CheckBox) view.findViewById(R.id.cb17);
+
+        SharedPreferences sharedPref_estadocb17 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb17 = sharedPref_estadocb17.getInt("estadocb17", 0);
+
+        if (estadocb17 == 0)
+            cb17.setChecked(false);
+        else
+            cb17.setChecked(true);
+
+        cb17.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb17.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb17.setChecked(true);
+
+                            //estadocb17 = 1;
+                            SharedPreferences sharedPref_estadocb17 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb17.edit();
+                            prefEditor.putInt("estadocb17",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb17.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb17 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb17.edit();
+                            prefEditor.putInt("estadocb17", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 17========================================
+
+        //======================TRATAMENTO DO CHECKBOX 18============================================
+
+        cb18 = (CheckBox) view.findViewById(R.id.cb18);
+
+        SharedPreferences sharedPref_estadocb18 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb18 = sharedPref_estadocb18.getInt("estadocb18", 0);
+
+        if (estadocb18 == 0)
+            cb18.setChecked(false);
+        else
+            cb18.setChecked(true);
+
+        cb18.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb18.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb18.setChecked(true);
+
+                            //estadocb18 = 1;
+                            SharedPreferences sharedPref_estadocb18 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb18.edit();
+                            prefEditor.putInt("estadocb18",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb18.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb18 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb18.edit();
+                            prefEditor.putInt("estadocb18", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 18========================================
+
+        //======================TRATAMENTO DO CHECKBOX 19============================================
+
+        cb19 = (CheckBox) view.findViewById(R.id.cb19);
+
+        SharedPreferences sharedPref_estadocb19 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb19 = sharedPref_estadocb19.getInt("estadocb19", 0);
+
+        if (estadocb19 == 0)
+            cb19.setChecked(false);
+        else
+            cb19.setChecked(true);
+
+        cb19.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb19.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb19.setChecked(true);
+
+                            //estadocb19 = 1;
+                            SharedPreferences sharedPref_estadocb19 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb19.edit();
+                            prefEditor.putInt("estadocb19",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb19.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb19 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb19.edit();
+                            prefEditor.putInt("estadocb19", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 19========================================
+
+        //======================TRATAMENTO DO CHECKBOX 20============================================
+
+        cb20 = (CheckBox) view.findViewById(R.id.cb20);
+
+        SharedPreferences sharedPref_estadocb20 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb20 = sharedPref_estadocb20.getInt("estadocb20", 0);
+
+        if (estadocb20 == 0)
+            cb20.setChecked(false);
+        else
+            cb20.setChecked(true);
+
+        cb20.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb20.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb20.setChecked(true);
+
+                            //estadocb20 = 1;
+                            SharedPreferences sharedPref_estadocb20 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb20.edit();
+                            prefEditor.putInt("estadocb20",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb20.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb20 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb20.edit();
+                            prefEditor.putInt("estadocb20", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 20========================================
+
+        //======================TRATAMENTO DO CHECKBOX 21============================================
+
+        cb21 = (CheckBox) view.findViewById(R.id.cb21);
+
+        SharedPreferences sharedPref_estadocb21 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb21 = sharedPref_estadocb21.getInt("estadocb21", 0);
+
+        if (estadocb21 == 0)
+            cb21.setChecked(false);
+        else
+            cb21.setChecked(true);
+
+        cb21.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb21.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb21.setChecked(true);
+
+                            //estadocb21 = 1;
+                            SharedPreferences sharedPref_estadocb21 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb21.edit();
+                            prefEditor.putInt("estadocb21",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb21.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb21 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb21.edit();
+                            prefEditor.putInt("estadocb21", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 21========================================
+
+        //======================TRATAMENTO DO CHECKBOX 22============================================
+
+        cb22 = (CheckBox) view.findViewById(R.id.cb22);
+
+        SharedPreferences sharedPref_estadocb22 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb22 = sharedPref_estadocb22.getInt("estadocb22", 0);
+
+        if (estadocb22 == 0)
+            cb22.setChecked(false);
+        else
+            cb22.setChecked(true);
+
+        cb22.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb22.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb22.setChecked(true);
+
+                            //estadocb22 = 1;
+                            SharedPreferences sharedPref_estadocb22 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb22.edit();
+                            prefEditor.putInt("estadocb22",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb22.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb22 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb22.edit();
+                            prefEditor.putInt("estadocb22", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 22========================================
+
+        //======================TRATAMENTO DO CHECKBOX 23============================================
+
+        cb23 = (CheckBox) view.findViewById(R.id.cb23);
+
+        SharedPreferences sharedPref_estadocb23 = this.getActivity().getSharedPreferences("pref_checkbox_arte_setimo", Context.MODE_PRIVATE);
+        estadocb23 = sharedPref_estadocb23.getInt("estadocb23", 0);
+
+        if (estadocb23 == 0)
+            cb23.setChecked(false);
+        else
+            cb23.setChecked(true);
+
+        cb23.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb23.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb23.setChecked(true);
+
+                            //estadocb23 = 1;
+                            SharedPreferences sharedPref_estadocb23 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb23.edit();
+                            prefEditor.putInt("estadocb23",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb23.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb23 = getActivity().getSharedPreferences("pref_checkbox_arte_setimo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb23.edit();
+                            prefEditor.putInt("estadocb23", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 23========================================
 
 
         return view;

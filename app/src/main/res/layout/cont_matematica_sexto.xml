@@ -294,6 +294,12 @@
                                                 android:text="Raiz Quadrada de números naturais"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
+
 
                                         </LinearLayout>
 
@@ -575,6 +581,11 @@
                                                 android:text="Operações com frações"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -854,6 +865,11 @@
                                                 android:text="Elementos das principais figuras planas"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -1091,7 +1107,7 @@
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/v20"
+                                                android:id="@+id/cb20"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -1129,6 +1145,11 @@
                                                 android:layout_marginBottom="1dp"
                                                 android:text="Área de terra com medidas agrárias"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
                                         </LinearLayout>
 

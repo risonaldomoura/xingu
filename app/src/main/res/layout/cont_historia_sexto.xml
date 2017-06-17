@@ -273,7 +273,7 @@
 
                                             <Space
                                                 android:layout_width="match_parent"
-                                                android:layout_height="10dp"
+                                                android:layout_height="20dp"
                                                 android:layout_weight="1" />
 
 
@@ -632,6 +632,11 @@
                                                 android:layout_marginBottom="1dp"
                                                 android:text="Homens e deuses, Uma religião cívica"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
 
                                         </LinearLayout>
@@ -1023,6 +1028,11 @@
                                                 android:layout_marginBottom="1dp"
                                                 android:text="A produção intelectual"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
 
 

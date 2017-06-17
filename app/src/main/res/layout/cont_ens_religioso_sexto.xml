@@ -819,7 +819,7 @@ sagrados, mitos, ritos e símbolos)"
 
                                             <Space
                                                 android:layout_width="match_parent"
-                                                android:layout_height="15dp"
+                                                android:layout_height="30dp"
                                                 android:layout_weight="1" />
 
 
@@ -1079,7 +1079,7 @@ que contribuem para a paz"
 
                                             <Space
                                                 android:layout_width="match_parent"
-                                                android:layout_height="30dp"
+                                                android:layout_height="34dp"
                                                 android:layout_weight="1" />
 
 

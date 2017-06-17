@@ -282,6 +282,11 @@
                                                 android:text="Oficina – apresentações dos trabalhos"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -298,7 +303,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_I"
+                                        android:id="@+id/btn1"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -558,6 +563,11 @@
                                                 android:text="Danças populares"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
                                         </LinearLayout>
 
                                     </LinearLayout>
@@ -573,7 +583,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_II"
+                                        android:id="@+id/btn2"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -833,6 +843,11 @@
                                                 android:text="Danças populares"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -849,7 +864,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_III"
+                                        android:id="@+id/btn3"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -1117,6 +1132,11 @@
                                                 android:text="Oficina (banda musical feita por alguns da sala e amigos da escola)"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -1133,7 +1153,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_IV"
+                                        android:id="@+id/btn4"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"

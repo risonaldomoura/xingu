@@ -95,6 +95,7 @@ public class Main_activity extends AppCompatActivity
 
     private ArrayAdapter<String> adp_disciplina;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -148,9 +149,7 @@ public class Main_activity extends AppCompatActivity
 
         //FrameLayout da spinner
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
-
-        //final FrameLayout fl_1 = (FrameLayout) findViewById(R.id.fl_1);
-        //final FrameLayout fl_2 = (FrameLayout) findViewById(R.id.fl_2);
+        
 
         //FrameLayout Arte
         final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
@@ -472,6 +471,41 @@ public class Main_activity extends AppCompatActivity
     }
     //==============================================================================================
 
+    public void fl_objetivo_teste(View view) {
+
+        final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
+        //final FrameLayout fl_obj = (FrameLayout) view.findViewById(R.id.fl_obj);
+
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        //Button btn_ok = (Button) view.findViewById(R.id.btn_ok);
+
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_arte.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                //fl_objetivo.setVisibility(View.VISIBLE);
+                //Toast.makeText(Main_activity.this, "Objetivo_1 ", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+/*
+        btn_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_arte.setVisibility(View.GONE);
+                fl_spinner.setVisibility(View.VISIBLE);
+            }
+        });*/
+
+
+    }
 
 
     //=============================COLOCAR SOMBRA NO BLOCO DE BIMESTRE==============================
@@ -569,66 +603,6 @@ public class Main_activity extends AppCompatActivity
             //======================================================================================
         }
     //==============================================================================================
-
-    /*
-    public void onCheckboxClicked(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-
-        // Check which checkbox was clicked
-        switch(view.getId()) {
-            case R.id.checkbox1:
-                if (checked)
-                    Toast.makeText(Main_activity.this,"Marcado:",Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(Main_activity.this,"Desmarcado:",Toast.LENGTH_SHORT).show();
-                break;
-           // case R.id.checkbox_cheese:
-               // if (checked)
-               // // Cheese me
-            //else
-            //    // I'm lactose intolerant
-             //   break;
-            //
-        }
-    } */
-
-
-
-    /*
-    private void loadSavedPreferences() {
-
-        SharedPreferences sharedPreferences = PreferenceManager
-                .getDefaultSharedPreferences(this/ Put some meat on the sandwich
-            else);
-        boolean checkBoxValue = sharedPreferences.getBoolean("CheckBox_Value", false);
-        String name = sharedPreferences.getString("storedName", "YourName");
-        if (checkBoxValue) {
-            checkbox1.setChecked(true);
-
-        } else {
-
-            checkbox1.setChecked(false);
-        }
-    }
-
-    private void savePreferences(String key, boolean value) {
-        SharedPreferences sharedPreferences = PreferenceManager
-                .getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putBoolean(key, value);
-        editor.commit();
-    }
-
-    public void onClick(View v) {
-        //
-        savePreferences("CheckBox_Value", checkbox1.isChecked());
-        //if (checkbox1.isChecked())
-        //savePreferences("storedName", editText.getText().toString());
-        finish();
-    }
-    */
-
 
 /*
     @Override
@@ -901,10 +875,9 @@ public class Main_activity extends AppCompatActivity
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_arte);
             FrameLayout fls = (FrameLayout) findViewById(R.id.fl_spinner);
 
-
             fl.setVisibility(View.VISIBLE);
             fls.setVisibility(View.GONE);
-            //Abrir a mensagem de objetivos de arte
+            //Abrir a mensagem de Apresentação de arte
 
         } if (id == R.id.ciencias) {
             FrameLayout fl = (FrameLayout) findViewById(R.id.fl_ciencias);

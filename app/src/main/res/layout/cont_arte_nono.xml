@@ -292,6 +292,11 @@
                                                 android:text="O grafite"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -308,7 +313,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_I"
+                                        android:id="@+id/btn1"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -568,6 +573,11 @@
                                                 android:text="Pensamento X movimento"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
                                         </LinearLayout>
 
                                     </LinearLayout>
@@ -583,7 +593,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_II"
+                                        android:id="@+id/btn2"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -860,6 +870,11 @@
                                                 android:text="Expressão humana"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
 
                                         </LinearLayout>
@@ -877,7 +892,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_III"
+                                        android:id="@+id/btn3"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -1102,7 +1117,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Os elementos das artes visuais"
+                                                android:text="História da música"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -1110,7 +1125,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Criar e sentir"
+                                                android:text="História da música brasileira de 1998 a 1990"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -1118,7 +1133,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
-                                                android:text="Pintura"
+                                                android:text="O sistema de escrita musical"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -1126,7 +1141,7 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
+                                                android:text="Elementos da música (altura,intensidade,timbre e densidade)"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
@@ -1134,17 +1149,8 @@
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
+                                                android:text="Babel musical"
                                                 app:buttonTint="@android:color/black" />
-
-                                            <CheckBox
-                                                android:id="@+id/cb24"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginBottom="1dp"
-                                                android:text="A arte dos povos indígenas"
-                                                app:buttonTint="@android:color/black" />
-
 
                                         </LinearLayout>
 
@@ -1161,7 +1167,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_IV"
+                                        android:id="@+id/btn4"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"

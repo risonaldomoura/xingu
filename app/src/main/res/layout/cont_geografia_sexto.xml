@@ -307,6 +307,11 @@ geográfico"
                                                 android:text="Os gráficos"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -606,6 +611,11 @@ tectônicas"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="O vulcanismo"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
 
 
@@ -907,6 +917,11 @@ tectônicas"
                                                 android:text="Brasil: formação vegetais naturais"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
 
                                         </LinearLayout>
@@ -1205,6 +1220,11 @@ tectônicas"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="Atividade industrial no Brasil"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
 
                                         </LinearLayout>

@@ -306,6 +306,11 @@ silábica"
                                                 android:text="O uso do dicionário: verbetes"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -577,6 +582,11 @@ textos: diário, cartas/e-mail, poema"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="Ortografia: -ez/-eza/ -oso/-osa"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
 
                                         </LinearLayout>
@@ -850,6 +860,11 @@ metáfora"
                                                 android:layout_marginBottom="1dp"
                                                 android:text="Ortografia: o emprego do mau/mal"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
                                         </LinearLayout>
 
@@ -1128,6 +1143,11 @@ em quadrinhos"
                                                 android:text="Ortografia: sinonímia, antonímia e
 homonímia"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
                                         </LinearLayout>
 

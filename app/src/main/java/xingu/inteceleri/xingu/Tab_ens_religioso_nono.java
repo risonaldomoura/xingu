@@ -5,13 +5,19 @@ package xingu.inteceleri.xingu;
  */
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -53,11 +59,16 @@ public class Tab_ens_religioso_nono extends Fragment {
     public int Dia_sistema;
     public int Mes_sistema;
 
+    public int estadocb1, estadocb2, estadocb3, estadocb4, estadocb5, estadocb6, estadocb7, estadocb8
+            ,estadocb9;
+
+    CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container2,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.cont_ens_religioso_sexto, container2, false);
+        View view = inflater.inflate(R.layout.cont_ens_religioso_nono, container2, false);
 
         //=============== CARREGAMENTO DAS DATAS DOS BIMESTRES =====================================
 
@@ -417,6 +428,682 @@ public class Tab_ens_religioso_nono extends Fragment {
 
         //==========================================================================================
         //FIM DO MÉTODO DE DATAS DOS BIMESTRES
+
+
+        //======================TRATAMENTO DO CHECKBOX 1============================================
+
+        cb1 = (CheckBox) view.findViewById(R.id.cb1);
+
+        SharedPreferences sharedPref_estadocb1 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb1 = sharedPref_estadocb1.getInt("estadocb1", 0);
+
+        if (estadocb1 == 0)
+            cb1.setChecked(false);
+        else
+            cb1.setChecked(true);
+
+        cb1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb1.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb1.setChecked(true);
+
+                            //estadocb1 = 1;
+                            SharedPreferences sharedPref_estadocb1 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb1.edit();
+                            prefEditor.putInt("estadocb1",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb1.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb1 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb1.edit();
+                            prefEditor.putInt("estadocb1", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+
+
+        //===================================FIM CHECKBOX 1=========================================
+
+        //======================TRATAMENTO DO CHECKBOX 2============================================
+
+        cb2 = (CheckBox) view.findViewById(R.id.cb2);
+
+        SharedPreferences sharedPref_estadocb2 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb2 = sharedPref_estadocb2.getInt("estadocb2", 0);
+
+        if (estadocb2 == 0)
+            cb2.setChecked(false);
+        else
+            cb2.setChecked(true);
+
+        cb2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb2.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb2.setChecked(true);
+
+                            //estadocb2 = 1;
+                            SharedPreferences sharedPref_estadocb2 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb2.edit();
+                            prefEditor.putInt("estadocb2",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb2.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb2 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb2.edit();
+                            prefEditor.putInt("estadocb2", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 2=========================================
+
+
+        //======================TRATAMENTO DO CHECKBOX 3============================================
+
+        cb3 = (CheckBox) view.findViewById(R.id.cb3);
+
+        SharedPreferences sharedPref_estadocb3 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb3 = sharedPref_estadocb3.getInt("estadocb3", 0);
+
+        if (estadocb3 == 0)
+            cb3.setChecked(false);
+        else
+            cb3.setChecked(true);
+
+        cb3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb3.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb3.setChecked(true);
+
+                            //estadocb3 = 1;
+                            SharedPreferences sharedPref_estadocb3 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb3.edit();
+                            prefEditor.putInt("estadocb3",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb3.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb3 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb3.edit();
+                            prefEditor.putInt("estadocb3", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 3=========================================
+
+        //======================TRATAMENTO DO CHECKBOX 4============================================
+
+        cb4 = (CheckBox) view.findViewById(R.id.cb4);
+
+        SharedPreferences sharedPref_estadocb4 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb4 = sharedPref_estadocb4.getInt("estadocb4", 0);
+
+        if (estadocb4 == 0)
+            cb4.setChecked(false);
+        else
+            cb4.setChecked(true);
+
+        cb4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb4.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb4.setChecked(true);
+
+                            //estadocb4 = 1;
+                            SharedPreferences sharedPref_estadocb4 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb4.edit();
+                            prefEditor.putInt("estadocb4",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb4.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb4 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb4.edit();
+                            prefEditor.putInt("estadocb4", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 4=========================================
+
+
+        //======================TRATAMENTO DO CHECKBOX 5============================================
+
+        cb5 = (CheckBox) view.findViewById(R.id.cb5);
+
+        SharedPreferences sharedPref_estadocb5 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb5 = sharedPref_estadocb5.getInt("estadocb5", 0);
+
+        if (estadocb5 == 0)
+            cb5.setChecked(false);
+        else
+            cb5.setChecked(true);
+
+        cb5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb5.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb5.setChecked(true);
+
+                            //estadocb5 = 1;
+                            SharedPreferences sharedPref_estadocb5 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb5.edit();
+                            prefEditor.putInt("estadocb5",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb5.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb5 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb5.edit();
+                            prefEditor.putInt("estadocb5", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 5=========================================
+
+        //======================TRATAMENTO DO CHECKBOX 6============================================
+
+        cb6 = (CheckBox) view.findViewById(R.id.cb6);
+
+        SharedPreferences sharedPref_estadocb6 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb6 = sharedPref_estadocb6.getInt("estadocb6", 0);
+
+        if (estadocb6 == 0)
+            cb6.setChecked(false);
+        else
+            cb6.setChecked(true);
+
+        cb6.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb6.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb6.setChecked(true);
+
+                            //estadocb6 = 1;
+                            SharedPreferences sharedPref_estadocb6 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb6.edit();
+                            prefEditor.putInt("estadocb6",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb6.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb6 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb6.edit();
+                            prefEditor.putInt("estadocb6", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 6=========================================
+
+
+        //======================TRATAMENTO DO CHECKBOX 7============================================
+
+        cb7 = (CheckBox) view.findViewById(R.id.cb7);
+
+        SharedPreferences sharedPref_estadocb7 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb7 = sharedPref_estadocb7.getInt("estadocb7", 0);
+
+        if (estadocb7 == 0)
+            cb7.setChecked(false);
+        else
+            cb7.setChecked(true);
+
+        cb7.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb7.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb7.setChecked(true);
+
+                            //estadocb7 = 1;
+                            SharedPreferences sharedPref_estadocb7 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb7.edit();
+                            prefEditor.putInt("estadocb7",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb7.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb7 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb7.edit();
+                            prefEditor.putInt("estadocb7", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 7=========================================
+
+
+        //======================TRATAMENTO DO CHECKBOX 8============================================
+
+        cb8 = (CheckBox) view.findViewById(R.id.cb8);
+
+        SharedPreferences sharedPref_estadocb8 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb8 = sharedPref_estadocb8.getInt("estadocb8", 0);
+
+        if (estadocb8 == 0)
+            cb8.setChecked(false);
+        else
+            cb8.setChecked(true);
+
+        cb8.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb8.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb8.setChecked(true);
+
+                            //estadocb8 = 1;
+                            SharedPreferences sharedPref_estadocb8 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb8.edit();
+                            prefEditor.putInt("estadocb8",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb8.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb8 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb8.edit();
+                            prefEditor.putInt("estadocb8", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 8=========================================
+
+        //======================TRATAMENTO DO CHECKBOX 9============================================
+
+        cb9 = (CheckBox) view.findViewById(R.id.cb9);
+
+        SharedPreferences sharedPref_estadocb9 = this.getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", Context.MODE_PRIVATE);
+        estadocb9 = sharedPref_estadocb9.getInt("estadocb9", 0);
+
+        if (estadocb9 == 0)
+            cb9.setChecked(false);
+        else
+            cb9.setChecked(true);
+
+        cb9.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb9.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb9.setChecked(true);
+
+                            //estadocb9 = 1;
+                            SharedPreferences sharedPref_estadocb9 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb9.edit();
+                            prefEditor.putInt("estadocb9",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb9.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb9 = getActivity().getSharedPreferences("pref_checkbox_ens_religioso_nono", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb9.edit();
+                            prefEditor.putInt("estadocb9", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 9=========================================
 
 
         DataSistema();

@@ -324,6 +324,11 @@
                                                 android:text="Fonação"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
 
 
@@ -631,6 +636,11 @@
                                                 android:text="Doenças sexualmente transmissíveis (DSTs)"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -915,6 +925,11 @@
                                                 android:text="Sistema Cardiovascular"
                                                 app:buttonTint="@android:color/black" />
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
+
 
                                         </LinearLayout>
 
@@ -1182,6 +1197,11 @@
                                                 android:layout_marginBottom="1dp"
                                                 android:text="Sistema Endócrino"
                                                 app:buttonTint="@android:color/black" />
+
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="10dp"
+                                                android:layout_weight="1" />
 
 
 
