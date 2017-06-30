@@ -241,6 +241,16 @@ public class Registro_activity extends AppCompatActivity  {
         firebaseAuth.addAuthStateListener(mAuthListener);
     }
 
+    @Override
+    protected  void onStop(){
+        super.onStop();
+
+        if(mAuthListener != null){
+            firebaseAuth.removeAuthStateListener(mAuthListener);
+        }
+
+
+    }
     /*
     @Override
     public void onClick(View v) {
