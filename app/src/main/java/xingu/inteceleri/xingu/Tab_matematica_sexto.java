@@ -2290,6 +2290,7 @@ public class Tab_matematica_sexto extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         ((Main_activity) getActivity()).SombraBimestre(view);
+        ((Main_activity) getActivity()).fl_obj_matematica_sexto(view);
     }
     //==============================================================================================
 }

@@ -75,7 +75,7 @@
         android:visibility="gone" />
 
     <include
-        android:id="@+id/fl_objetivo"
+        android:id="@+id/fl_obj"
         layout="@layout/obj"
         layout_width="match_parent"
         android:layout_width="match_parent"

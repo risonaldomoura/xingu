@@ -34,7 +34,6 @@ import java.util.logging.Handler;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-//import static android.widget.Toast.*;
 
 
 public class Main_activity extends AppCompatActivity
@@ -132,24 +131,36 @@ public class Main_activity extends AppCompatActivity
 
         spn_disciplina = (Spinner) findViewById(R.id.spn_disciplina);
 
-        adp_disciplina = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
+        adp_disciplina = new ArrayAdapter<String>(this, R.layout.layout_spinner);
         adp_disciplina.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spn_disciplina.setAdapter(adp_disciplina);
 
         adp_disciplina.add("Arte");
         adp_disciplina.add("Ciências");
-        adp_disciplina.add("Educação Física");
-        adp_disciplina.add("Ens. Religioso");
+        adp_disciplina.add("Educação física");
+        adp_disciplina.add("Ensino religioso");
         adp_disciplina.add("Geografia");
         adp_disciplina.add("História");
-        adp_disciplina.add("Língua Portuguesa");
+        adp_disciplina.add("Língua portuguesa");
         adp_disciplina.add("Matemática");
 
 
         //FrameLayout da spinner
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
-        
+
+        //Botao OK dos objetivos
+       Button btn_ok = (Button) findViewById(R.id.btn_ok);
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        btn_ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.GONE);
+                fl_spinner.setVisibility(View.VISIBLE);
+            }
+        });
+
 
         //FrameLayout Arte
         final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
@@ -438,7 +449,7 @@ public class Main_activity extends AppCompatActivity
                 //Toast.makeText(Main_activity.this, "estado: "+ configurar,Toast.LENGTH_SHORT).show();
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Atenção!");
+                builder.setTitle("Bem Vindo(a)!");
                 builder.setMessage("Deseja modificar as datas padrão dos bimestres?")
                         .setCancelable(false)
                         .setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
@@ -471,41 +482,2058 @@ public class Main_activity extends AppCompatActivity
     }
     //==============================================================================================
 
-    public void fl_objetivo_teste(View view) {
+    //==========================LAYOUT CONTEÚDO DOS BIMESTRES=======================================
 
-        final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
-        //final FrameLayout fl_obj = (FrameLayout) view.findViewById(R.id.fl_obj);
-
+    //=========================================ARTE SEXTO===========================================
+    public void fl_obj_arte_sexto(View view) {
+       final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
         Button btn1 = (Button) view.findViewById(R.id.btn1);
-        //Button btn_ok = (Button) view.findViewById(R.id.btn_ok);
-
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                fl_arte.setVisibility(View.VISIBLE);
+                fl_obj.setVisibility(View.VISIBLE);
                 fl_spinner.setVisibility(View.GONE);
 
-                //fl_objetivo.setVisibility(View.VISIBLE);
-                //Toast.makeText(Main_activity.this, "Objetivo_1 ", Toast.LENGTH_SHORT).show();
+                String obj = getString(R.string.obj_arte_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ARTE SETIMO==========================================
+    public void fl_obj_arte_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
 
             }
         });
 
-/*
-        btn_ok.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                fl_arte.setVisibility(View.GONE);
-                fl_spinner.setVisibility(View.VISIBLE);
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
             }
-        });*/
+        });
 
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
     }
+    //==============================================================================================
+
+    //=========================================ARTE OITAVO==========================================
+    public void fl_obj_arte_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ARTE NONO============================================
+    public void fl_obj_arte_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_arte_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+
+    //=========================================CIENCIAS SEXTO============================================
+    public void fl_obj_ciencias_sexto(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+
+    //=========================================CIENCIAS SETIMO============================================
+    public void fl_obj_ciencias_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+
+    //=========================================CIENCIAS OITAVO============================================
+    public void fl_obj_ciencias_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+
+    //=========================================CIENCIAS NONO============================================
+    public void fl_obj_ciencias_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ciencias_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ED_FISICA SEXTO============================================
+    public void fl_obj_ed_fisica_sexto(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ED_FISICA SETIMO============================================
+    public void fl_obj_ed_fisica_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ED_FISICA OITAVO============================================
+    public void fl_obj_ed_fisica_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ED_FISICA NONO============================================
+    public void fl_obj_ed_fisica_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ed_fisica_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ENS_RELIGIOSO SEXTO============================================
+    public void fl_obj_ens_religioso_sexto(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ENS_RELIGIOSO SETIMO============================================
+    public void fl_obj_ens_religioso_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ENS_RELIGIOSO OITAVO============================================
+    public void fl_obj_ens_religioso_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================ENS_RELIGIOSO NONO============================================
+    public void fl_obj_ens_religioso_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_ens_religioso_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================GEOGRAFIA SEXTO============================================
+    public void fl_obj_geografia_sexto(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================GEOGRAFIA SETIMO============================================
+    public void fl_obj_geografia_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================GEOGRAFIA OITAVO============================================
+    public void fl_obj_geografia_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================GEOGRAFIA NONO============================================
+    public void fl_obj_geografia_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_geografia_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================HISTORIA SEXTO============================================
+    public void fl_obj_historia_sexto(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================HISTORIA SETIMO============================================
+    public void fl_obj_historia_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================HISTORIA OITAVO============================================
+    public void fl_obj_historia_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================HISTORIA NONO============================================
+    public void fl_obj_historia_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_historia_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================MATEMATICA SEXTO============================================
+    public void fl_obj_matematica_sexto(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================MATEMATICA SETIMO============================================
+    public void fl_obj_matematica_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================MATEMATICA OITAVO============================================
+    public void fl_obj_matematica_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================MATEMATICA NONO============================================
+    public void fl_obj_matematica_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_matematica_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================PORTUGUES SEXTO============================================
+    public void fl_obj_portugues_sexto(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_sexto_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_sexto_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_sexto_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_sexto_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================PORTUGUES SETIMO============================================
+    public void fl_obj_portugues_setimo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_setimo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_setimo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_setimo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_setimo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================PORTUGUES OITAVO============================================
+    public void fl_obj_portugues_oitavo(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_oitavo_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
+
+    //=========================================PORTUGUES NONO============================================
+    public void fl_obj_portugues_nono(View view) {
+        final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
+        Button btn1 = (Button) view.findViewById(R.id.btn1);
+        Button btn2 = (Button) view.findViewById(R.id.btn2);
+        Button btn3 = (Button) view.findViewById(R.id.btn3);
+        Button btn4 = (Button) view.findViewById(R.id.btn4);
+        final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_nono_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_nono_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_nono_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_nono_IV);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+    }
+    //==============================================================================================
 
 
     //=============================COLOCAR SOMBRA NO BLOCO DE BIMESTRE==============================
@@ -864,8 +2892,7 @@ public class Main_activity extends AppCompatActivity
             // chamar a activity de configurações
         } else if (id == R.id.compartilhar) {
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
-            shareIntent.setType("set/plain");
-
+            shareIntent.setType("text/plain");
             shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Compartilhe o M-Xingu com seus amigos!");
             shareIntent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=air.MatematicandoEducation&hl=pt_BR");

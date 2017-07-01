@@ -58,7 +58,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -276,7 +276,7 @@ metonímias, hipérbole, ironia, sinestesia"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb4"
+                                                android:id="@+id/cb5"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -285,7 +285,7 @@ composto e desinencial"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb4"
+                                                android:id="@+id/cb6"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -293,7 +293,7 @@ composto e desinencial"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb4"
+                                                android:id="@+id/cb7"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -301,7 +301,7 @@ composto e desinencial"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb4"
+                                                android:id="@+id/cb8"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -309,7 +309,7 @@ composto e desinencial"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb4"
+                                                android:id="@+id/cb9"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -338,7 +338,7 @@ composto e desinencial"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_I"
+                                        android:id="@+id/btn1"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -372,7 +372,7 @@ composto e desinencial"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -554,7 +554,7 @@ composto e desinencial"
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb5"
+                                                android:id="@+id/cb10"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -563,7 +563,7 @@ biografia, memórias e entrevistas"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb6"
+                                                android:id="@+id/cb11"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -571,7 +571,7 @@ biografia, memórias e entrevistas"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb7"
+                                                android:id="@+id/cb12"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -580,7 +580,7 @@ estilo"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb8"
+                                                android:id="@+id/cb13"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -588,7 +588,7 @@ estilo"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb9"
+                                                android:id="@+id/cb14"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -596,7 +596,7 @@ estilo"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb10"
+                                                android:id="@+id/cb15"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -604,7 +604,7 @@ estilo"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb11"
+                                                android:id="@+id/cb16"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -612,7 +612,7 @@ estilo"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb12"
+                                                android:id="@+id/cb17"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -640,7 +640,7 @@ estilo"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_II"
+                                        android:id="@+id/btn2"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -674,7 +674,7 @@ estilo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -856,7 +856,7 @@ estilo"
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb13"
+                                                android:id="@+id/cb18"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -866,7 +866,7 @@ reportagem, artigo de opinião, infográficos
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb14"
+                                                android:id="@+id/cb19"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -875,7 +875,7 @@ adjunto adverbial, aposto e vocativo"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb15"
+                                                android:id="@+id/cb20"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -885,7 +885,7 @@ com o posicionamento sobre o tema)"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb16"
+                                                android:id="@+id/cb21"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -894,7 +894,7 @@ brasileiro)"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb17"
+                                                android:id="@+id/cb22"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -902,7 +902,7 @@ brasileiro)"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb18"
+                                                android:id="@+id/cb23"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -929,7 +929,7 @@ brasileiro)"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_III"
+                                        android:id="@+id/btn3"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -963,7 +963,7 @@ brasileiro)"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -1150,7 +1150,7 @@ brasileiro)"
                                             android:orientation="vertical">
 
                                             <CheckBox
-                                                android:id="@+id/cb19"
+                                                android:id="@+id/cb24"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -1161,7 +1161,7 @@ crítica e resenha descritiva"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb20"
+                                                android:id="@+id/cb25"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -1170,7 +1170,7 @@ aglutinação e justaposição"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb21"
+                                                android:id="@+id/cb26"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="4dp"
@@ -1178,7 +1178,7 @@ aglutinação e justaposição"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb22"
+                                                android:id="@+id/cb27"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1186,7 +1186,7 @@ aglutinação e justaposição"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb23"
+                                                android:id="@+id/cb28"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1194,7 +1194,7 @@ aglutinação e justaposição"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb24"
+                                                android:id="@+id/cb29"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1202,7 +1202,7 @@ aglutinação e justaposição"
                                                 app:buttonTint="@android:color/black" />
 
                                             <CheckBox
-                                                android:id="@+id/cb25"
+                                                android:id="@+id/cb30"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
                                                 android:layout_marginBottom="1dp"
@@ -1229,7 +1229,7 @@ aglutinação e justaposição"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_IV"
+                                        android:id="@+id/btn4"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"

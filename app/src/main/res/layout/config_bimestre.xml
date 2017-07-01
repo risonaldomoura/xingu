@@ -73,10 +73,10 @@
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
-                                    android:backgroundTint="@android:color/holo_blue_light"
+                                    android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="I BIMESTRE"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -85,7 +85,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
-                                android:backgroundTint="@android:color/holo_blue_bright"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
                                 android:orientation="vertical">
 
                                 <Space
@@ -107,7 +107,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Início"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
 
@@ -158,7 +158,7 @@
                                     android:layout_height="3dp"
                                     android:layout_marginLeft="20dp"
                                     android:layout_marginRight="20dp"
-                                    android:background="@android:color/holo_blue_light"
+                                    android:background="@color/elementos_conteudo"
                                     android:orientation="horizontal"></LinearLayout>
 
                                 <Space
@@ -180,7 +180,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Término"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
 
@@ -258,10 +258,10 @@
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
-                                    android:backgroundTint="@android:color/holo_blue_light"
+                                    android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="II BIMESTRE"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -270,7 +270,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
-                                android:backgroundTint="@android:color/holo_blue_bright"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
                                 android:orientation="vertical">
 
                                 <Space
@@ -292,7 +292,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Início"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
 
@@ -343,7 +343,7 @@
                                     android:layout_height="3dp"
                                     android:layout_marginLeft="20dp"
                                     android:layout_marginRight="20dp"
-                                    android:background="@android:color/holo_blue_light"
+                                    android:background="@color/elementos_conteudo"
                                     android:orientation="horizontal"></LinearLayout>
 
                                 <Space
@@ -366,7 +366,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Término"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -444,10 +444,10 @@
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
-                                    android:backgroundTint="@android:color/holo_blue_light"
+                                    android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="III BIMESTRE"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -456,7 +456,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
-                                android:backgroundTint="@android:color/holo_blue_bright"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
                                 android:orientation="vertical">
 
                                 <Space
@@ -478,7 +478,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Início"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
 
@@ -528,7 +528,7 @@
                                     android:layout_height="3dp"
                                     android:layout_marginLeft="20dp"
                                     android:layout_marginRight="20dp"
-                                    android:background="@android:color/holo_blue_light"
+                                    android:background="@color/elementos_conteudo"
                                     android:orientation="horizontal"></LinearLayout>
 
                                 <Space
@@ -550,7 +550,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Término"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>
@@ -629,10 +629,10 @@
                                     android:layout_gravity="center"
                                     android:layout_weight="1"
                                     android:background="@drawable/canto_sup_arredondado"
-                                    android:backgroundTint="@android:color/holo_blue_light"
+                                    android:backgroundTint="@color/elementos_conteudo"
                                     android:gravity="center"
                                     android:text="IV BIMESTRE"
-                                    android:textColor="@android:color/white"
+                                    android:textColor="@color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -641,7 +641,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@drawable/canto_inf_arredondado"
-                                android:backgroundTint="@android:color/holo_blue_bright"
+                                android:backgroundTint="@color/fundo_bloco_bimestre"
                                 android:orientation="vertical">
 
                                 <Space
@@ -664,7 +664,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Início"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
 
@@ -715,7 +715,7 @@
                                     android:layout_height="3dp"
                                     android:layout_marginLeft="20dp"
                                     android:layout_marginRight="20dp"
-                                    android:background="@android:color/holo_blue_light"
+                                    android:background="@color/elementos_conteudo"
                                     android:orientation="horizontal"></LinearLayout>
 
                                 <Space
@@ -738,7 +738,7 @@
                                         android:layout_weight="1"
                                         android:gravity="left|center"
                                         android:text="Término"
-                                        android:textColor="@android:color/white"
+                                        android:textColor="@color/black"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
                                 </LinearLayout>

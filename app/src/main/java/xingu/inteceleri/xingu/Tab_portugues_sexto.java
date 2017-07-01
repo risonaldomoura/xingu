@@ -2214,6 +2214,7 @@ public class Tab_portugues_sexto extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         ((Main_activity) getActivity()).SombraBimestre(view);
+        ((Main_activity) getActivity()).fl_obj_portugues_sexto(view);
     }
     //==============================================================================================
 }

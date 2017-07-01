@@ -3330,6 +3330,7 @@ public class Tab_ciencias_nono extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         ((Main_activity) getActivity()).SombraBimestre(view);
+        ((Main_activity) getActivity()).fl_obj_ciencias_nono(view);
     }
     //==============================================================================================
 }

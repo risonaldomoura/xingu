@@ -3772,6 +3772,7 @@ public class Tab_historia_oitavo extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         ((Main_activity) getActivity()).SombraBimestre(view);
+        ((Main_activity) getActivity()).fl_obj_historia_oitavo(view);
     }
     //==============================================================================================
 }

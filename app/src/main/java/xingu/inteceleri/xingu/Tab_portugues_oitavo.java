@@ -62,10 +62,11 @@ public class Tab_portugues_oitavo extends Fragment {
     public int estadocb1, estadocb2, estadocb3, estadocb4, estadocb5, estadocb6, estadocb7, estadocb8
             ,estadocb9, estadocb10, estadocb11, estadocb12, estadocb13, estadocb14, estadocb15
             , estadocb16, estadocb17, estadocb18, estadocb19, estadocb20, estadocb21, estadocb22
-            , estadocb23, estadocb24, estadocb25;
+            , estadocb23, estadocb24, estadocb25, estadocb26, estadocb27, estadocb28, estadocb29
+            , estadocb30;
 
     CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10, cb11, cb12, cb13, cb14, cb15, cb16
-            , cb17, cb18, cb19, cb20, cb21, cb22, cb23, cb24, cb25;
+            , cb17, cb18, cb19, cb20, cb21, cb22, cb23, cb24, cb25, cb26, cb27, cb28, cb29, cb30;
 
 
     @Override
@@ -2338,6 +2339,377 @@ public class Tab_portugues_oitavo extends Fragment {
         //===================================FIM CHECKBOX 25========================================
 
 
+        //======================TRATAMENTO DO CHECKBOX 26============================================
+
+        cb26 = (CheckBox) view.findViewById(R.id.cb26);
+
+        SharedPreferences sharedPref_estadocb26 = this.getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", Context.MODE_PRIVATE);
+        estadocb26 = sharedPref_estadocb26.getInt("estadocb26", 0);
+
+        if (estadocb26 == 0)
+            cb26.setChecked(false);
+        else
+            cb26.setChecked(true);
+
+        cb26.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb26.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb26.setChecked(true);
+
+                            //estadocb26 = 1;
+                            SharedPreferences sharedPref_estadocb26 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb26.edit();
+                            prefEditor.putInt("estadocb26",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb26.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb26 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb26.edit();
+                            prefEditor.putInt("estadocb26", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 26========================================
+
+        //======================TRATAMENTO DO CHECKBOX 27============================================
+
+        cb27 = (CheckBox) view.findViewById(R.id.cb27);
+
+        SharedPreferences sharedPref_estadocb27 = this.getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", Context.MODE_PRIVATE);
+        estadocb27 = sharedPref_estadocb27.getInt("estadocb27", 0);
+
+        if (estadocb27 == 0)
+            cb27.setChecked(false);
+        else
+            cb27.setChecked(true);
+
+        cb27.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb27.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb27.setChecked(true);
+
+                            //estadocb27 = 1;
+                            SharedPreferences sharedPref_estadocb27 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb27.edit();
+                            prefEditor.putInt("estadocb27",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb27.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb27 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb27.edit();
+                            prefEditor.putInt("estadocb27", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 27========================================
+
+        //======================TRATAMENTO DO CHECKBOX 28============================================
+
+        cb28 = (CheckBox) view.findViewById(R.id.cb28);
+
+        SharedPreferences sharedPref_estadocb28 = this.getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", Context.MODE_PRIVATE);
+        estadocb28 = sharedPref_estadocb28.getInt("estadocb28", 0);
+
+        if (estadocb28 == 0)
+            cb28.setChecked(false);
+        else
+            cb28.setChecked(true);
+
+        cb28.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb28.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb28.setChecked(true);
+
+                            //estadocb28 = 1;
+                            SharedPreferences sharedPref_estadocb28 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb28.edit();
+                            prefEditor.putInt("estadocb28",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb28.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb28 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb28.edit();
+                            prefEditor.putInt("estadocb28", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 28========================================
+
+        //======================TRATAMENTO DO CHECKBOX 29============================================
+
+        cb29 = (CheckBox) view.findViewById(R.id.cb29);
+
+        SharedPreferences sharedPref_estadocb29 = this.getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", Context.MODE_PRIVATE);
+        estadocb29 = sharedPref_estadocb29.getInt("estadocb29", 0);
+
+        if (estadocb29 == 0)
+            cb29.setChecked(false);
+        else
+            cb29.setChecked(true);
+
+        cb29.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb29.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb29.setChecked(true);
+
+                            //estadocb29 = 1;
+                            SharedPreferences sharedPref_estadocb29 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb29.edit();
+                            prefEditor.putInt("estadocb29",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb29.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb29 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb29.edit();
+                            prefEditor.putInt("estadocb29", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 29========================================
+
+        //======================TRATAMENTO DO CHECKBOX 30============================================
+
+        cb30 = (CheckBox) view.findViewById(R.id.cb30);
+
+        SharedPreferences sharedPref_estadocb30 = this.getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", Context.MODE_PRIVATE);
+        estadocb30 = sharedPref_estadocb30.getInt("estadocb30", 0);
+
+        if (estadocb30 == 0)
+            cb30.setChecked(false);
+        else
+            cb30.setChecked(true);
+
+        cb30.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+
+                if (cb30.isChecked()){
+                    String mensagem_marcar = getString(R.string.confirmacao_marcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_marcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb30.setChecked(true);
+
+                            //estadocb30 = 1;
+                            SharedPreferences sharedPref_estadocb30 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo",0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb30.edit();
+                            prefEditor.putInt("estadocb30",1);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    builder.show();
+                }
+                else {
+                    String mensagem_desmarcar = getString(R.string.confirmacao_desmarcar);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    builder.setMessage(mensagem_desmarcar);
+                    builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Intent intent = new Intent(getActivity(), Main_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            cb30.setChecked(false);
+
+                            SharedPreferences sharedPref_estadocb30 = getActivity().getSharedPreferences("pref_checkbox_portugues_oitavo", 0);
+                            SharedPreferences.Editor prefEditor = sharedPref_estadocb30.edit();
+                            prefEditor.putInt("estadocb30", 0);
+                            prefEditor.commit();
+
+                            Toast.makeText(getActivity().getApplicationContext(), "Salvo", Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+                    builder.show();
+                }
+            }
+        });
+        //===================================FIM CHECKBOX 30========================================
+
+
         DataSistema();
 
         return view;
@@ -2363,6 +2735,7 @@ public class Tab_portugues_oitavo extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         ((Main_activity) getActivity()).SombraBimestre(view);
+        ((Main_activity) getActivity()).fl_obj_portugues_oitavo(view);
     }
     //==============================================================================================
 }

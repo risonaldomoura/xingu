@@ -10,22 +10,19 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@color/colorPrimary"
         app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <FrameLayout
         android:id="@+id/fl_tabbed_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <Space
-                android:layout_width="100dp"
-                android:layout_height="44dp" />
 
             <include
                 layout="@layout/tab_activity"
@@ -51,16 +48,15 @@
             android:orientation="horizontal"
             android:weightSum="1">
 
+
             <Spinner
                 android:id="@+id/spn_disciplina"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
                 android:layout_marginLeft="80dp"
-                android:layout_marginRight="80dp"
-                android:layout_marginTop="3dp"
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:gravity="center"
+                android:textAlignment="center"
+                />
 
         </LinearLayout>
     </FrameLayout>

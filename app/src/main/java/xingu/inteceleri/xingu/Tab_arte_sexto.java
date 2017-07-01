@@ -83,67 +83,6 @@ public class Tab_arte_sexto extends Fragment {
         View view = inflater.inflate(R.layout.cont_arte_sexto, container, false);
 
 
-
-        Button btn1 = (Button) view.findViewById(R.id.btn1);
-        Button btn2 = (Button) view.findViewById(R.id.btn2);
-        Button btn3 = (Button) view.findViewById(R.id.btn3);
-        Button btn4 = (Button) view.findViewById(R.id.btn4);
-        Button btn_ok_arte = (Button) view.findViewById(R.id.btn_ok_arte);
-
-        //FrameLayout Objetivo
-         final FrameLayout fl_objetivo = (FrameLayout) view.findViewById(R.id.fl_objetivo);
-         final FrameLayout fl_arte = (FrameLayout) view.findViewById(R.id.fl_arte);
-         final FrameLayout fl_spinner = (FrameLayout) view.findViewById(R.id.fl_spinner);
-/*
-        btn_ok_arte.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                fl_arte.setVisibility(View.GONE);
-                fl_spinner.setVisibility(View.VISIBLE);
-            }
-        });
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                fl_arte.setVisibility(View.VISIBLE);
-                fl_spinner.setVisibility(View.GONE);
-
-            }
-        });
-
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(getActivity().getApplicationContext(), "Botão obj. 2", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(getActivity().getApplicationContext(), "Botão obj. 3", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(getActivity().getApplicationContext(), "Botão obj. 4", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-*/
-
         //=============== CARREGAMENTO DAS DATAS DOS BIMESTRES =====================================
 
         //=================PRIMEIRO BIMESTRE========================================================
@@ -8731,7 +8670,7 @@ public class Tab_arte_sexto extends Fragment {
     @Override
     public void onViewCreated (View view, Bundle savedInstanceState) {
         ((Main_activity) getActivity()).SombraBimestre(view);
-        ((Main_activity) getActivity()).fl_objetivo_teste(view);
+        ((Main_activity) getActivity()).fl_obj_arte_sexto(view);
     }
     //==============================================================================================
 }

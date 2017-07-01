@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/configuracoes"
-            android:icon="@drawable/ic_configuracoes"
-            android:title="Configurações" />
-        <item
-            android:id="@+id/compartilhar"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Compartilhar" />
-    </group>
-
     <item android:title="Apresentação das disciplinas"
           android:textSize="18sp">
         <menu>
@@ -50,5 +39,16 @@
 
         </menu>
     </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/configuracoes"
+            android:icon="@drawable/ic_configuracoes"
+            android:title="Configurações" />
+        <item
+            android:id="@+id/compartilhar"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Compartilhar" />
+    </group>
 
 </menu>

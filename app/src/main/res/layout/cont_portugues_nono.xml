@@ -58,7 +58,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -339,7 +339,7 @@ vírgula"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_I"
+                                        android:id="@+id/btn1"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -373,7 +373,7 @@ vírgula"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -643,7 +643,7 @@ mais/ más e os porquês"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_II"
+                                        android:id="@+id/btn2"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -677,7 +677,7 @@ mais/ más e os porquês"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -937,7 +937,7 @@ subordinadas adjetivas"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_III"
+                                        android:id="@+id/btn3"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
@@ -971,7 +971,7 @@ subordinadas adjetivas"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:background="@color/sombra_bimestre"
                             android:elevation="8dp"
                             android:visibility="gone">
 
@@ -1221,7 +1221,7 @@ coordenação e subordinação"
                                     android:orientation="horizontal">
 
                                     <Button
-                                        android:id="@+id/obj_arte_sexto_IV"
+                                        android:id="@+id/btn4"
                                         android:layout_width="80dp"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="25dp"
