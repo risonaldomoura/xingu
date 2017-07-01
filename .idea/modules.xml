@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Xingu.iml" filepath="$PROJECT_DIR$/Xingu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xingu.iml" filepath="$PROJECT_DIR$/xingu.iml" />
     </modules>
   </component>
 </project>

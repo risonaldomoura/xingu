@@ -6,14 +6,22 @@ import android.view.*;
 import android.content.*;
 import android.widget.*;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Config_activity extends AppCompatActivity implements View.OnClickListener{
 
     Button btn_config_bimestre, btn_mudar_conta;
+    //private FirebaseAuth firebaseAuth;
+    private GoogleApiClient mGoogleApiClient;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.config_activity);
+
+        mAuth = FirebaseAuth.getInstance();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Mostrar o botão
         getSupportActionBar().setHomeButtonEnabled(true);      //Ativar o botão
@@ -54,7 +62,16 @@ public class Config_activity extends AppCompatActivity implements View.OnClickLi
                     prefEditor.putInt("execucao",2);
                     prefEditor.commit();
 
-                    Intent it3 = new Intent(this, Login_activity.class);
+                    //firebaseAuth.mAuth();
+
+                    FirebaseAuth.getInstance().signOut();
+
+                    /* GOOGLE LOGOUT */
+                    //if( mGoogleApiClient != null && mGoogleApiClient.isConnected() ){
+                    //    mAuth.GoogleSignInApi.signOut(mGoogleApiClient);
+                    //}
+
+                    Intent it3 = new Intent(this, Registro_activity.class);
                     startActivity(it3);
 
                     break;

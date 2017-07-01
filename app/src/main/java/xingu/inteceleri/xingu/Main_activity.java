@@ -180,7 +180,7 @@ public class Main_activity extends AppCompatActivity
         //FrameLayout da spinner
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
 
-<<<<<<< HEAD
+
         //Botao OK dos objetivos
        Button btn_ok = (Button) findViewById(R.id.btn_ok);
         final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
@@ -193,8 +193,6 @@ public class Main_activity extends AppCompatActivity
             }
         });
 
-=======
->>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
 
         //FrameLayout Arte
         final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
@@ -2507,10 +2505,59 @@ public class Main_activity extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
-<<<<<<< HEAD
+
                 fl_obj.setVisibility(View.VISIBLE);
                 fl_spinner.setVisibility(View.GONE);
-=======
+
+                String obj = getString(R.string.obj_portugues_oitavo_I);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_oitavo_II);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                fl_obj.setVisibility(View.VISIBLE);
+                fl_spinner.setVisibility(View.GONE);
+
+                String obj = getString(R.string.obj_portugues_oitavo_III);
+                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                txt_obj.setText(obj);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+             // Toast.makeText(Main_activity.this, "Dia: "+ Dia_sistema + " Mês: "+ Mes_sistema,Toast.LENGTH_SHORT).show();
+                 fl_obj.setVisibility(View.VISIBLE);
+                 fl_spinner.setVisibility(View.GONE);
+
+                 String obj = getString(R.string.obj_portugues_oitavo_IV);
+                 TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
+                 txt_obj.setText(obj);
+             }
+        });
+    }
+    //==============================================================================================
+
+
     private void setUserData(FirebaseUser user){
 
 
@@ -2563,92 +2610,6 @@ public class Main_activity extends AppCompatActivity
         startActivity(intent);
     }
 
-
-
-    public void configurar(){
->>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
-
-                String obj = getString(R.string.obj_portugues_oitavo_I);
-                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
-                txt_obj.setText(obj);
-            }
-        });
-
-<<<<<<< HEAD
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                fl_obj.setVisibility(View.VISIBLE);
-                fl_spinner.setVisibility(View.GONE);
-
-                String obj = getString(R.string.obj_portugues_oitavo_II);
-                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
-                txt_obj.setText(obj);
-=======
-            //Escreve configurar == 1;
-            SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre", 0);
-            SharedPreferences.Editor prefEditor2 = sharedPref_configurar.edit();
-            prefEditor2.putInt("configurar", 1);
-            prefEditor2.commit();
-
-            //Toast.makeText(Main_activity.this, "estado: "+ configurar,Toast.LENGTH_SHORT).show();
-
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Atenção!");
-            builder.setMessage("Deseja modificar as datas padrão dos bimestres?")
-                    .setCancelable(false)
-                    .setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
-                        }
-                    })
-                    .setPositiveButton("SIM", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            Intent intent = new Intent(Main_activity.this, Config_bimestre_activity.class);
-                            startActivity(intent);
-                        }
-                    });
-            builder.show();
-        }
->>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
-
-            }
-        });
-
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                fl_obj.setVisibility(View.VISIBLE);
-                fl_spinner.setVisibility(View.GONE);
-
-                String obj = getString(R.string.obj_portugues_oitavo_III);
-                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
-                txt_obj.setText(obj);
-            }
-        });
-
-<<<<<<< HEAD
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-=======
-        // Toast.makeText(Main_activity.this, "Dia: "+ Dia_sistema + " Mês: "+ Mes_sistema,Toast.LENGTH_SHORT).show();
-    }
-    //==============================================================================================
->>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
-
-                fl_obj.setVisibility(View.VISIBLE);
-                fl_spinner.setVisibility(View.GONE);
-
-                String obj = getString(R.string.obj_portugues_oitavo_IV);
-                TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
-                txt_obj.setText(obj);
-            }
-        });
-    }
-    //==============================================================================================
 
     //=========================================PORTUGUES NONO============================================
     public void fl_obj_portugues_nono(View view) {
