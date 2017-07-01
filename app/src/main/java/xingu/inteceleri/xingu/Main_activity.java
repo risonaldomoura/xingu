@@ -3,8 +3,15 @@ package xingu.inteceleri.xingu;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AlertDialog;
 import android.text.Layout;
 import android.view.View;
@@ -20,6 +27,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,11 +36,28 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
 import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Handler;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.BitmapImageViewTarget;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.Api;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserInfo;
 
 
 
@@ -57,9 +82,16 @@ public class Main_activity extends AppCompatActivity
     public String mes_11 = "NOV";
     public String mes_12 = "DEZ";
 
-    //FireBase
+    //Autentição com o Google
+    private GoogleApiClient googleApiClient;
+    private ImageView photoID;
+    private TextView nomeID;
+    private RoundedBitmapDrawable roundedBitmapDrawable;
+    private Intent data;
+
+    //Firebase
     private FirebaseAuth fbAuth;
-    private TextView emailUsuario;
+    private FirebaseAuth.AuthStateListener fbAuthListener;
 
     private Spinner spn_disciplina;
     public static int IDAtual;
@@ -100,7 +132,6 @@ public class Main_activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        fbAuth = FirebaseAuth.getInstance();
 
         //load do ID do estado de configurar bimestre
         SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre",MODE_PRIVATE);
@@ -149,6 +180,7 @@ public class Main_activity extends AppCompatActivity
         //FrameLayout da spinner
         final FrameLayout fl_spinner = (FrameLayout) findViewById(R.id.fl_spinner);
 
+<<<<<<< HEAD
         //Botao OK dos objetivos
        Button btn_ok = (Button) findViewById(R.id.btn_ok);
         final FrameLayout fl_obj = (FrameLayout) findViewById(R.id.fl_obj);
@@ -161,6 +193,8 @@ public class Main_activity extends AppCompatActivity
             }
         });
 
+=======
+>>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
 
         //FrameLayout Arte
         final FrameLayout fl_arte = (FrameLayout) findViewById(R.id.fl_arte);
@@ -282,7 +316,60 @@ public class Main_activity extends AppCompatActivity
         //FirebaseUser fbUsuario = fbAuth.getCurrentUser();
         //View nav_header = (View) navigationView.getHeaderView(R.layout.nav_header_main_activity);
 
-       // TextView email = (TextView) findViewById(R.id.textViewEmailUsuario);
+        //===================================================================================
+        /*
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user!= null){
+
+
+            String nome = user.getDisplayName();
+            Uri photoUrl = user.getPhotoUrl();
+
+            View header  = navigationView.getHeaderView(0);
+
+            ImageView photoID = (ImageView) header.findViewById(R.id.imageViewPhoto);
+            TextView nomeID = (TextView) header.findViewById(R.id.textViewEmailUsuario);
+
+            photoID.setImageURI(photoUrl);
+            nomeID.setText(nome);
+
+            //String nome  = user.getDisplayName();
+            //Uri photoUrl = user.getPhotoUrl();
+
+
+        }*/
+        //==========================================================================
+
+        View header  = navigationView.getHeaderView(0);
+         photoID = (ImageView) header.findViewById(R.id.imageViewPhoto);
+         nomeID = (TextView) header.findViewById(R.id.textViewEmailUsuario);
+
+        
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+
+        googleApiClient= new GoogleApiClient.Builder(this)
+
+                .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
+                .build();
+
+
+        fbAuth = FirebaseAuth.getInstance();
+        fbAuthListener = new FirebaseAuth.AuthStateListener(){
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
+                FirebaseUser user = fbAuth.getCurrentUser();
+                if(user != null){
+                    setUserData(user);
+                }
+            }
+        };
+
+
+
+        // TextView email = (TextView) findViewById(R.id.textViewEmailUsuario);
         //email.setText(fbUsuario.getEmail());
 
         /*
@@ -2420,8 +2507,66 @@ public class Main_activity extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
+<<<<<<< HEAD
                 fl_obj.setVisibility(View.VISIBLE);
                 fl_spinner.setVisibility(View.GONE);
+=======
+    private void setUserData(FirebaseUser user){
+
+
+        nomeID.setText(user.getDisplayName());
+        //Glide.with(this)
+        //       .load(user.getPhotoUrl())
+        //        .into(photoID);
+
+        Glide.with(this).load(user.getPhotoUrl()).asBitmap().centerCrop().into(new BitmapImageViewTarget(photoID) {
+            @Override
+            protected void setResource(Bitmap resource) {
+                RoundedBitmapDrawable circularBitmapDrawable =
+                        RoundedBitmapDrawableFactory.create(getResources(), resource);
+                circularBitmapDrawable.setCircular(true);
+                photoID.setImageDrawable(circularBitmapDrawable);
+            }
+        });
+
+    }
+    protected void onStart(){
+        super.onStart();
+        fbAuth.addAuthStateListener(fbAuthListener);
+    }
+
+    protected  void onStop(){
+        super.onStop();
+
+        if(fbAuthListener != null){
+            fbAuth.removeAuthStateListener(fbAuthListener);
+        }
+    }
+
+    private void  handleSingInResult(GoogleSignInResult result){
+        if(result.isSuccess()){
+            GoogleSignInAccount account = result.getSignInAccount();
+
+            nomeID.setText(account.getDisplayName());
+            Glide.with(this).load(account.getPhotoUrl()).into(photoID);
+
+        }else
+            goRegistroLogin();
+        {
+
+        }
+
+    }
+
+    private void goRegistroLogin(){
+        Intent intent = new Intent(this,Registro_activity.class);
+        startActivity(intent);
+    }
+
+
+
+    public void configurar(){
+>>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
 
                 String obj = getString(R.string.obj_portugues_oitavo_I);
                 TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
@@ -2429,6 +2574,7 @@ public class Main_activity extends AppCompatActivity
             }
         });
 
+<<<<<<< HEAD
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -2439,6 +2585,33 @@ public class Main_activity extends AppCompatActivity
                 String obj = getString(R.string.obj_portugues_oitavo_II);
                 TextView txt_obj = (TextView) findViewById(R.id.txt_obj);
                 txt_obj.setText(obj);
+=======
+            //Escreve configurar == 1;
+            SharedPreferences sharedPref_configurar = getSharedPreferences("pref_bimestre", 0);
+            SharedPreferences.Editor prefEditor2 = sharedPref_configurar.edit();
+            prefEditor2.putInt("configurar", 1);
+            prefEditor2.commit();
+
+            //Toast.makeText(Main_activity.this, "estado: "+ configurar,Toast.LENGTH_SHORT).show();
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Atenção!");
+            builder.setMessage("Deseja modificar as datas padrão dos bimestres?")
+                    .setCancelable(false)
+                    .setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    })
+                    .setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            Intent intent = new Intent(Main_activity.this, Config_bimestre_activity.class);
+                            startActivity(intent);
+                        }
+                    });
+            builder.show();
+        }
+>>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
 
             }
         });
@@ -2456,9 +2629,15 @@ public class Main_activity extends AppCompatActivity
             }
         });
 
+<<<<<<< HEAD
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+=======
+        // Toast.makeText(Main_activity.this, "Dia: "+ Dia_sistema + " Mês: "+ Mes_sistema,Toast.LENGTH_SHORT).show();
+    }
+    //==============================================================================================
+>>>>>>> 3d73e8df3f8baaae6ad55e0f2cbdad3c6ed40298
 
                 fl_obj.setVisibility(View.VISIBLE);
                 fl_spinner.setVisibility(View.GONE);
@@ -2538,98 +2717,98 @@ public class Main_activity extends AppCompatActivity
 
     //=============================COLOCAR SOMBRA NO BLOCO DE BIMESTRE==============================
 
-          public void SombraBimestre(View view) {
+    public void SombraBimestre(View view) {
 
-            FrameLayout fl_1 = (FrameLayout) view.findViewById(R.id.fl_1);
-            FrameLayout fl_2 = (FrameLayout) view.findViewById(R.id.fl_2);
-            FrameLayout fl_3 = (FrameLayout) view.findViewById(R.id.fl_3);
-            FrameLayout fl_4 = (FrameLayout) view.findViewById(R.id.fl_4);
+        FrameLayout fl_1 = (FrameLayout) view.findViewById(R.id.fl_1);
+        FrameLayout fl_2 = (FrameLayout) view.findViewById(R.id.fl_2);
+        FrameLayout fl_3 = (FrameLayout) view.findViewById(R.id.fl_3);
+        FrameLayout fl_4 = (FrameLayout) view.findViewById(R.id.fl_4);
 
-            //====================================I BIMESTRE========================================
+        //====================================I BIMESTRE========================================
 
-            if (Mes_sistema == ID_salvo_mes_termino_I) {
+        if (Mes_sistema == ID_salvo_mes_termino_I) {
 
-                if (Dia_sistema > ID_salvo_dia_termino_I) {
+            if (Dia_sistema > ID_salvo_dia_termino_I) {
 
-                   // Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
-
-                    fl_1.setVisibility(View.VISIBLE);
-
-                } else
-                    fl_1.setVisibility(View.GONE);
-            } else if (Mes_sistema > ID_salvo_mes_termino_I) {
+                // Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
 
                 fl_1.setVisibility(View.VISIBLE);
 
-            } else if (Mes_sistema < ID_salvo_mes_termino_I) {
-
+            } else
                 fl_1.setVisibility(View.GONE);
-            }
-            //======================================================================================
+        } else if (Mes_sistema > ID_salvo_mes_termino_I) {
 
-            //===================================II BIMESTRE========================================
-            if (Mes_sistema == ID_salvo_mes_termino_II) {
+            fl_1.setVisibility(View.VISIBLE);
 
-                if (Dia_sistema > ID_salvo_dia_termino_II) {
+        } else if (Mes_sistema < ID_salvo_mes_termino_I) {
 
-                    //Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
+            fl_1.setVisibility(View.GONE);
+        }
+        //======================================================================================
 
-                    fl_2.setVisibility(View.VISIBLE);
+        //===================================II BIMESTRE========================================
+        if (Mes_sistema == ID_salvo_mes_termino_II) {
 
-                } else
-                    fl_2.setVisibility(View.GONE);
-            } else if (Mes_sistema > ID_salvo_mes_termino_II) {
+            if (Dia_sistema > ID_salvo_dia_termino_II) {
+
+                //Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
 
                 fl_2.setVisibility(View.VISIBLE);
 
-            } else if (Mes_sistema < ID_salvo_mes_termino_II) {
-
+            } else
                 fl_2.setVisibility(View.GONE);
-            }
-            //======================================================================================
+        } else if (Mes_sistema > ID_salvo_mes_termino_II) {
 
-            //==================================III BIMESTRE========================================
-            if (Mes_sistema == ID_salvo_mes_termino_III) {
+            fl_2.setVisibility(View.VISIBLE);
 
-                if (Dia_sistema > ID_salvo_dia_termino_III) {
+        } else if (Mes_sistema < ID_salvo_mes_termino_II) {
 
-                    //Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
+            fl_2.setVisibility(View.GONE);
+        }
+        //======================================================================================
 
-                    fl_3.setVisibility(View.VISIBLE);
+        //==================================III BIMESTRE========================================
+        if (Mes_sistema == ID_salvo_mes_termino_III) {
 
-                } else
-                    fl_3.setVisibility(View.GONE);
-            } else if (Mes_sistema > ID_salvo_mes_termino_III) {
+            if (Dia_sistema > ID_salvo_dia_termino_III) {
+
+                //Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
 
                 fl_3.setVisibility(View.VISIBLE);
 
-            } else if (Mes_sistema < ID_salvo_mes_termino_III) {
-
+            } else
                 fl_3.setVisibility(View.GONE);
-            }
-            //======================================================================================
+        } else if (Mes_sistema > ID_salvo_mes_termino_III) {
 
-            //===================================IV BIMESTRE========================================
-            if (Mes_sistema == ID_salvo_mes_termino_IV) {
+            fl_3.setVisibility(View.VISIBLE);
 
-                if (Dia_sistema > ID_salvo_dia_termino_IV) {
+        } else if (Mes_sistema < ID_salvo_mes_termino_III) {
 
-                    //Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
+            fl_3.setVisibility(View.GONE);
+        }
+        //======================================================================================
 
-                    fl_4.setVisibility(View.VISIBLE);
+        //===================================IV BIMESTRE========================================
+        if (Mes_sistema == ID_salvo_mes_termino_IV) {
 
-                } else
-                    fl_4.setVisibility(View.GONE);
-            } else if (Mes_sistema > ID_salvo_mes_termino_IV) {
+            if (Dia_sistema > ID_salvo_dia_termino_IV) {
+
+                //Toast.makeText(Main_activity.this, "Sombra Bim_I ", Toast.LENGTH_SHORT).show();
 
                 fl_4.setVisibility(View.VISIBLE);
 
-            } else if (Mes_sistema < ID_salvo_mes_termino_IV) {
-
+            } else
                 fl_4.setVisibility(View.GONE);
-            }
-            //======================================================================================
+        } else if (Mes_sistema > ID_salvo_mes_termino_IV) {
+
+            fl_4.setVisibility(View.VISIBLE);
+
+        } else if (Mes_sistema < ID_salvo_mes_termino_IV) {
+
+            fl_4.setVisibility(View.GONE);
         }
+        //======================================================================================
+    }
     //==============================================================================================
 
 /*

@@ -25,7 +25,7 @@ public class Apresentacao_activity extends AppCompatActivity implements View.OnC
     @Override
     public void onClick(View v){
 
-        Intent it = new Intent(this, Login_activity.class);
+        Intent it = new Intent(this, Registro_activity.class);
         startActivity(it);
     }
 
