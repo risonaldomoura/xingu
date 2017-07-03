@@ -288,15 +288,15 @@ textos: regimento, entrevista, memória literária"
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn1"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
@@ -591,15 +591,15 @@ suspense)"
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn2"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
@@ -888,15 +888,15 @@ vírgula"
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn3"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
@@ -918,6 +918,7 @@ vírgula"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:background="@android:color/transparent"
                         app:cardCornerRadius="5dp"
@@ -1179,15 +1180,15 @@ derivação: prefixos e sufixos"
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn4"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"

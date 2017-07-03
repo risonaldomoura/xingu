@@ -27,6 +27,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+
 public class Registro_activity extends AppCompatActivity  {
 
     private SignInButton mgoogleBtn;
@@ -51,6 +52,7 @@ public class Registro_activity extends AppCompatActivity  {
         setContentView(R.layout.activity_registro_activity);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
         mAuthListener = new FirebaseAuth.AuthStateListener(){
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
@@ -78,16 +80,15 @@ public class Registro_activity extends AppCompatActivity  {
                     public void onConnectionFailed(@NonNull ConnectionResult connectionResult){
                         Toast.makeText(Registro_activity.this,"Erro ao fazer login!",Toast.LENGTH_LONG).show();
                     }
-
                 })*/
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
                 .build();
 
         mgoogleBtn.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View view){
-                    signIn();
-                }
+            @Override
+            public void onClick(View view){
+                signIn();
+            }
 
         });
 
@@ -95,12 +96,10 @@ public class Registro_activity extends AppCompatActivity  {
 
         /*
         progressDiag = new ProgressDialog(this);
-
         botaoRegistrar = (Button) findViewById(R.id.btn_registrarRegistro);
         campoEditarEmail = (EditText) findViewById(R.id.edtEmailRegistro);
         campoEditarSenha = (EditText) findViewById(R.id.edtSenhaRegistro);
         campoEditarSenhaConfirm = (EditText) findViewById(R.id.edtSenhaRegistroConfirmacao);
-
         botaoRegistrar.setOnClickListener(this);
         */
     }
@@ -149,11 +148,9 @@ public class Registro_activity extends AppCompatActivity  {
 
     /*
     private  void registrarUsuario(){
-
         String email = campoEditarEmail.getText().toString().trim();
         String senha =  campoEditarSenha.getText().toString().trim();
         String senhaConfirm = campoEditarSenhaConfirm.getText().toString().trim();
-
         if(TextUtils.isEmpty(email)){
             Toast.makeText(this, "Por favor, entre com um E-mail!", Toast.LENGTH_SHORT).show();
             return;
@@ -161,8 +158,6 @@ public class Registro_activity extends AppCompatActivity  {
             Toast.makeText(this, "Por favor, entre com uma senha!", Toast.LENGTH_SHORT).show();
             return;
         }else{
-
-
                 if( senha.compareTo(senhaConfirm) == 0){
                     //Toast.makeText(this, "Senhas iguais", Toast.LENGTH_SHORT).show();
                     //return;
@@ -175,16 +170,12 @@ public class Registro_activity extends AppCompatActivity  {
                             } catch (InterruptedException e){
                                 e.printStackTrace();
                             } finally{
-
                             }
                         }
                     };
                     timerThread.start();
-
-
                     firebaseAuth.createUserWithEmailAndPassword(email,senha)
                             .addOnCompleteListener(this, new OnCompleteListener<AuthResult>(){
-
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if(task.isSuccessful()){
@@ -221,18 +212,11 @@ public class Registro_activity extends AppCompatActivity  {
                                     }
                                 }
                             });
-
                 }else {
                     Toast.makeText(this, "Senhas não coincidem!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-
-
-
-
         }
-
     }
     */
     @Override
@@ -258,14 +242,9 @@ public class Registro_activity extends AppCompatActivity  {
                     registrarUsuario();
             }
     }
-
-
-
     public void onBackPressed() {
-
         Intent it = new Intent(this, Login_activity.class);
         startActivity(it);
-
         return;
     }
     */

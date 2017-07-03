@@ -6,22 +6,21 @@ import android.view.*;
 import android.content.*;
 import android.widget.*;
 
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Config_activity extends AppCompatActivity implements View.OnClickListener{
 
     Button btn_config_bimestre, btn_mudar_conta;
-    //private FirebaseAuth firebaseAuth;
+
     private GoogleApiClient mGoogleApiClient;
-    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.config_activity);
-
-        mAuth = FirebaseAuth.getInstance();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Mostrar o botão
         getSupportActionBar().setHomeButtonEnabled(true);      //Ativar o botão
@@ -62,17 +61,26 @@ public class Config_activity extends AppCompatActivity implements View.OnClickLi
                     prefEditor.putInt("execucao",2);
                     prefEditor.commit();
 
-                    //firebaseAuth.mAuth();
+                    /*
+                    GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                            .requestIdToken(getString(R.string.default_web_client_id))
+                            .requestEmail()
+                            .build();
 
-                    FirebaseAuth.getInstance().signOut();
+                    mGoogleApiClient = new GoogleApiClient.Builder(getApplicationContext())
+                            .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
+                            .build();
 
-                    /* GOOGLE LOGOUT */
-                    //if( mGoogleApiClient != null && mGoogleApiClient.isConnected() ){
-                    //    mAuth.GoogleSignInApi.signOut(mGoogleApiClient);
-                    //}
+                    if (mGoogleApiClient != null && mGoogleApiClient.isConnected()){
 
-                    Intent it3 = new Intent(this, Registro_activity.class);
+                        Auth.GoogleSignInApi.signOut(mGoogleApiClient);
+
+                    }
+                    */
+
+                    Intent it3 = new Intent(Config_activity.this, Registro_activity.class);
                     startActivity(it3);
+                    //finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
 
                     break;
 

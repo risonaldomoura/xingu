@@ -291,15 +291,15 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn1"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
@@ -346,6 +346,10 @@
 
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/canto_sup_arredondado"
+                                android:backgroundTint="@color/elementos_conteudo"
                                 android:orientation="horizontal">
 
                                 <TextView
@@ -565,15 +569,15 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn2"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
@@ -620,6 +624,10 @@
 
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/canto_sup_arredondado"
+                                android:backgroundTint="@color/elementos_conteudo"
                                 android:orientation="horizontal">
 
                                 <TextView
@@ -833,15 +841,15 @@ sagrados, mitos, ritos e símbolos)"
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn3"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"
@@ -863,6 +871,7 @@ sagrados, mitos, ritos e símbolos)"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:background="@android:color/transparent"
                         app:cardCornerRadius="5dp"
@@ -886,8 +895,13 @@ sagrados, mitos, ritos e símbolos)"
 
                             <LinearLayout
                                 android:id="@+id/layout"
+                                android:elevation="10dp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:background="@drawable/canto_sup_arredondado"
+                                android:backgroundTint="@color/elementos_conteudo"
                                 android:orientation="horizontal">
 
                                 <TextView
@@ -1059,6 +1073,11 @@ sagrados, mitos, ritos e símbolos)"
                                             android:layout_marginRight="10dp"
                                             android:orientation="vertical">
 
+                                            <Space
+                                                android:layout_width="match_parent"
+                                                android:layout_height="20dp"
+                                                android:layout_weight="1" />
+
                                             <CheckBox
                                                 android:id="@+id/cb12"
                                                 android:layout_width="match_parent"
@@ -1093,15 +1112,15 @@ que contribuem para a paz"
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="30dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="10dp"
                                     android:gravity="end"
                                     android:orientation="horizontal">
 
                                     <Button
                                         android:id="@+id/btn4"
-                                        android:layout_width="80dp"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="90dp"
+                                        android:layout_height="32dp"
                                         android:layout_marginRight="25dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/cantoarredondado"

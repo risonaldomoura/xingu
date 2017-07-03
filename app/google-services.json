@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "737635589843",
-    "firebase_url": "https://m-xingu.firebaseio.com",
-    "project_id": "m-xingu",
-    "storage_bucket": "m-xingu.appspot.com"
+    "project_number": "32412832272",
+    "firebase_url": "https://matriz-xingu.firebaseio.com",
+    "project_id": "matriz-xingu",
+    "storage_bucket": "matriz-xingu.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:737635589843:android:241d42f73e6a9793",
+        "mobilesdk_app_id": "1:32412832272:android:241d42f73e6a9793",
         "android_client_info": {
           "package_name": "xingu.inteceleri.xingu"
         }
       },
       "oauth_client": [
         {
-          "client_id": "737635589843-bq0br53nr9r0q9t6dir62jjlslpcrpi9.apps.googleusercontent.com",
+          "client_id": "32412832272-rme0dhp1k590lv81jea5q1sgvsbpjj71.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "xingu.inteceleri.xingu",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "737635589843-enfsr2cduca6f54m5gi4ma1b42peaua4.apps.googleusercontent.com",
+          "client_id": "32412832272-b0uiq9iumqp9j2nic1fnb5docb44e0rn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDCv18XSs44f_F53JjDBRiWSBwtgHqdHj8"
+          "current_key": "AIzaSyALlxMzwLPw8KS8ZdUoezyjQtSh7jKzl9c"
         }
       ],
       "services": {
@@ -40,14 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "737635589843-nmu7i5h47dv4937i7heglndcqhefr95r.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "xingu.inteceleri.xingu"
-              }
-            },
-            {
-              "client_id": "737635589843-enfsr2cduca6f54m5gi4ma1b42peaua4.apps.googleusercontent.com",
+              "client_id": "32412832272-b0uiq9iumqp9j2nic1fnb5docb44e0rn.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

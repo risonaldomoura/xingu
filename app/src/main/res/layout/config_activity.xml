@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/white"
         android:orientation="vertical"
         android:layout_weight="1">
 
@@ -41,7 +42,7 @@
                     android:layout_marginLeft="35dp"
                     android:text="Clique para configurar"
                     android:textColor="?android:attr/textColorPrimaryNoDisable"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
 
                 <Button
                     android:id="@+id/btn_config_bimestre"
@@ -76,7 +77,7 @@
                     android:layout_marginLeft="35dp"
                     android:text="Mudar de conta"
                     android:textColor="?android:attr/textColorPrimaryNoDisable"
-                    android:textSize="16sp" />
+                    android:textSize="15sp" />
 
                 <Button
                     android:id="@+id/btn_mudar_conta"

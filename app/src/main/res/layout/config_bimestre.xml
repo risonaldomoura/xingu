@@ -124,27 +124,29 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_inicio_I"
-                                        android:layout_width="70dp"
-                                        android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="34dp" />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_mes_inicio_I"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
 
                                 </LinearLayout>
 
@@ -197,27 +199,30 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_termino_I"
-                                        android:layout_width="70dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1" />
 
                                     <Spinner
                                         android:id="@+id/spn_mes_termino_I"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
 
                                 </LinearLayout>
 
@@ -309,27 +314,30 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_inicio_II"
-                                        android:layout_width="70dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_mes_inicio_II"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
 
                                 </LinearLayout>
 
@@ -382,27 +390,30 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_termino_II"
-                                        android:layout_width="70dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_mes_termino_II"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
 
                                 </LinearLayout>
 
@@ -495,27 +506,30 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_inicio_III"
-                                        android:layout_width="70dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_mes_inicio_III"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
 
                                 </LinearLayout>
 
@@ -566,27 +580,30 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_termino_III"
-                                        android:layout_width="70dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_mes_termino_III"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
 
                                 </LinearLayout>
 
@@ -681,27 +698,30 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_inicio_IV"
-                                        android:layout_width="70dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_mes_inicio_IV"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
 
                                 </LinearLayout>
 
@@ -754,27 +774,30 @@
 
                                     <Space
                                         android:layout_width="40dp"
-                                        android:layout_height="20dp" />
+                                        android:layout_height="20dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_dia_termino_IV"
-                                        android:layout_width="70dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                        />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="10dp" />
+                                        android:layout_height="10dp"
+                                        android:layout_weight="1"/>
 
                                     <Spinner
                                         android:id="@+id/spn_mes_termino_IV"
-                                        android:layout_width="90dp"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="34dp"
-                                        android:layout_weight="1" />
+                                       />
 
                                     <Space
                                         android:layout_width="20dp"
-                                        android:layout_height="wrap_content" />
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
 
                                 </LinearLayout>
 

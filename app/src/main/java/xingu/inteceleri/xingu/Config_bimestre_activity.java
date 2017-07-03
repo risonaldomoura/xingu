@@ -125,38 +125,38 @@ public class Config_bimestre_activity extends AppCompatActivity{
         getSupportActionBar().setHomeButtonEnabled(true);      //Ativar o botão
         getSupportActionBar().setTitle("Configuração de bimestre"); //titulo a mostrar na barra
 
-        adp_dia.add("Dia");
-        adp_dia.add("01");
-        adp_dia.add("02");
-        adp_dia.add("03");
-        adp_dia.add("04");
-        adp_dia.add("05");
-        adp_dia.add("06");
-        adp_dia.add("07");
-        adp_dia.add("08");
-        adp_dia.add("09");
-        adp_dia.add("10");
-        adp_dia.add("11");
-        adp_dia.add("12");
-        adp_dia.add("13");
-        adp_dia.add("14");
-        adp_dia.add("15");
-        adp_dia.add("16");
-        adp_dia.add("17");
-        adp_dia.add("18");
-        adp_dia.add("19");
-        adp_dia.add("20");
-        adp_dia.add("21");
-        adp_dia.add("22");
-        adp_dia.add("23");
-        adp_dia.add("24");
-        adp_dia.add("25");
-        adp_dia.add("26");
-        adp_dia.add("27");
-        adp_dia.add("28");
-        adp_dia.add("29");
-        adp_dia.add("30");
-        adp_dia.add("31");
+        adp_dia.add("  Dia  ");
+        adp_dia.add("   01   ");
+        adp_dia.add("   02   ");
+        adp_dia.add("   03   ");
+        adp_dia.add("   04   ");
+        adp_dia.add("   05   ");
+        adp_dia.add("   06   ");
+        adp_dia.add("   07   ");
+        adp_dia.add("   08   ");
+        adp_dia.add("   09   ");
+        adp_dia.add("   10   ");
+        adp_dia.add("   11   ");
+        adp_dia.add("   12   ");
+        adp_dia.add("   13   ");
+        adp_dia.add("   14   ");
+        adp_dia.add("   15   ");
+        adp_dia.add("   16   ");
+        adp_dia.add("   17   ");
+        adp_dia.add("   18   ");
+        adp_dia.add("   19   ");
+        adp_dia.add("   20   ");
+        adp_dia.add("   21   ");
+        adp_dia.add("   22   ");
+        adp_dia.add("   23   ");
+        adp_dia.add("   24   ");
+        adp_dia.add("   25   ");
+        adp_dia.add("   26   ");
+        adp_dia.add("   27   ");
+        adp_dia.add("   28   ");
+        adp_dia.add("   29   ");
+        adp_dia.add("   30   ");
+        adp_dia.add("   31   ");
 
         adp_mes.add("Mês");
         adp_mes.add("Janeiro");
@@ -177,7 +177,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
         //spn_dia_inicio_I
         spn_dia_inicio_I = (Spinner) findViewById(R.id.spn_dia_inicio_I);
 
-        ArrayAdapter<String> adp1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, adp_dia);
+        ArrayAdapter<String> adp1 = new ArrayAdapter<String>(this, R.layout.layout_spn_config_bimestre, adp_dia);
         ArrayAdapter<String> spnAdapter1 = adp1;
         spnAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_dia_inicio_I.setAdapter(spnAdapter1);
@@ -185,7 +185,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
         //spn_dia_termino_I
         spn_dia_termino_I = (Spinner) findViewById(R.id.spn_dia_termino_I);
 
-        ArrayAdapter<String> adp2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, adp_dia);
+        ArrayAdapter<String> adp2 = new ArrayAdapter<String>(this, R.layout.layout_spn_config_bimestre, adp_dia);
         ArrayAdapter<String> spnAdapter2 = adp2;
         spnAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_dia_termino_I.setAdapter(spnAdapter2);
@@ -193,7 +193,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
         //spn_mes_inicio_I
         spn_mes_inicio_I = (Spinner) findViewById(R.id.spn_mes_inicio_I);
 
-        ArrayAdapter<String> adp3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, adp_mes);
+        ArrayAdapter<String> adp3 = new ArrayAdapter<String>(this, R.layout.layout_spn_config_bimestre, adp_mes);
         ArrayAdapter<String> spnAdapter3 = adp3;
         spnAdapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_mes_inicio_I.setAdapter(spnAdapter3);
@@ -201,7 +201,7 @@ public class Config_bimestre_activity extends AppCompatActivity{
         //spn_mes_termino_I
         spn_mes_termino_I = (Spinner) findViewById(R.id.spn_mes_termino_I);
 
-        ArrayAdapter<String> adp4 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, adp_mes);
+        ArrayAdapter<String> adp4 = new ArrayAdapter<String>(this, R.layout.layout_spn_config_bimestre, adp_mes);
         ArrayAdapter<String> spnAdapter4 = adp4;
         spnAdapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_mes_termino_I.setAdapter(spnAdapter4);
