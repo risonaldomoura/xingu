@@ -15,11 +15,19 @@
       },
       "oauth_client": [
         {
-          "client_id": "32412832272-rme0dhp1k590lv81jea5q1sgvsbpjj71.apps.googleusercontent.com",
+          "client_id": "32412832272-jibr45p33n1gfh2t0phpp8iathv5q1u8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "xingu.inteceleri.xingu",
             "certificate_hash": "893232964429fb392814afe86d51ff0c5351a54b"
+          }
+        },
+        {
+          "client_id": "32412832272-rdhd9piskjri1q1k7buhpfd1ns7kvv2e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xingu.inteceleri.xingu",
+            "certificate_hash": "93c4c560276e7f6f61bbead9b928d024a8c5b0d4"
           }
         },
         {

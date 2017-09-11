@@ -69,18 +69,18 @@
             android:layout_height="173dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Saberes e Fazeres é um projeto digital da matriz curricular unificada para auxiliar professores e educadores no acompanhamento dos conteúdos a serem lecionados em sala de aula."
+            android:text="M-Xingu é a matriz curricular da cidade de Xingu-PA que auxilia professores e educadores no acompanhamento dos conteúdos a serem lecionados em sala de aula."
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
             android:textColor="@android:color/background_light"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.383" />
+            app:layout_constraintVertical_bias="0.363" />
 
     </android.support.constraint.ConstraintLayout>
 

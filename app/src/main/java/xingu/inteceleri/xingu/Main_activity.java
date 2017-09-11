@@ -3036,7 +3036,8 @@ public class Main_activity extends AppCompatActivity
             shareIntent.setType("text/plain");
             shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Compartilhe o M-Xingu com seus amigos!");
-            shareIntent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=air.MatematicandoEducation&hl=pt_BR");
+            shareIntent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=xingu.inteceleri.xingu&hl=pt"
+            );
             startActivity(Intent.createChooser(shareIntent, "Compartilhar via"));
             //Abrir opçoes de compartilhar
         } if (id == R.id.arte) {

@@ -94,6 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:text="Contato"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="18sp" />
@@ -117,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="TEL: "
-                    android:textColor="@color/apresentacao_tela_bg"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"/>
 
                 <TextView
@@ -151,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Email: "
-                    android:textColor="@color/apresentacao_tela_bg"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"/>/>
 
                 <TextView
@@ -169,7 +170,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="10dp" />
+                android:layout_height="20dp" />
 
             <ImageView
                 android:id="@+id/imglogointeceleri"
@@ -194,7 +195,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Versão 1.0"
+                android:text="Versão 1.1"
                 android:textColor="@android:color/black" />
 
         </LinearLayout>
